@@ -1,6 +1,7 @@
 package Airline.model;
 
 public class Airport {
+
     private String sAirportName;
     private String sAirportICAO;
     private String sAirportSize;
@@ -16,6 +17,8 @@ public class Airport {
     private Integer iWaitingPassengers;
     private Integer iWaitingCargo;
 
+    private Integer iTotalSlots;
+    private Integer iOccupiedSlots;
+    private Integer iAvailableSlots;
     
-
 }
