@@ -1,6 +1,6 @@
 package Airline.model;
 
-public class GameInitializer {
+public class AirlineGame {
 
     public static void Initialize() {
         /*

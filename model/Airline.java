@@ -6,6 +6,8 @@ public class Airline {
     private String sAirlineName;
     private String sAirlineDesc;
 
+    private Boolean sAutoAirline;
+
     private Double dAirlineFunds;
     private Double dAirlineValue;
 
