@@ -1,4 +1,4 @@
-package model;
+package Airline.model;
 
 public class Airport {
     private String sAirportName;
