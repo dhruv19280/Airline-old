@@ -6,9 +6,11 @@ public class Airport {
     private String sAirportICAO;
     private String sAirportSize;
     private String sAirportType;
+    
+    private String sAirportCountry;
     private String sAirportCity;
 
-    private Double dLatitucdde;
+    private Double dLatitude;
     private Double dLongitude;
 
     private Integer iPassengerCapacity;
@@ -21,4 +23,32 @@ public class Airport {
     private Integer iOccupiedSlots;
     private Integer iAvailableSlots;
     
+    private Double dBranchSetupCost;
+    private Double dBrandDemolishCost;
+    private Double dBranchRegularCost;
+
+    public void GeneratePassengers() {
+        
+    }
+
+    public void DeliverPassengers() {
+
+    }
+
+    public void GenerateCargo() {
+
+    }
+
+    public void DeliverCargo() {
+
+    }
+
+    public void AircraftArrival() {
+
+    }
+
+    public void AircraftDeparture() {
+        
+    }
+
 }
