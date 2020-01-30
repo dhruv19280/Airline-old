@@ -51,4 +51,20 @@ public class Airport {
         
     }
 
+    public void AllocateSlots() {
+
+    }
+
+    public void DeallocateSlots() {
+
+    }
+
+    public void StartUpgradeAirport() {
+
+    }
+
+    public void CompleteUpgradeAirport() {
+        
+    }
+
 }

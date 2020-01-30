@@ -8,8 +8,10 @@ public class Flight {
     private Airport aSource;
     private Airport aTarget;
     private Aircraft aAircraft;
-    
 
+    private Integer iDistance;
+    private Integer iFlightTimeMins;
+    
     private Integer iEconomyPassengers;
     private Integer iBusinessPassengers;
     private Integer iFirstPassengers;
