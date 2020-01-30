@@ -8,23 +8,21 @@ import java.util.List;
 
 public class AirportsInitializer {
 
-    private static String sURLAfrica;
-    private static String sURLAsia;
-    private static String sURLEurope;
-    private static String sURLNAmerica;
-    private static String sURLSAmerica;
-    private static String sURLOceania;
+    private static String sURLAfrica = "";
+    private static String sURLAsia = "";
+    private static String sURLEurope = "";
+    private static String sURLNAmerica = "";
+    private static String sURLSAmerica = "";
+    private static String sURLOceania = "";
 
-    AirportsInitializer() {
+    public static List<Airport> InitializeAll() {
+
         sURLAfrica="https://www.flightsfrom.com/top-100-airports-in-africa";
         sURLAsia="https://www.flightsfrom.com/top-100-airports-in-asia";
         sURLEurope="https://www.flightsfrom.com/top-100-airports-in-europe";
         sURLNAmerica="https://www.flightsfrom.com/top-100-airports-in-north-america";
         sURLSAmerica="https://www.flightsfrom.com/top-100-airports-in-south-america";
         sURLOceania="https://www.flightsfrom.com/top-100-airports-in-oceania";
-    }
-
-    public static List<Airport> InitializeAll() {
 
         String resultAfrica = getUrlContents(sURLAfrica);
         String resultAsia = getUrlContents(sURLAsia);
