@@ -32,6 +32,13 @@ public class AirportsInitializer {
         String resultOceania = getUrlContents(sURLOceania);
 
         return null;
+
+        /*
+        <div class="hometoplist-content">
+          <span class="hometoplist-first">Chicago   (ORD)</span>
+          <span class="hometoplist-last"><span class="makebluehighlight">982 flights</span> every day</span>
+        </div>
+    */
     }
 
     private static String getUrlContents(String theUrl)
