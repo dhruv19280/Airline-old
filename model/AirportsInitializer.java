@@ -1,16 +1,19 @@
 package Airline.model;
 
 import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.List;
 
 public class AirportsInitializer {
 
-    private String sURLAfrica;
-    private String sURLAsia;
-    private String sURLEurope;
-    private String sURLNAmerica;
-    private String sURLSAmerica;
-    private String sURLOceania;
+    private static String sURLAfrica;
+    private static String sURLAsia;
+    private static String sURLEurope;
+    private static String sURLNAmerica;
+    private static String sURLSAmerica;
+    private static String sURLOceania;
 
     AirportsInitializer() {
         sURLAfrica="https://www.flightsfrom.com/top-100-airports-in-africa";
@@ -27,8 +30,10 @@ public class AirportsInitializer {
         String resultAsia = getUrlContents(sURLAsia);
         String resultEurope = getUrlContents(sURLEurope);
         String resultNAmerica = getUrlContents(sURLNAmerica);
-        String resultSAmerica = getUrlContents(sURLSAmerica;
+        String resultSAmerica = getUrlContents(sURLSAmerica);
         String resultOceania = getUrlContents(sURLOceania);
+
+        return null;
     }
 
     private static String getUrlContents(String theUrl)

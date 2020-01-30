@@ -54,13 +54,13 @@ public class Airport {
             iOccupiedSlots = 0;
             iAvailableSlots = iTotalSlots - iOccupiedSlots;
             
-            dBranchSetupCost = 5000000;
-            dBrandDemolishCost = 5000000;
-            dBranchRegularCost = 100000;
+            dBranchSetupCost = 5000000D;
+            dBrandDemolishCost = 5000000D;
+            dBranchRegularCost = 100000D;
 
-            dConnectivityRating = 3.00;
-            dFacilitiesRating = 3.00;
-            dPunctualityRating = 3.00;
+            dConnectivityRating = 3.00D;
+            dFacilitiesRating = 3.00D;
+            dPunctualityRating = 3.00D;
         }
         else if (iFlights >=500 && iFlights<750 ) {
             sAirportSize = "Large";
@@ -74,13 +74,13 @@ public class Airport {
             iOccupiedSlots = 0;
             iAvailableSlots = iTotalSlots - iOccupiedSlots;
             
-            dBranchSetupCost = 2500000;
-            dBrandDemolishCost = 2500000;
-            dBranchRegularCost = 50000;
+            dBranchSetupCost = 2500000D;
+            dBrandDemolishCost = 2500000D;
+            dBranchRegularCost = 50000D;
 
-            dConnectivityRating = 2.00;
-            dFacilitiesRating = 2.00;
-            dPunctualityRating = 2.00;            
+            dConnectivityRating = 2.00D;
+            dFacilitiesRating = 2.00D;
+            dPunctualityRating = 2.00D;            
         }
         else if (iFlights >=250 && iFlights<500) {
             sAirportSize = "Medium";
@@ -94,13 +94,13 @@ public class Airport {
             iOccupiedSlots = 0;
             iAvailableSlots = iTotalSlots - iOccupiedSlots;
             
-            dBranchSetupCost = 1000000;
-            dBrandDemolishCost = 1000000;
-            dBranchRegularCost = 20000;
+            dBranchSetupCost = 1000000D;
+            dBrandDemolishCost = 1000000D;
+            dBranchRegularCost = 20000D;
             
-            dConnectivityRating = 1.00;
-            dFacilitiesRating = 1.00;
-            dPunctualityRating = 1.00;            
+            dConnectivityRating = 1.00D;
+            dFacilitiesRating = 1.00D;
+            dPunctualityRating = 1.00D;            
         }
         else {
             sAirportSize = "Small";
@@ -114,13 +114,13 @@ public class Airport {
             iOccupiedSlots = 0;
             iAvailableSlots = iTotalSlots - iOccupiedSlots;
             
-            dBranchSetupCost = 500000;
-            dBrandDemolishCost = 500000;
-            dBranchRegularCost = 10000;
+            dBranchSetupCost = 5000000D;
+            dBrandDemolishCost = 500000D;
+            dBranchRegularCost = 10000D;
 
-            dConnectivityRating = 0.50;
-            dFacilitiesRating = 0.50;
-            dPunctualityRating = 0.50;            
+            dConnectivityRating = 0.50D;
+            dFacilitiesRating = 0.50D;
+            dPunctualityRating = 0.50D;            
         }
     }
 
