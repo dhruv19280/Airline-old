@@ -27,6 +27,10 @@ public class Airport {
     private Double dBrandDemolishCost;
     private Double dBranchRegularCost;
 
+    private Double dConnectivityRating;
+    private Double dFacilitiesRating;
+    private Double dPunctualityRating;
+
     public void GeneratePassengers() {
         
     }
@@ -64,7 +68,7 @@ public class Airport {
     }
 
     public void CompleteUpgradeAirport() {
-        
+
     }
 
 }
