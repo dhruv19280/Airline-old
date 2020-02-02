@@ -4,10 +4,8 @@ import java.util.List;
 
 public class AirlineGame {
 
-    private static List<Airport> lstAllAirports;
-
     public static void Initialize() {
-        lstAllAirports = AirportsInitializer.InitializeAll();
+        AirportsInitializer.InitializeAll();
 
         
         /*

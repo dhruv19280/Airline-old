@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
+import java.util.StringTokenizer;
 
 public class AirportsInitializer {
 
@@ -15,7 +16,9 @@ public class AirportsInitializer {
     private static String sURLSAmerica = "";
     private static String sURLOceania = "";
 
-    public static List<Airport> InitializeAll() {
+    public static List<Airport> lstAllAirports;
+
+    public static void InitializeAll() {
 
         sURLAfrica="https://www.flightsfrom.com/top-100-airports-in-africa";
         sURLAsia="https://www.flightsfrom.com/top-100-airports-in-asia";
@@ -24,24 +27,31 @@ public class AirportsInitializer {
         sURLSAmerica="https://www.flightsfrom.com/top-100-airports-in-south-america";
         sURLOceania="https://www.flightsfrom.com/top-100-airports-in-oceania";
 
-        String resultAfrica = getUrlContents(sURLAfrica);
-        String resultAsia = getUrlContents(sURLAsia);
-        String resultEurope = getUrlContents(sURLEurope);
-        String resultNAmerica = getUrlContents(sURLNAmerica);
-        String resultSAmerica = getUrlContents(sURLSAmerica);
-        String resultOceania = getUrlContents(sURLOceania);
+        String resultAfrica = GetUrlContents(sURLAfrica);
+        String resultAsia = GetUrlContents(sURLAsia);
+        String resultEurope = GetUrlContents(sURLEurope);
+        String resultNAmerica = GetUrlContents(sURLNAmerica);
+        String resultSAmerica = GetUrlContents(sURLSAmerica);
+        String resultOceania = GetUrlContents(sURLOceania);
 
-        return null;
+        BuildAirportsFromString(resultAfrica);
+        BuildAirportsFromString(resultAsia);
+        BuildAirportsFromString(resultEurope);
+        BuildAirportsFromString(resultNAmerica);
+        BuildAirportsFromString(resultOceania);
+        BuildAirportsFromString(resultSAmerica);
+
 
         /*
         <div class="hometoplist-content">
           <span class="hometoplist-first">Chicago   (ORD)</span>
-          <span class="hometoplist-last"><span class="makebluehighlight">982 flights</span> every day</span>
+          <span class="hometoplist-last"><span class="makebluehighlight">
+          982 flights</span> every day</span>
         </div>
     */
     }
 
-    private static String getUrlContents(String theUrl)
+    private static String GetUrlContents(String theUrl)
     {
       StringBuilder content = new StringBuilder();
       try
@@ -63,6 +73,50 @@ public class AirportsInitializer {
       }
       return content.toString();
     }
+
+    private static void BuildAirportsFromString(String sInput) {
+
+      String sToken = "";
+      String sTemp = "";
+      String sAirportName = "";
+      String sAirportICAO = "";
+      String sAirportCity = "";
+      Integer iFlights = 0;
+
+
+      if (!sInput.isBlank() || !sInput.isEmpty()) {
+
+        StringTokenizer stk = new StringTokenizer(sInput, "<div class=\"hometoplist-content\">");
+        while (stk.hasMoreTokens()) {
+          sToken = "";
+          sTemp = "";
+          sAirportName = "";
+          sAirportICAO = "";
+          iFlights = 0; 
+
+          sToken = stk.nextToken();
+          StringTokenizer stk1 = new StringTokenizer(sToken, "<span class=");
+
+          sAirportName = stk1.nextToken();
+          sAirportName = sAirportName.substring(sAirportName.indexOf(">"), sAirportName.indexOf("<"));
+
+          sAirportICAO = sAirportName.substring(sAirportName.indexOf("("), sAirportName.indexOf(")"));
+          sAirportCity = sAirportName.substring(0, sAirportName.indexOf("  "));
+
+          sTemp = stk1.nextToken();
+          sTemp = stk1.nextToken();
+
+          sTemp = sTemp.substring(sTemp.indexOf(">"), sTemp.indexOf(" "));
+          iFlights = Integer.parseInt(sTemp);
+          ///String sName, String sICAO, String sCountry, String sCity, Integer iFlights
+
+
+          Airport aTemp = new Airport(sAirportName, sAirportICAO, ""/*Determine Country from City? */, sAirportCity, iFlights);
+          lstAllAirports.add(aTemp);
+        }
+      }
+      
+    } 
 
 }
 
