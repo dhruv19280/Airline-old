@@ -40,15 +40,6 @@ public class AirportsInitializer {
         BuildAirportsFromString(resultNAmerica);
         BuildAirportsFromString(resultOceania);
         BuildAirportsFromString(resultSAmerica);
-
-
-        /*
-        <div class="hometoplist-content">
-          <span class="hometoplist-first">Chicago   (ORD)</span>
-          <span class="hometoplist-last"><span class="makebluehighlight">
-          982 flights</span> every day</span>
-        </div>
-    */
     }
 
     private static String GetUrlContents(String theUrl)
@@ -108,7 +99,7 @@ public class AirportsInitializer {
 
           sTemp = sTemp.substring(sTemp.indexOf(">"), sTemp.indexOf(" "));
           iFlights = Integer.parseInt(sTemp);
-          ///String sName, String sICAO, String sCountry, String sCity, Integer iFlights
+
 
 
           Airport aTemp = new Airport(sAirportName, sAirportICAO, ""/*Determine Country from City? */, sAirportCity, iFlights);
@@ -121,6 +112,10 @@ public class AirportsInitializer {
 }
 
 /*
+String sName, String sICAO, String sCountry, String sCity, Integer iFlights
+
+
+
 https://www.flightsfrom.com/top-100-airports-in-africa
 https://www.flightsfrom.com/top-100-airports-in-asia
 https://www.flightsfrom.com/top-100-airports-in-europe
@@ -135,4 +130,15 @@ https://www.flightsfrom.com/top-100-airlines
 https://www.flightsfrom.com/top-100-international-routes
 https://www.flightsfrom.com/top-100-intercontinental-routes
 https://www.flightsfrom.com/top-100-domestic-routes
+
+
+
+
+
+
+<div class="hometoplist-content">
+  <span class="hometoplist-first">Chicago   (ORD)</span>
+  <span class="hometoplist-last"><span class="makebluehighlight">
+  982 flights</span> every day</span>
+</div>
 */
