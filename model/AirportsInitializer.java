@@ -72,7 +72,7 @@ public class AirportsInitializer {
       String sAirportName = "";
       String sAirportICAO = "";
       String sAirportCity = "";
-      Integer iFlights = 0;
+      Integer iFlights = 0 ;
 
 
       if (!sInput.isBlank() || !sInput.isEmpty()) {
