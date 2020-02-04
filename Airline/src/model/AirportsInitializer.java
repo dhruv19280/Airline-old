@@ -1,4 +1,4 @@
-package Airline.model;
+package Airline.src.model;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -83,7 +83,7 @@ public class AirportsInitializer {
           sTemp = "";
           sAirportName = "";
           sAirportICAO = "";
-          iFlights = 0; 
+          iFlights = 0;
 
           sToken = stk.nextToken();
           StringTokenizer stk1 = new StringTokenizer(sToken, "<span class=");

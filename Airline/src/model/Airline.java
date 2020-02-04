@@ -1,4 +1,4 @@
-package Airline.model;
+package Airline.src.model;
 
 import java.util.List;
 

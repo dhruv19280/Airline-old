@@ -1,4 +1,4 @@
-package Airline.model;
+package Airline.src.model;
 
 public class Flight {
 
