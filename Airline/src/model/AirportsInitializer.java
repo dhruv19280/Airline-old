@@ -7,6 +7,9 @@ import java.net.URLConnection;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.jsoup;
+
+
 public class AirportsInitializer {
 
     private static String sURLAfrica = "";
@@ -18,7 +21,7 @@ public class AirportsInitializer {
 
     public static List<Airport> lstAllAirports;
 
-    public static void InitializeAll() {
+    public static void InitializeAll1() {
 
         sURLAfrica="https://www.flightsfrom.com/top-100-airports-in-africa";
         sURLAsia="https://www.flightsfrom.com/top-100-airports-in-asia";
@@ -109,7 +112,12 @@ public class AirportsInitializer {
       
     } 
 
+    public void initializeAll() {
+      Document doc = Jsoup.connect(sURLAfrica).get();
+      String title = doc.title();
+    }
 }
+
 
 /*
 String sName, String sICAO, String sCountry, String sCity, Integer iFlights
