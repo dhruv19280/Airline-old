@@ -7,8 +7,10 @@ import java.net.URLConnection;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import org.jsoup;
-
+import org.jsoup.*;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 public class AirportsInitializer {
 
