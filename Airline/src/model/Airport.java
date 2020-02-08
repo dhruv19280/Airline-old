@@ -164,4 +164,8 @@ public class Airport {
 
     }
 
+    public void PrintDetails() {
+        System.out.println(sAirportICAO + ":" + sAirportName + ":" + sAirportCountry + ":" + sAirportCity + ":" + sAirportSize + ":" + iPassengerCapacity + ":" + iTotalSlots);
+    }
+
 }

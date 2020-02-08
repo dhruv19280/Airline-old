@@ -25,13 +25,9 @@ public class AirportsInitializer {
 
     public static List<Airport> lstAllAirports;
 
-    public static void InitializeAll1() {
-
-
-
-    }
-
     public static void InitializeAll() {
+
+        lstAllAirports = new ArrayList<Airport>();
 
         sURLAfrica="https://www.flightsfrom.com/top-100-airports-in-africa";
         sURLAsia="https://www.flightsfrom.com/top-100-airports-in-asia";
@@ -62,31 +58,43 @@ public class AirportsInitializer {
             int i = 0;
             for (Element row : tablerows) {
 
-                String temp = row.text();
-                System.out.println(temp);
-                StringTokenizer stk = new StringTokenizer(temp, " ");
+                try {
+                    String temp = row.text();
+                    System.out.println(temp);
+                    StringTokenizer stk = new StringTokenizer(temp, " ");
 
-                stk.nextToken();
+                    stk.nextToken();
 
-                String sCity = stk.nextToken();
-                String bracket = stk.nextToken();
+                    String sCity = stk.nextToken();
+                    String bracket = stk.nextToken();
 
-                while (bracket.indexOf("(") < 0) {
-                    sCity = sCity.concat(bracket);
-                    bracket = stk.nextToken();
+                    while (bracket.indexOf("(") < 0) {
+                        sCity = sCity.concat(" " + bracket);
+                        bracket = stk.nextToken();
+                    }
+                    String sICAO = bracket.substring(1,4);
+                    String sFlights = stk.nextToken();
+
+                    lstAirports.add(new Airport(sCity, sICAO, sCity, sCity, Integer.parseInt(sFlights)));
+                    i++;
+
+                } catch (Exception e) {
+                    continue;
                 }
-                String sICAO = bracket.substring(1,4);
-                String sFlights = stk.nextToken();
 
-                lstAirports.add(new Airport(sCity, sICAO, sCity, sCity, Integer.parseInt(sFlights)));
-                i++;
             }
-            System.out.println(i + "Airports Parsed");
+            System.out.println(i + " Airports Parsed");
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         return lstAirports;
+    }
+
+    public static void PrintAllAirports() {
+        for (Airport a : lstAllAirports) {
+            a.PrintDetails();
+        }
     }
 
 
@@ -116,14 +124,4 @@ https://www.flightsfrom.com/top-100-international-routes
 https://www.flightsfrom.com/top-100-intercontinental-routes
 https://www.flightsfrom.com/top-100-domestic-routes
 
-
-
-
-
-
-<div class="hometoplist-content">
-  <span class="hometoplist-first">Chicago   (ORD)</span>
-  <span class="hometoplist-last"><span class="makebluehighlight">
-  982 flights</span> every day</span>
-</div>
-*/
+ */

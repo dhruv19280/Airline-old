@@ -4,6 +4,7 @@ public class AirlineGame {
 
     public static void Initialize() {
         AirportsInitializer.InitializeAll();
+        AirportsInitializer.PrintAllAirports();
 
         
         /*
