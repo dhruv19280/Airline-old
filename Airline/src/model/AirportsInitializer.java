@@ -1,9 +1,11 @@
 package Airline.src.model;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -25,6 +27,12 @@ public class AirportsInitializer {
 
     public static void InitializeAll1() {
 
+
+
+    }
+
+    public static void InitializeAll() {
+
         sURLAfrica="https://www.flightsfrom.com/top-100-airports-in-africa";
         sURLAsia="https://www.flightsfrom.com/top-100-airports-in-asia";
         sURLEurope="https://www.flightsfrom.com/top-100-airports-in-europe";
@@ -32,92 +40,59 @@ public class AirportsInitializer {
         sURLSAmerica="https://www.flightsfrom.com/top-100-airports-in-south-america";
         sURLOceania="https://www.flightsfrom.com/top-100-airports-in-oceania";
 
-        String resultAfrica = GetUrlContents(sURLAfrica);
-        String resultAsia = GetUrlContents(sURLAsia);
-        String resultEurope = GetUrlContents(sURLEurope);
-        String resultNAmerica = GetUrlContents(sURLNAmerica);
-        String resultSAmerica = GetUrlContents(sURLSAmerica);
-        String resultOceania = GetUrlContents(sURLOceania);
+        lstAllAirports.addAll(ParseURLintoAirports(sURLAfrica));
+        lstAllAirports.addAll(ParseURLintoAirports(sURLAsia));
+        lstAllAirports.addAll(ParseURLintoAirports(sURLEurope));
+        lstAllAirports.addAll(ParseURLintoAirports(sURLOceania));
+        lstAllAirports.addAll(ParseURLintoAirports(sURLNAmerica));
+        lstAllAirports.addAll(ParseURLintoAirports(sURLSAmerica));
 
-        BuildAirportsFromString(resultAfrica);
-        BuildAirportsFromString(resultAsia);
-        BuildAirportsFromString(resultEurope);
-        BuildAirportsFromString(resultNAmerica);
-        BuildAirportsFromString(resultOceania);
-        BuildAirportsFromString(resultSAmerica);
+        System.out.println(lstAllAirports.size() + ": Size of All Airports");
     }
 
-    private static String GetUrlContents(String theUrl)
-    {
-      StringBuilder content = new StringBuilder();
-      try
-      {
-        URL url = new URL(theUrl);
-        URLConnection urlConnection = url.openConnection();
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-  
-        String line;
-        while ((line = bufferedReader.readLine()) != null)
-        {
-          content.append(line + "\n");
+    private static List<Airport> ParseURLintoAirports(String sURL) {
+
+        Document doc = null;
+        ArrayList<Airport> lstAirports = new ArrayList<Airport>();
+
+        try {
+            doc = Jsoup.connect(sURL).get();
+            Elements tablerows = doc.select("a.hometoplist-item");
+
+            int i = 0;
+            for (Element row : tablerows) {
+
+                String temp = row.text();
+                System.out.println(temp);
+                StringTokenizer stk = new StringTokenizer(temp, " ");
+
+                stk.nextToken();
+
+                String sCity = stk.nextToken();
+                String bracket = stk.nextToken();
+
+                while (bracket.indexOf("(") < 0) {
+                    sCity = sCity.concat(bracket);
+                    bracket = stk.nextToken();
+                }
+                String sICAO = bracket.substring(1,4);
+                String sFlights = stk.nextToken();
+
+                lstAirports.add(new Airport(sCity, sICAO, sCity, sCity, Integer.parseInt(sFlights)));
+                i++;
+            }
+            System.out.println(i + "Airports Parsed");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        bufferedReader.close();
-      }
-      catch(Exception e)
-      {
-        e.printStackTrace();
-      }
-      return content.toString();
+
+        return lstAirports;
     }
 
-    private static void BuildAirportsFromString(String sInput) {
-
-      String sToken = "";
-      String sTemp = "";
-      String sAirportName = "";
-      String sAirportICAO = "";
-      String sAirportCity = "";
-      Integer iFlights = 0 ;
-
-
-      if (!sInput.isBlank() || !sInput.isEmpty()) {
-
-        StringTokenizer stk = new StringTokenizer(sInput, "<div class=\"hometoplist-content\">");
-        while (stk.hasMoreTokens()) {
-          sToken = "";
-          sTemp = "";
-          sAirportName = "";
-          sAirportICAO = "";
-          iFlights = 0;
-
-          sToken = stk.nextToken();
-          StringTokenizer stk1 = new StringTokenizer(sToken, "<span class=");
-
-          sAirportName = stk1.nextToken();
-          sAirportName = sAirportName.substring(sAirportName.indexOf(">"), sAirportName.indexOf("<"));
-
-          sAirportICAO = sAirportName.substring(sAirportName.indexOf("("), sAirportName.indexOf(")"));
-          sAirportCity = sAirportName.substring(0, sAirportName.indexOf("  "));
-
-          sTemp = stk1.nextToken();
-          sTemp = stk1.nextToken();
-
-          sTemp = sTemp.substring(sTemp.indexOf(">"), sTemp.indexOf(" "));
-          iFlights = Integer.parseInt(sTemp);
 
 
 
-          Airport aTemp = new Airport(sAirportName, sAirportICAO, ""/*Determine Country from City? */, sAirportCity, iFlights);
-          lstAllAirports.add(aTemp);
-        }
-      }
-      
-    } 
 
-    public void initializeAll() {
-      Document doc = Jsoup.connect(sURLAfrica).get();
-      String title = doc.title();
-    }
 }
 
 

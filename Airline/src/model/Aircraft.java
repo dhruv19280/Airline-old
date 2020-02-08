@@ -1,6 +1,6 @@
 package Airline.src.model;
 
-public class Aircraft implements AircraftTemplate {
+public class Aircraft {
 
 
 }
