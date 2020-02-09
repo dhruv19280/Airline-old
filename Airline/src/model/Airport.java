@@ -1,5 +1,8 @@
 package Airline.src.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Airport {
 
     private String sAirportName;
@@ -29,6 +32,9 @@ public class Airport {
     private Double dConnectivityRating;
     private Double dFacilitiesRating;
     private Double dPunctualityRating;
+
+    private Integer iRunwayCount;
+    private List<Runway> lstRunways;
 
     Airport(String sName, String sICAO, String sCountry, String sCity, Integer iFlights) {
         
@@ -122,6 +128,9 @@ public class Airport {
             dFacilitiesRating = 0.50D;
             dPunctualityRating = 0.50D;            
         }
+
+        iRunwayCount = 0;
+        lstRunways = new ArrayList<Runway>();
     }
 
     public void GeneratePassengers() {

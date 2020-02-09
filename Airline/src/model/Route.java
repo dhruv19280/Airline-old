@@ -17,7 +17,9 @@ public class Route {
     private Double dCargoGenerationAtSource;
     private Double dCargoGenerationAtTarget;
 
-    private Double dRouteSetupCost;
-    private Double dRouteRentalCost;
-    
+    private Double dRouteGrossSetupCost;
+    private Double dRouteSubsidies;
+    private Double dRouteNetSetupCost;
+    private Double dRouteCostPerFlight;
+
 }

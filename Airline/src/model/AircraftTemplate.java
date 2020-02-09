@@ -9,11 +9,14 @@ public interface AircraftTemplate{
 
     public Integer iFuelCapacity=0;
     public Integer iRemainingFuel=0;
+    public Double dConsumptionLitersPerPaxPerHundredKM=0.00D;
+
+    public Integer iCompleteFlights = 0;
+    public Integer iCompleteFlightHours = 0;
 
     public Integer iMaximumRange=0;
     public Integer iCurrentRange=0;
-
-    public Double dMilesPerGallon=0.00D;
+    public Integer iSpeedPerHour=0;
 
     public Integer iEconomyPassengerCapacity=0;
     public Integer iBusinessPassengerCapacity=0;
@@ -25,7 +28,19 @@ public interface AircraftTemplate{
     public Integer iAge=0;
     public Boolean bInFlight=false;
 
-    public Double dWearTearPercentage=0.00D;
+    public Double dWearRatePerHundredHour = 0.00D;
+    public Double dCurrentWearPercentage=0.00D;
+
+
+    public Double dPurchasePrice = 0.00D;
+    public Double dRegularMaintenanceCost=0.00D;
+    public Double dCumulativeMaintenanceCosts=0.00D;
+    public Double dCumulativeFuelCosts=0.00D;
+    public Double dCumulativePassengerRevenue=0.00D;
+    public Double dCumulativeCargoRevenue=0.00D;
+    public Double dCumulativeOtherRevenue=0.00D;
+
+    public Float dCumulativeProfitability=0.00F;
 
     public void BoardPassengers();
     public void DeboardPassengers();
