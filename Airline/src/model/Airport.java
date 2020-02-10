@@ -1,5 +1,7 @@
 package Airline.src.model;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -174,7 +176,20 @@ public class Airport {
     }
 
     public void PrintDetails() {
-        System.out.println(sAirportICAO + ":" + sAirportName + ":" + sAirportCountry + ":" + sAirportCity + ":" + sAirportSize + ":" + iPassengerCapacity + ":" + iTotalSlots);
+        System.out.println(
+                sAirportICAO + ":" +
+                sAirportName + ":" +
+                sAirportCountry + ":" +
+                sAirportCity + ":" +
+                sAirportSize + ":" +
+                iPassengerCapacity + ":" +
+                iTotalSlots + ":" +
+                dLatitude.toString() + ":" +
+                dLongitude.toString());
+    }
+
+    private void GetCoordinates(String sInputFile) throws FileNotFoundException {
+        FileReader input = new FileReader(sInputFile);
     }
 
 }
