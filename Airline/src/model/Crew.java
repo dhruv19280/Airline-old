@@ -5,7 +5,7 @@ public class Crew {
     private String sFirstName;
     private String sLastName;
     private String sGender;
-    private String sType;
+    private EmployeeType sType;
 
     private Integer iAge;
     private Integer iExperience;
@@ -24,4 +24,11 @@ enum EmployeeLevel {
     Entry_Level,
     Professionals,
     Managers
+}
+
+enum EmployeeType {
+    Pilot,
+    Ground,
+    AirHostess,
+    Management
 }
