@@ -14,8 +14,9 @@ public class Airport {
     private String sAirportCountry;
     private String sAirportCity;
 
-    private Double dLatitude;
-    private Double dLongitude;
+    private Double dLatitude=0.00D;
+    private Double dLongitude=0.00D;
+    private Integer iElevation=0;
 
     private Integer iPassengerCapacity;
     private Integer iCargoCapacity;
@@ -185,11 +186,20 @@ public class Airport {
                 iPassengerCapacity + ":" +
                 iTotalSlots + ":" +
                 dLatitude.toString() + ":" +
-                dLongitude.toString());
+                dLongitude.toString()+ ":" +
+                iElevation.toString());
     }
 
-    private void GetCoordinates(String sInputFile) throws FileNotFoundException {
-        FileReader input = new FileReader(sInputFile);
+    public void SetCoords(String sName, String sCountry, Double dLat, Double dLong, Integer iElev){
+        this.sAirportName = sName;
+        this.sAirportCountry = sCountry;
+        this.dLatitude = dLat;
+        this.dLongitude = dLong;
+        this.iElevation = iElev;
+    }
+
+    public String GetICAO() {
+        return sAirportICAO;
     }
 
 }
