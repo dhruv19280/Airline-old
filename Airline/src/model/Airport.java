@@ -1,14 +1,18 @@
 package Airline.src.model;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
+import static java.util.Objects.isNull;
 
 public class Airport {
 
     private String sAirportName;
-    private String sAirportICAO;
+    private String sAirportIATA;
     private String sAirportSize;
     
     private String sAirportCountry;
@@ -36,22 +40,23 @@ public class Airport {
     private Double dFacilitiesRating;
     private Double dPunctualityRating;
 
-    private Integer iRunwayCount;
-    private List<Runway> lstRunways;
+    private Boolean bIsValid = false;
 
-    Airport(String sName, String sICAO, String sCountry, String sCity, Integer iFlights) {
-        
-        sAirportName = sName;
-        sAirportICAO = sICAO;
-        sAirportCountry = sCountry;
-        sAirportCity = sCity;
+    Airport(String sIATA, Integer iFlights) {
 
+        sAirportIATA = sIATA;
+
+        try {
+            UpdateDetails("airports.csv");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         DeriveOtherFields(iFlights);
     }
 
     private void DeriveOtherFields(Integer iFlights) {
 
-        if (iFlights >= 750 && iFlights <1000) {
+        if (iFlights >= 600 && iFlights <1000) {
             sAirportSize = "Very Large";
             iPassengerCapacity = 5000;
             iCargoCapacity = 500;
@@ -71,7 +76,7 @@ public class Airport {
             dFacilitiesRating = 3.00D;
             dPunctualityRating = 3.00D;
         }
-        else if (iFlights >=500 && iFlights<750 ) {
+        else if (iFlights >=200 && iFlights<599 ) {
             sAirportSize = "Large";
             iPassengerCapacity = 2500;
             iCargoCapacity = 250;
@@ -91,7 +96,7 @@ public class Airport {
             dFacilitiesRating = 2.00D;
             dPunctualityRating = 2.00D;            
         }
-        else if (iFlights >=250 && iFlights<500) {
+        else if (iFlights >=50 && iFlights<199) {
             sAirportSize = "Medium";
             iPassengerCapacity = 1000;
             iCargoCapacity = 100;
@@ -132,25 +137,8 @@ public class Airport {
             dPunctualityRating = 0.50D;            
         }
 
-        iRunwayCount = 0;
-        lstRunways = new ArrayList<Runway>();
     }
 
-    public void GeneratePassengers() {
-        
-    }
-
-    public void DeliverPassengers() {
-
-    }
-
-    public void GenerateCargo() {
-
-    }
-
-    public void DeliverCargo() {
-
-    }
 
     public void AircraftArrival() {
 
@@ -176,9 +164,13 @@ public class Airport {
 
     }
 
+    public Boolean IsValid() {
+        return this.bIsValid;
+    }
+
     public void PrintDetails() {
         System.out.println(
-                sAirportICAO + ":" +
+                sAirportIATA + ":" +
                 sAirportName + ":" +
                 sAirportCountry + ":" +
                 sAirportCity + ":" +
@@ -190,16 +182,26 @@ public class Airport {
                 iElevation.toString());
     }
 
-    public void SetCoords(String sName, String sCountry, Double dLat, Double dLong, Integer iElev){
-        this.sAirportName = sName;
-        this.sAirportCountry = sCountry;
-        this.dLatitude = dLat;
-        this.dLongitude = dLong;
-        this.iElevation = iElev;
-    }
+    private void UpdateDetails(String sInputFile) throws FileNotFoundException {
 
-    public String GetICAO() {
-        return sAirportICAO;
-    }
+        String DEFAULT_SEPARATOR = ",";
 
+        Scanner scanner = new Scanner(new File(sInputFile));
+        while (scanner.hasNext()) {
+            String line = scanner.nextLine();
+            String[] values = line.split(DEFAULT_SEPARATOR);
+
+                if(this.sAirportIATA.equalsIgnoreCase(values[0])) {
+
+                    this.sAirportName = values[2];
+                    this.sAirportCountry = values[7];
+                    this.sAirportCity = values[8];
+                    this.dLatitude = Double.parseDouble(values[3]);
+                    this.dLongitude = Double.parseDouble(values[4]);
+                    this.iElevation = Integer.parseInt(values[5]);
+                    this.bIsValid = true;
+                }
+        }
+        scanner.close();
+    }
 }

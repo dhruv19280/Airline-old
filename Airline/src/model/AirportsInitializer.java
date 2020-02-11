@@ -2,8 +2,8 @@ package Airline.src.model;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 import org.jsoup.*;
@@ -20,8 +20,6 @@ public class AirportsInitializer {
     private static final String sURLSAmerica = "https://www.flightsfrom.com/top-100-airports-in-south-america";
     private static final String sURLOceania = "https://www.flightsfrom.com/top-100-airports-in-oceania";
 
-    private static final String DEFAULT_SEPARATOR = ",";
-
     public static List<Airport> lstAllAirports;
 
     public static void InitializeAll() {
@@ -35,14 +33,11 @@ public class AirportsInitializer {
         lstAllAirports.addAll(ParseURLintoAirports(sURLNAmerica));
         lstAllAirports.addAll(ParseURLintoAirports(sURLSAmerica));
 
-        System.out.println(lstAllAirports.size() + ": Size of All Airports");
+        System.out.println(lstAllAirports.size() + ": Size of All Airports Before Cleanup");
 
-        try {
-            UpdateAllCoordinates("airports.csv");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        CleanUpAirports();
 
+        System.out.println(lstAllAirports.size() + ": Size of All Airports After Cleanup");
     }
 
     private static List<Airport> ParseURLintoAirports(String sURL) {
@@ -73,7 +68,7 @@ public class AirportsInitializer {
                     String sICAO = bracket.substring(1, 4);
                     String sFlights = stk.nextToken();
 
-                    lstAirports.add(new Airport(sCity, sICAO, sCity, sCity, Integer.parseInt(sFlights)));
+                    lstAirports.add(new Airport(sICAO, Integer.parseInt(sFlights)));
                     i++;
 
                 } catch (Exception e) {
@@ -94,27 +89,20 @@ public class AirportsInitializer {
         }
     }
 
+    private static void CleanUpAirports() {
 
-    private static void UpdateAllCoordinates(String sInputFile) throws FileNotFoundException {
-
-        Scanner scanner = new Scanner(new File(sInputFile));
-        while (scanner.hasNext()) {
-            String line = scanner.nextLine();
-            String[] values = line.split(DEFAULT_SEPARATOR);
-
-            for(Airport a : lstAllAirports) {
-                if(a.GetICAO().compareTo(values[0]) == 1) {
-                    a.SetCoords(values[2], values[7], Double.parseDouble(values[3]), Double.parseDouble(values[4]), Integer.parseInt(values[5]));
-                }
+        for(int i = 0; i<lstAllAirports.size(); i++){
+            //System.out.println(myList.get(i));
+            if(!lstAllAirports.get(i).IsValid()){
+                lstAllAirports.remove(i);
+                i--;
             }
         }
-        scanner.close();
     }
 }
 
 
 /*
-
 https://www.flightsfrom.com/top-100-airlines
 
 

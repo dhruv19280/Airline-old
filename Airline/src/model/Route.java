@@ -6,7 +6,7 @@ public class Route {
     private Airport aTarget;
 
     private Integer iPassengersAtSource;
-    private Integer iPassengersatTarget;
+    private Integer iPassengersAtTarget;
 
     private Double dPassengerGenerationAtSource;
     private Double dPassengerGenerationAtTarget;
@@ -22,4 +22,19 @@ public class Route {
     private Double dRouteNetSetupCost;
     private Double dRouteCostPerFlight;
 
+    public void GeneratePassengers() {
+
+    }
+
+    public void DeliverPassengers() {
+
+    }
+
+    public void GenerateCargo() {
+
+    }
+
+    public void DeliverCargo() {
+
+    }
 }
