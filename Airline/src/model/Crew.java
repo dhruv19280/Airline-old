@@ -16,6 +16,8 @@ public class Crew {
     private Double dSalary;
 
     private Boolean bHired;
+
+
 }
 
 enum EmployeeLevel {

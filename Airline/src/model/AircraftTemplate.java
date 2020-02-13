@@ -47,6 +47,7 @@ public interface AircraftTemplate{
     public void BoardCargo();
     public void DeboardCargo();
     public void Fly();
+    public void BreakDown();
     public void PerformMaintenance();
     public void TakeOff();
     public void Land();
