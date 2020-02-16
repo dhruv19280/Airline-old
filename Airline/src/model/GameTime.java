@@ -3,7 +3,7 @@ package Airline.src.model;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class GameTime {
+public class GameTime extends Thread {
 
     private static Integer iGameStartYear = 1980;
     private static Integer iGameStartMonth = 1;
@@ -21,12 +21,26 @@ public class GameTime {
     }
 
     public static String GetGameCurrentTime() {
-        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm tt");
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm a");
         String formatDateTime = dtGameCurrentTime.format(format);
         return formatDateTime;
     }
 
-    public static void IncrementGameCurrentTime() {
+    private static void IncrementGameCurrentTime() {
         dtGameCurrentTime = dtGameCurrentTime.plusMinutes(iVirtualMinsPerRealSecond);
+    } 
+
+    @Override
+    public void run() {
+        while(true) {
+            try {
+                IncrementGameCurrentTime();
+                System.out.println(GetGameCurrentTime());
+                this.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 }
