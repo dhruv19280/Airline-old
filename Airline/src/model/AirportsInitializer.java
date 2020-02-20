@@ -23,6 +23,8 @@ public class AirportsInitializer {
 
     public static void InitializeAll() {
 
+
+
         lstAllAirports = new ArrayList<Airport>();
 
         lstAllAirports.addAll(ParseURLintoAirports(sURLAfrica));
@@ -37,6 +39,7 @@ public class AirportsInitializer {
         CleanUpAirports();
 
         System.out.println(lstAllAirports.size() + ": Size of All Airports After Cleanup");
+
     }
 
     private static List<Airport> ParseURLintoAirports(String sURL) {

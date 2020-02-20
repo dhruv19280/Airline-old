@@ -2,49 +2,47 @@ package Airline.src.model;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import static java.util.Objects.isNull;
 
-public class Airport {
+public class Airport implements AirportTemplate {
 
-    private String sAirportName;
-    private String sAirportIATA;
-    private String sAirportSize;
-    
-    private String sAirportCountry;
-    private String sAirportCity;
+    public String sAirportName = "";
+    public String sAirportIATA = "";
+    public String sAirportSize = "";
 
-    private Double dLatitude=0.00D;
-    private Double dLongitude=0.00D;
-    private Integer iElevation=0;
+    public String sAirportCountry = "";
+    public String sAirportCity = "";
 
-    private Integer iPassengerCapacity;
-    private Integer iCargoCapacity;
+    public Double dLatitude=0.00D;
+    public Double dLongitude=0.00D;
+    public Integer iElevation=0;
 
-    private Integer iWaitingPassengers;
-    private Integer iWaitingCargo;
+    public Integer iPassengerCapacity = 0;
+    public Integer iCargoCapacity = 0;
 
-    private Integer iTotalSlots;
-    private Integer iOccupiedSlots;
-    private Integer iAvailableSlots;
-    
-    private Double dBranchSetupCost;
-    private Double dBrandDemolishCost;
-    private Double dBranchRegularCost;
+    public Integer iWaitingPassengers = 0;
+    public Integer iWaitingCargo = 0;
 
-    private Double dConnectivityRating;
-    private Double dFacilitiesRating;
-    private Double dPunctualityRating;
+    public Integer iTotalSlots = 0;
+    public Integer iOccupiedSlots = 0;
+    public Integer iAvailableSlots = 0;
 
-    private Boolean bIsValid = false;
+    public Double dBranchSetupCost = 0.00D;
+    public Double dBrandDemolishCost = 0.00D;
+    public Double dBranchRegularCost = 0.00D;
+
+    public Double dConnectivityRating = 0.00D;
+    public Double dFacilitiesRating = 0.00D;
+    public Double dPunctualityRating = 0.00D;
+
+    public Boolean bIsValid = false;
+
 
     Airport(String sIATA, Integer iFlights) {
 
-        sAirportIATA = sIATA;
+        this.sAirportIATA = sIATA;
 
         try {
             UpdateDetails("airports.csv");
@@ -139,31 +137,6 @@ public class Airport {
 
     }
 
-
-    public void AircraftArrival() {
-
-    }
-
-    public void AircraftDeparture() {
-        
-    }
-
-    public void AllocateSlots() {
-
-    }
-
-    public void DeallocateSlots() {
-
-    }
-
-    public void StartUpgradeAirport() {
-
-    }
-
-    public void CompleteUpgradeAirport() {
-
-    }
-
     public Boolean IsValid() {
         return this.bIsValid;
     }
@@ -203,5 +176,35 @@ public class Airport {
                 }
         }
         scanner.close();
+    }
+
+    @Override
+    public void AircraftArrival() {
+
+    }
+
+    @Override
+    public void AircraftDeparture() {
+
+    }
+
+    @Override
+    public void AllocateSlots() {
+
+    }
+
+    @Override
+    public void DeallocateSlots() {
+
+    }
+
+    @Override
+    public void StartUpgradeAirport() {
+
+    }
+
+    @Override
+    public void CompleteUpgradeAirport() {
+
     }
 }
