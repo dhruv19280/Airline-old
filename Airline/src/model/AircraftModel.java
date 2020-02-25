@@ -17,5 +17,18 @@ public class AircraftModel {
     private Integer iCargoCapacity=0;
 
     private Double dWearRatePerHundredHour = 0.00D;
+
+    public void PrintDetails() {
+        System.out.printf("%s : %s : %d : %d : %d : %d : %d : %d, %d",
+                sManufacturer,
+                sModel,
+                iFuelCapacity,
+                iMaximumRange,
+                iMaxSpeedPerHour,
+                iEconomyPassengerCapacity,
+                iBusinessPassengerCapacity,
+                iFirstPassengerCapacity,
+                iCargoCapacity);
+    }
     
 }
