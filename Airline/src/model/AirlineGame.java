@@ -10,8 +10,8 @@ public class AirlineGame {
         System.out.println("Airports Initialization Completed.");
 
         System.out.println("Initializing Aircrafts...");
-        AircraftsInitializer.InitializeAll();
-        AircraftsInitializer.PrintAllAircraftModels();
+        AircraftModelsInitializer.InitializeAll();
+        AircraftModelsInitializer.PrintAllAircraftModels();
         System.out.println("Aircrafts Initialization Completed.");
 
         System.out.println("Initializing GameTime...");

@@ -3,7 +3,8 @@ package Airline.src.model;
 public class AircraftModel {
 
     private String sManufacturer="";
-    private String sModel="";
+    private String sAircraftType="";
+    private String sAircraftModel="";
 
     private Integer iFuelCapacity=0;
     private Double dConsumptionLitersPerPaxPerHundredKM=0.00D;
@@ -19,9 +20,10 @@ public class AircraftModel {
     private Double dWearRatePerHundredHour = 0.00D;
 
     public void PrintDetails() {
-        System.out.printf("%s : %s : %d : %d : %d : %d : %d : %d, %d",
+        System.out.printf("%s : %s : %s : %d : %d : %d : %d : %d : %d, %d",
                 sManufacturer,
-                sModel,
+                sAircraftType,
+                sAircraftModel,
                 iFuelCapacity,
                 iMaximumRange,
                 iMaxSpeedPerHour,
