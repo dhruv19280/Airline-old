@@ -8,28 +8,25 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
 
 public class AircraftModelsInitializer {
 
-    private static final String sURLManufacturers = "https://www.aircraftcompare.com/manufacturer-categories/airplane/";
+    private static final String sParentURL = "https://www.aircraftcompare.com/manufacturer-categories/airplane/";
 
     public static List<AircraftModel> lstAllAircraftModels;
-    private static List<String> lstModelsURLs;
 
 
     public static void InitializeAll() {
 
         lstAllAircraftModels = new ArrayList<AircraftModel>();
-        lstAllAircraftModels.addAll(ParseManufacturerURL(sURLManufacturers));
+        ParseParentURL(sParentURL);
 
-        System.out.println(lstAllAircraftModels.size() + ": Size of All Manufacturers");
+        System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels");
     }
 
-    private static List<AircraftModel> ParseManufacturerURL(String sURL) {
+    private static void ParseParentURL(String sURL) {
 
         Document doc = null;
-        ArrayList<AircraftModel> lstAirports = new ArrayList<AircraftModel>();
 
         try {
             doc = Jsoup.connect(sURL).get();
@@ -41,7 +38,8 @@ public class AircraftModelsInitializer {
                 try {
                     String sManufacturerURL=row.attr("href");
                     String sManufacturerName = row.text();
-                    System.out.println(sManufacturerName + " : " + sManufacturerURL);
+                    //System.out.println("Processing : " + sManufacturerName + " : " + sManufacturerURL);
+                    ParseManufacturerURL(sManufacturerName, sManufacturerURL);
                 } catch (Exception e) {
                     continue;
                 }
@@ -50,11 +48,59 @@ public class AircraftModelsInitializer {
             e.printStackTrace();
         }
 
-        return lstAllAircraftModels;
     }
 
-    private static void ProcessManufacturerURL(String sManufacturerName, String sManufacturerURL) {
+    private static void ParseManufacturerURL(String sManufacturerName, String sManufacturerURL) {
+        Document doc = null;
 
+        try {
+            doc = Jsoup.connect(sManufacturerURL).get();
+            Elements tablerows = doc.select("section.mb-4.px-3");
+
+            int i = 0;
+            for (Element row : tablerows) {
+
+                try {
+                    String sModelCategory = row.select("h3").text();
+                    Elements subrows = tablerows.select("div.media-body");
+
+                    for (Element subrow: subrows) {
+                        String sModelURL=subrow.select("a").attr("href");
+                        String sModelName = subrow.select("a").text();
+                        String sModelPrice = subrow.select("p").text();
+                        System.out.println("Processing : " + sManufacturerName + " : " + sModelCategory + " : " + sModelName + " : " + sModelPrice + " : " + sModelURL);
+                        ParseModelURL(sModelURL, sManufacturerName, sModelCategory, sModelName, sModelPrice);
+                    }
+                } catch (Exception e) {
+                    continue;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private static void ParseModelURL(String sURL, String sMfr,String sCategory, String sModel, String sPrice) {
+        Document doc = null;
+        try {
+            doc = Jsoup.connect(sURL).get();
+            Elements tablerows = doc.select("div.media-body a");
+
+            int i = 0;
+            for (Element row : tablerows) {
+
+                try {
+                    String sAircraftURL=row.attr("href");
+                    String sAircraftName = row.text();
+                    System.out.println("Processing : " + sAircraftName + " : " + sAircraftURL);
+                } catch (Exception e) {
+                    continue;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void PrintAllAircraftModels() {
