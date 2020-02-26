@@ -42,13 +42,17 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
 
     private Float dCumulativeProfitability=0.00F;
 
+    public Aircraft(String sMfr, String sModel, String sType, String sFrom, String sTo) {
+        super(sMfr, sModel, sType, sFrom, sTo);
+    }
+
     @Override
     public void BoardPassengers() {
 
     }
 
     @Override
-    public void DeboardPassengers() {
+    public void UnloadPassengers() {
 
     }
 
@@ -58,7 +62,7 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
     }
 
     @Override
-    public void DeboardCargo() {
+    public void UnloadCargo() {
 
     }
 

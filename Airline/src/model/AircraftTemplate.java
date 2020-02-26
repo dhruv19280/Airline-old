@@ -3,9 +3,9 @@ package Airline.src.model;
 public interface AircraftTemplate {
 
     public void BoardPassengers();
-    public void DeboardPassengers();
+    public void UnloadPassengers();
     public void BoardCargo();
-    public void DeboardCargo();
+    public void UnloadCargo();
     public void Fly();
     public void BreakDown();
     public void PerformMaintenance();
