@@ -36,7 +36,7 @@ public class AircraftModelsInitializer {
             for (Element row : tablerows) {
 
                 try {
-                    String sManufacturerURL=row.attr("href");
+                    String sManufacturerURL = row.attr("href");
                     String sManufacturerName = row.text();
                     //System.out.println("Processing : " + sManufacturerName + " : " + sManufacturerURL);
                     ParseManufacturerURL(sManufacturerName, sManufacturerURL);
@@ -57,15 +57,14 @@ public class AircraftModelsInitializer {
             doc = Jsoup.connect(sManufacturerURL).get();
             Elements tablerows = doc.select("section.mb-4.px-3");
 
-            int i = 0;
             for (Element row : tablerows) {
 
                 try {
                     String sModelCategory = row.select("h3").text();
                     Elements subrows = tablerows.select("div.media-body");
 
-                    for (Element subrow: subrows) {
-                        String sModelURL=subrow.select("a").attr("href");
+                    for (Element subrow : subrows) {
+                        String sModelURL = subrow.select("a").attr("href");
                         String sModelName = subrow.select("a").text();
                         String sModelPrice = subrow.select("p").text();
                         System.out.println("Processing : " + sManufacturerName + " : " + sModelCategory + " : " + sModelName + " : " + sModelPrice + " : " + sModelURL);
@@ -81,21 +80,25 @@ public class AircraftModelsInitializer {
 
     }
 
-    private static void ParseModelURL(String sURL, String sMfr,String sCategory, String sModel, String sPrice) {
+    private static void ParseModelURL(String sURL, String sMfr, String sCategory, String sModel, String sPrice) {
         Document doc = null;
+
         try {
             doc = Jsoup.connect(sURL).get();
-            Elements tablerows = doc.select("div.media-body a");
+            Elements tablerows = doc.select("dl.row.mb-0");
 
-            int i = 0;
             for (Element row : tablerows) {
+                Elements headers = row.select("dt");
+                Elements values = row.select("dd");
 
-                try {
-                    String sAircraftURL=row.attr("href");
-                    String sAircraftName = row.text();
-                    System.out.println("Processing : " + sAircraftName + " : " + sAircraftURL);
-                } catch (Exception e) {
-                    continue;
+
+                for (int i = 0; i < headers.size(); i++) {
+                    try {
+                        System.out.println("Processing : ");
+                    } catch (Exception e) {
+                        continue;
+                    }
+
                 }
             }
         } catch (IOException e) {

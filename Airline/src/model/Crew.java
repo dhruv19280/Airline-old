@@ -25,7 +25,8 @@ enum EmployeeLevel {
     Fresh_Recruits,
     Entry_Level,
     Professionals,
-    Managers
+    Managers,
+    Executives
 }
 
 enum EmployeeType {

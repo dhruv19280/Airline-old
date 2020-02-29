@@ -5,11 +5,17 @@ import java.time.format.DateTimeFormatter;
 
 public class GameTime extends Thread {
 
-    private static Integer iGameStartYear = 1980;
-    private static Integer iGameStartMonth = 1;
-    private static Integer iGameStartDate = 1;
-    private static Integer iGameStartHour = 6;
-    private static Integer iGameStartMinutes=0;
+    public static Integer iGameStartYear = 1980;
+    public static Integer iGameStartMonth = 1;
+    public static Integer iGameStartDate = 1;
+    public static Integer iGameStartHour = 0;
+    public static Integer iGameStartMinutes=0;
+
+    public static Integer iGameFinishYear = 2080;
+    public static Integer iGameFinishMonth = 12;
+    public static Integer iGameFinishDate = 31;
+    public static Integer iGameFinishHour = 23;
+    public static Integer iGameFinishMinutes=59;
 
     private static Long iVirtualMinsPerRealSecond = 15L;
     private static LocalDateTime dtGameCurrentTime;

@@ -20,10 +20,6 @@ public class AirlineGame {
         thGameTime.start();
         System.out.println("GameTime Initialized and Running.");
 
-
-
-
-
         /*
         AirlinesInitializer.InitializeAll();
         GameGenerator.InitializeAll();

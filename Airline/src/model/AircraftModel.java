@@ -50,11 +50,18 @@ public class AircraftModel {
         this.sManufacturer = sMfr;
         this.sAircraftModel = sModel;
         this.sAircraftType = sType;
-        this.dtManufacturedFrom = LocalDateTime.of(Integer.parseInt(sFrom), 1,1,0,0);
-        if (sFrom.length() > 1) {
+
+        if(sFrom.length() > 0) {
+            this.dtManufacturedFrom = LocalDateTime.of(Integer.parseInt(sFrom), 1,1,0,0);
+        } else {
+            this.dtManufacturedFrom = LocalDateTime.of(GameTime.iGameStartYear, GameTime.iGameStartMonth,GameTime.iGameStartDate,GameTime.iGameStartHour,GameTime.iGameStartMinutes);
+        }
+
+
+        if (sTo.length() > 1) {
             this.dtManufacturedTo = LocalDateTime.of(Integer.parseInt(sTo), 12,31,23,59);
         } else {
-            this.dtManufacturedTo = LocalDateTime.of(Integer.parseInt("2075"), 12,31,23,59);
+            this.dtManufacturedTo = LocalDateTime.of(GameTime.iGameFinishYear, GameTime.iGameFinishMonth,GameTime.iGameFinishDate,GameTime.iGameFinishHour,GameTime.iGameFinishMinutes);
         }
     }
 
