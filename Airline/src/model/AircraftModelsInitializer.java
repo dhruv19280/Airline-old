@@ -82,6 +82,7 @@ public class AircraftModelsInitializer {
 
     private static void ParseModelURL(String sURL, String sMfr, String sCategory, String sModel, String sPrice) {
         Document doc = null;
+        List<String, String> sProperties = new ArrayList<String, String>();
 
         try {
             doc = Jsoup.connect(sURL).get();
