@@ -68,7 +68,15 @@ public class AircraftModelsInitializer {
                         String sModelName = subrow.select("a").text();
                         String sModelPrice = subrow.select("p").text();
                         System.out.println("Processing : " + sManufacturerName + " : " + sModelCategory + " : " + sModelName + " : " + sModelPrice + " : " + sModelURL);
-                        ParseModelURL(sModelURL, sManufacturerName, sModelCategory, sModelName, sModelPrice);
+                        if(
+                                sModelCategory.equalsIgnoreCase("Passenger Turbo Props")
+                                || sModelCategory.equalsIgnoreCase("Light Passenger Jets")
+                                || sModelCategory.equalsIgnoreCase("Mid Size Passenger Jets")
+                                || sModelCategory.equalsIgnoreCase("Jumbo Passenger Jets")
+                                || sModelCategory.equalsIgnoreCase("Cargo Airplanes")
+                        ) {
+                            ParseModelURL(sModelURL, sManufacturerName, sModelCategory, sModelName, sModelPrice);
+                        }
                     }
                 } catch (Exception e) {
                     continue;
@@ -82,26 +90,58 @@ public class AircraftModelsInitializer {
 
     private static void ParseModelURL(String sURL, String sMfr, String sCategory, String sModel, String sPrice) {
         Document doc = null;
-        List<String, String> sProperties = new ArrayList<String, String>();
 
         try {
             doc = Jsoup.connect(sURL).get();
             Elements tablerows = doc.select("dl.row.mb-0");
 
+            String sAvionics = "";
+            String sEngine = "";
+            String sPower = "";
+            String sSpeed = "";
+            String sRange = "";
+            String sFuelEconomy = "";
+            String sTakeOffDistance = "";
+            String sLandingDistance = "";
+            String sPayload = "";
+            String sTankCapacity = "";
+            String sSeatsEconomy = "";
+            String sSeatsBusiness = "";
+            String sSeatsFirst = "";
+            String sWingSpan = "";
+
             for (Element row : tablerows) {
                 Elements headers = row.select("dt");
                 Elements values = row.select("dd");
 
-
                 for (int i = 0; i < headers.size(); i++) {
                     try {
-                        System.out.println("Processing : ");
+
+                        if (headers.get(i).text().contains("Avionics")) sAvionics = values.get(i).text();
+                        if (headers.get(i).text().contains("Engine")) sEngine = values.get(i).text();
+                        if (headers.get(i).text().contains("Power")) sPower = values.get(i).text();
+                        if (headers.get(i).text().contains("Cruise Speed")) sSpeed = values.get(i).text();
+                        if (headers.get(i).text().contains("range")) sRange = values.get(i).text();
+                        if (headers.get(i).text().contains("Fuel Economy")) sFuelEconomy = values.get(i).text();
+                        if (headers.get(i).text().contains("Take Off Distance")) sTakeOffDistance = values.get(i).text();
+                        if (headers.get(i).text().contains("Landing Distance")) sLandingDistance = values.get(i).text();
+                        if (headers.get(i).text().contains("Payload")) sPayload = values.get(i).text();
+                        if (headers.get(i).text().contains("Tank Capacity")) sTankCapacity = values.get(i).text();
+                        if (headers.get(i).text().contains("Seats - Economy")) sSeatsEconomy = values.get(i).text();
+                        if (headers.get(i).text().contains("Seats - Business")) sSeatsBusiness = values.get(i).text();
+                        if (headers.get(i).text().contains("Seats - First")) sSeatsFirst = values.get(i).text();
+                        if (headers.get(i).text().contains("Wing Span")) sWingSpan = values.get(i).text();
+                        System.out.println("Processing : " + headers.get(i).text() + " : " + values.get(i).text());
+
                     } catch (Exception e) {
                         continue;
                     }
 
                 }
             }
+
+            //Create Aircraft Object and Append to List.
+
         } catch (IOException e) {
             e.printStackTrace();
         }
