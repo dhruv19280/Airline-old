@@ -92,9 +92,9 @@ public class AircraftModelsInitializer {
         Document doc = null;
 
         try {
-            doc = Jsoup.connect(sURL).get();
-            Elements tablerows = doc.select("dl.row.mb-0");
-
+            String sFrom = "";
+            String sTo="";
+            String sCountry = "";
             String sAvionics = "";
             String sEngine = "";
             String sPower = "";
@@ -109,6 +109,18 @@ public class AircraftModelsInitializer {
             String sSeatsBusiness = "";
             String sSeatsFirst = "";
             String sWingSpan = "";
+
+            doc = Jsoup.connect(sURL).get();
+
+            Elements toprows = doc.select("dl.row");
+            Elements dates = toprows.select("dd.col-6.mb-0");
+
+            sCountry = dates.get(1).text();
+            sFrom = dates.get(2).text().substring(0,4);
+            sTo = dates.get(2).text().substring(8);
+            sTo = sTo.replaceAll("Present", GameTime.iGameFinishYear.toString()). replaceAll("Onward", GameTime.iGameFinishYear.toString()).trim();
+
+            Elements tablerows = doc.select("dl.row.mb-0");
 
             for (Element row : tablerows) {
                 Elements headers = row.select("dt");
@@ -136,11 +148,34 @@ public class AircraftModelsInitializer {
                     } catch (Exception e) {
                         continue;
                     }
-
                 }
             }
 
-            //Create Aircraft Object and Append to List.
+            AircraftModel am = new AircraftModel(sMfr, sModel, sCategory, sFrom, sTo);
+
+            sPrice = sPrice.replaceAll("\\$", "").trim();
+            sPrice = sPrice.replaceAll("Price:", "").trim();
+            sPrice = sPrice.replaceAll("\\s+", "");
+            sPrice = sPrice.replaceAll("MillionUSD", "000000").trim();
+            am.UpdatePrice(Double.parseDouble(sPrice));
+
+            sPower = sPower.replaceAll("pound-force", "").trim();
+            sPower = sPower.replaceAll(",", "").trim();
+            am.UpdateEngineSpecs(sEngine, Integer.parseInt(sPower));
+
+
+
+            sPayload = sPayload.substring(0, sPayload.indexOf(' ')).trim();
+            sPayload = sPayload.replaceAll(",", "").trim();
+            sTankCapacity = sTankCapacity.split("\\s+")[2].trim();
+            sTankCapacity = sTankCapacity.replaceAll(",", "").trim();
+            am.UpdatePayload(Integer.parseInt(sPayload), Integer.parseInt(sTankCapacity));
+
+            sTakeOffDistance = sTakeOffDistance.substring(0, sTakeOffDistance.indexOf(' ')+1).trim();
+            sLandingDistance = sLandingDistance.substring(0, sLandingDistance.indexOf(' ')+1).trim();
+            am.UpdateVREF(Integer.parseInt(sTakeOffDistance), Integer.parseInt(sLandingDistance));
+
+
 
         } catch (IOException e) {
             e.printStackTrace();
