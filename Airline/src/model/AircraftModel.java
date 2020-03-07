@@ -8,7 +8,7 @@ public class AircraftModel {
     private String sAircraftType="";
     private String sAircraftModel="";
     private String sAircraftEngine = "";
-    private Integer iEnginePower = 0;
+    private String sEnginePower = "";
 
     private LocalDateTime dtManufacturedFrom;
     private LocalDateTime dtManufacturedTo;
@@ -22,7 +22,7 @@ public class AircraftModel {
     private Integer iMaxEconomyCapacity=0;
     private Integer iMaxBusinessCapacity=0;
     private Integer iMaxFirstCapacity=0;
-    private Integer iMaxCargoCapacity=0;
+    private Float fMaxCargoCapacity=0.0F;
 
     private Integer iMinTakeOffDistance=0;
     private Integer iMinLandingDistance=0;
@@ -33,17 +33,23 @@ public class AircraftModel {
     private Double dBaseCost = 0.00D;
 
     public void PrintDetails() {
-        System.out.printf("%s : %s : %s : %d : %d : %d : %d : %d : %d, %d",
+        System.out.printf("%s : %s : %s : %s : %s : %s : %s : %d, %d : %d : %d : %d : %d : %f : %d : %d \n",
                 sManufacturer,
                 sAircraftType,
                 sAircraftModel,
+                sAircraftEngine,
+                sEnginePower,
+                dtManufacturedFrom.toString(),
+                dtManufacturedTo.toString(),
                 iFuelCapacity,
                 iMaximumRange,
                 iMaxSpeedPerHour,
                 iMaxEconomyCapacity,
                 iMaxBusinessCapacity,
                 iMaxFirstCapacity,
-                iMaxCargoCapacity);
+                fMaxCargoCapacity,
+                iMinTakeOffDistance,
+                iMinTakeOffDistance);
     }
 
     public AircraftModel(String sMfr, String sModel, String sType, String sFrom, String sTo) {
@@ -65,9 +71,9 @@ public class AircraftModel {
         }
     }
 
-    public void UpdateEngineSpecs(String sEngine, Integer iPower) {
+    public void UpdateEngineSpecs(String sEngine, String sPower) {
         this.sAircraftEngine = sEngine;
-        this.iEnginePower = iPower;
+        this.sEnginePower = sPower;
     }
 
     public void UpdateRangeSpeed(Integer iSpeed, Integer iRange, Double dEconomy) {
@@ -86,11 +92,11 @@ public class AircraftModel {
         this.iMinTakeOffDistance = iTakeOffDist;
     }
 
-    public void UpdatePaxCapacities(Integer iEco, Integer iBus, Integer iFirst, Integer iCargo) {
+    public void UpdatePaxCapacities(Integer iEco, Integer iBus, Integer iFirst, Float fCargo) {
         this.iMaxEconomyCapacity = iEco;
         this.iMaxBusinessCapacity = iBus;
         this.iMaxFirstCapacity = iFirst;
-        this.iMaxCargoCapacity = iCargo;
+        this.fMaxCargoCapacity = fCargo;
     }
 
     public void UpdatePrice(Double dPrice) {

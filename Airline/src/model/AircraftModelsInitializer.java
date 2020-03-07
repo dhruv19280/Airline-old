@@ -21,7 +21,7 @@ public class AircraftModelsInitializer {
         lstAllAircraftModels = new ArrayList<AircraftModel>();
         ParseParentURL(sParentURL);
 
-        System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels");
+        System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels Before Cleanup");
     }
 
     private static void ParseParentURL(String sURL) {
@@ -38,7 +38,6 @@ public class AircraftModelsInitializer {
                 try {
                     String sManufacturerURL = row.attr("href");
                     String sManufacturerName = row.text();
-                    //System.out.println("Processing : " + sManufacturerName + " : " + sManufacturerURL);
                     ParseManufacturerURL(sManufacturerName, sManufacturerURL);
                 } catch (Exception e) {
                     continue;
@@ -61,20 +60,21 @@ public class AircraftModelsInitializer {
 
                 try {
                     String sModelCategory = row.select("h3").text();
-                    Elements subrows = tablerows.select("div.media-body");
+                    Elements subrows = row.select("div.media-body");
 
                     for (Element subrow : subrows) {
                         String sModelURL = subrow.select("a").attr("href");
                         String sModelName = subrow.select("a").text();
                         String sModelPrice = subrow.select("p").text();
-                        System.out.println("Processing : " + sManufacturerName + " : " + sModelCategory + " : " + sModelName + " : " + sModelPrice + " : " + sModelURL);
                         if(
                                 sModelCategory.equalsIgnoreCase("Passenger Turbo Props")
                                 || sModelCategory.equalsIgnoreCase("Light Passenger Jets")
                                 || sModelCategory.equalsIgnoreCase("Mid Size Passenger Jets")
                                 || sModelCategory.equalsIgnoreCase("Jumbo Passenger Jets")
+                                || sModelCategory.equalsIgnoreCase("Heavy Business Jets")
                                 || sModelCategory.equalsIgnoreCase("Cargo Airplanes")
                         ) {
+                            //System.out.println("Processing : " + sManufacturerName + " : " + sModelCategory + " : " + sModelName + " : " + sModelPrice + " : " + sModelURL);
                             ParseModelURL(sModelURL, sManufacturerName, sModelCategory, sModelName, sModelPrice);
                         }
                     }
@@ -94,8 +94,6 @@ public class AircraftModelsInitializer {
         try {
             String sFrom = "";
             String sTo="";
-            String sCountry = "";
-            String sAvionics = "";
             String sEngine = "";
             String sPower = "";
             String sSpeed = "";
@@ -108,14 +106,13 @@ public class AircraftModelsInitializer {
             String sSeatsEconomy = "";
             String sSeatsBusiness = "";
             String sSeatsFirst = "";
-            String sWingSpan = "";
+            String sCargoVolume = "";
 
             doc = Jsoup.connect(sURL).get();
 
             Elements toprows = doc.select("dl.row");
             Elements dates = toprows.select("dd.col-6.mb-0");
 
-            sCountry = dates.get(1).text();
             sFrom = dates.get(2).text().substring(0,4);
             sTo = dates.get(2).text().substring(8);
             sTo = sTo.replaceAll("Present", GameTime.iGameFinishYear.toString()). replaceAll("Onward", GameTime.iGameFinishYear.toString()).trim();
@@ -129,7 +126,6 @@ public class AircraftModelsInitializer {
                 for (int i = 0; i < headers.size(); i++) {
                     try {
 
-                        if (headers.get(i).text().contains("Avionics")) sAvionics = values.get(i).text();
                         if (headers.get(i).text().contains("Engine")) sEngine = values.get(i).text();
                         if (headers.get(i).text().contains("Power")) sPower = values.get(i).text();
                         if (headers.get(i).text().contains("Cruise Speed")) sSpeed = values.get(i).text();
@@ -142,42 +138,111 @@ public class AircraftModelsInitializer {
                         if (headers.get(i).text().contains("Seats - Economy")) sSeatsEconomy = values.get(i).text();
                         if (headers.get(i).text().contains("Seats - Business")) sSeatsBusiness = values.get(i).text();
                         if (headers.get(i).text().contains("Seats - First")) sSeatsFirst = values.get(i).text();
-                        if (headers.get(i).text().contains("Wing Span")) sWingSpan = values.get(i).text();
-                        System.out.println("Processing : " + headers.get(i).text() + " : " + values.get(i).text());
+                        if (headers.get(i).text().contains("Baggage Volume")) sCargoVolume = values.get(i).text();
+                        //System.out.println("Processing : " + headers.get(i).text() + " : " + values.get(i).text());
 
                     } catch (Exception e) {
                         continue;
                     }
                 }
             }
-
+            //System.out.println("Creating Object : " + sMfr + " : " + sCategory + " : " +sModel + " : " + sFrom + " : " + sTo);
             AircraftModel am = new AircraftModel(sMfr, sModel, sCategory, sFrom, sTo);
 
             sPrice = sPrice.replaceAll("\\$", "").trim();
             sPrice = sPrice.replaceAll("Price:", "").trim();
             sPrice = sPrice.replaceAll("\\s+", "");
             sPrice = sPrice.replaceAll("MillionUSD", "000000").trim();
+            if(sPrice.isBlank() || sPrice.isEmpty()) {
+                sPrice = "0.00";
+            }
             am.UpdatePrice(Double.parseDouble(sPrice));
 
-            sPower = sPower.replaceAll("pound-force", "").trim();
-            sPower = sPower.replaceAll(",", "").trim();
-            am.UpdateEngineSpecs(sEngine, Integer.parseInt(sPower));
+            am.UpdateEngineSpecs(sEngine, sPower);
 
 
+            if(sPayload.isEmpty() || sPayload.isBlank()) {
+                sPayload = "0";
+            } else {
+                sPayload = sPayload.substring(0, sPayload.indexOf(' ')).trim();
+                sPayload = sPayload.replaceAll(",", "").trim();
+            }
 
-            sPayload = sPayload.substring(0, sPayload.indexOf(' ')).trim();
-            sPayload = sPayload.replaceAll(",", "").trim();
-            sTankCapacity = sTankCapacity.split("\\s+")[2].trim();
-            sTankCapacity = sTankCapacity.replaceAll(",", "").trim();
+            if (!sTankCapacity.isBlank() && !sTankCapacity.isEmpty()) {
+                sTankCapacity = sTankCapacity.split("\\s+")[2].trim();
+                sTankCapacity = sTankCapacity.replaceAll(",", "").trim();
+            } else
+            {
+                sTankCapacity = "0";
+            }
             am.UpdatePayload(Integer.parseInt(sPayload), Integer.parseInt(sTankCapacity));
 
             sTakeOffDistance = sTakeOffDistance.substring(0, sTakeOffDistance.indexOf(' ')+1).trim();
+            if(sTakeOffDistance.isEmpty() || sTakeOffDistance.isBlank()) sTakeOffDistance = "0";
             sLandingDistance = sLandingDistance.substring(0, sLandingDistance.indexOf(' ')+1).trim();
+            if(sLandingDistance.isEmpty() || sLandingDistance.isBlank()) sLandingDistance = "0";
             am.UpdateVREF(Integer.parseInt(sTakeOffDistance), Integer.parseInt(sLandingDistance));
 
+            //840 Nautical Miles 1,556 Kilometers
+            sRange = sRange.replaceAll("Nautical Miles", "").replaceAll("Kilometers", "").trim();
+            sRange = sRange.replaceAll(",", "").trim();
+            if(sRange.isBlank() || sRange.isBlank()) {
+                sRange = "0";
+            } else
+            {
+                sRange = sRange.split("\\s+")[1].trim();
+            }
 
+            //410 knots 759 Km/h
+            sSpeed = sSpeed.replaceAll("knots", "").replaceAll("Km/h", "").trim();
+            sSpeed = sSpeed.replaceAll(",", "").trim();
+            if (sSpeed.isBlank() || sSpeed.isEmpty()) {
+                sSpeed = "0";
+            } else
+            {
+                sSpeed = sSpeed.split("\\s+")[1].trim();
+            }
+
+            //1.55 nautical mile / gallon 0.758 kilometres / litre
+            sFuelEconomy = sFuelEconomy.replaceAll("nautical mile / gallon", "").replaceAll("kilometres / litre", "").trim();
+            sFuelEconomy = sFuelEconomy.replaceAll(",", "").trim();
+
+            if (!sFuelEconomy.isBlank() && !sFuelEconomy.isEmpty()) {
+                sFuelEconomy = sFuelEconomy.split("\\s+")[1].trim();
+            } else
+            {
+                sFuelEconomy = "0.00";
+            }
+
+            am.UpdateRangeSpeed(Integer.parseInt(sSpeed), Integer.parseInt(sRange), Double.parseDouble(sFuelEconomy));
+
+            //189 seats
+            sSeatsEconomy = sSeatsEconomy.replaceAll("seats", "").trim();
+            if (sSeatsEconomy.isBlank() || sSeatsEconomy.isEmpty()) sSeatsEconomy = "0";
+
+            sSeatsBusiness = sSeatsBusiness.replaceAll("seats", "").trim();
+            if (sSeatsBusiness.isBlank() || sSeatsBusiness.isEmpty()) sSeatsBusiness = "0";
+
+            sSeatsFirst = sSeatsFirst.replaceAll("seats", "").trim();
+            if (sSeatsFirst.isBlank() || sSeatsFirst.isEmpty()) sSeatsFirst = "0";
+
+            //1845 m3 / 65,156 ft3
+            sCargoVolume = sCargoVolume.replaceAll("m3","").replaceAll("ft3", "").trim();
+            sCargoVolume = sCargoVolume.replaceAll(",", "").trim();
+            if (!sCargoVolume.isBlank() && !sCargoVolume.isEmpty()) {
+                sCargoVolume = sCargoVolume.split("\\s+")[0].trim();
+            } else
+            {
+                sCargoVolume = "0.00";
+            }
+            am.UpdatePaxCapacities(Integer.parseInt(sSeatsEconomy), Integer.parseInt(sSeatsBusiness), Integer.parseInt(sSeatsFirst), Float.parseFloat(sCargoVolume));
+
+            //System.out.println("Adding Object : " + sMfr + " : " + sCategory + " : " +sModel + " : " + sFrom + " : " + sTo);
+            lstAllAircraftModels.add(am);
 
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

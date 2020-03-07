@@ -6,7 +6,7 @@ public class AirlineGame {
 
         System.out.println("Initializing Airports...");
         AirportsInitializer.InitializeAll();
-        AirportsInitializer.PrintAllAirports();
+        //AirportsInitializer.PrintAllAirports();
         System.out.println("Airports Initialization Completed.");
 
         System.out.println("Initializing Aircrafts...");
