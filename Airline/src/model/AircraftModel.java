@@ -4,36 +4,36 @@ import java.time.LocalDateTime;
 
 public class AircraftModel {
 
-    private String sManufacturer="";
-    private String sAircraftType="";
-    private String sAircraftModel="";
+    private String sManufacturer = "";
+    private String sAircraftType = "";
+    private String sAircraftModel = "";
     private String sAircraftEngine = "";
     private String sEnginePower = "";
 
     private LocalDateTime dtManufacturedFrom;
     private LocalDateTime dtManufacturedTo;
 
-    private Integer iFuelCapacity=0;
-    private Double dFuelEconomy=0.00D;
+    private Integer iFuelCapacity = 0;
+    private Double dFuelEconomy = 0.00D;
 
-    private Integer iMaximumRange=0;
-    private Integer iMaxSpeedPerHour=0;
+    private Integer iMaximumRange = 0;
+    private Integer iMaxSpeedPerHour = 0;
 
-    private Integer iMaxEconomyCapacity=0;
-    private Integer iMaxBusinessCapacity=0;
-    private Integer iMaxFirstCapacity=0;
-    private Float fMaxCargoCapacity=0.0F;
+    private Integer iMaxEconomyCapacity = 0;
+    private Integer iMaxBusinessCapacity = 0;
+    private Integer iMaxFirstCapacity = 0;
+    private Float fMaxCargoCapacity = 0.0F;
 
-    private Integer iMinTakeOffDistance=0;
-    private Integer iMinLandingDistance=0;
+    private Integer iMinTakeOffDistance = 0;
+    private Integer iMinLandingDistance = 0;
 
-    private Integer iMaxPayload=0;
+    private Integer iMaxPayload = 0;
 
-    private Double dWearRatePerHundredHour = 0.00D;
+    private Double dBaseWearRate = 0.00D;
     private Double dBaseCost = 0.00D;
 
     public void PrintDetails() {
-        System.out.printf("%s : %s : %s : %s : %s : %s : %s : %d, %d : %d : %d : %d : %d : %f : %d : %d \n",
+        System.out.printf("%s : %s : %s : %s : %s : %s : %s : %d, %d : %d : %d : %d : %d : %f : %d : %d : %f : %f : %f \n",
                 sManufacturer,
                 sAircraftType,
                 sAircraftModel,
@@ -49,7 +49,10 @@ public class AircraftModel {
                 iMaxFirstCapacity,
                 fMaxCargoCapacity,
                 iMinTakeOffDistance,
-                iMinTakeOffDistance);
+                iMinLandingDistance,
+                dBaseCost,
+                dFuelEconomy,
+                dBaseWearRate);
     }
 
     public AircraftModel(String sMfr, String sModel, String sType, String sFrom, String sTo) {
@@ -57,17 +60,17 @@ public class AircraftModel {
         this.sAircraftModel = sModel;
         this.sAircraftType = sType;
 
-        if(sFrom.length() > 0) {
-            this.dtManufacturedFrom = LocalDateTime.of(Integer.parseInt(sFrom), 1,1,0,0);
+        if (sFrom.length() > 0) {
+            this.dtManufacturedFrom = LocalDateTime.of(Integer.parseInt(sFrom), 1, 1, 0, 0);
         } else {
-            this.dtManufacturedFrom = LocalDateTime.of(GameTime.iGameStartYear, GameTime.iGameStartMonth,GameTime.iGameStartDate,GameTime.iGameStartHour,GameTime.iGameStartMinutes);
+            this.dtManufacturedFrom = LocalDateTime.of(GameTime.iGameStartYear, GameTime.iGameStartMonth, GameTime.iGameStartDate, GameTime.iGameStartHour, GameTime.iGameStartMinutes);
         }
 
 
         if (sTo.length() > 1) {
-            this.dtManufacturedTo = LocalDateTime.of(Integer.parseInt(sTo), 12,31,23,59);
+            this.dtManufacturedTo = LocalDateTime.of(Integer.parseInt(sTo), 12, 31, 23, 59);
         } else {
-            this.dtManufacturedTo = LocalDateTime.of(GameTime.iGameFinishYear, GameTime.iGameFinishMonth,GameTime.iGameFinishDate,GameTime.iGameFinishHour,GameTime.iGameFinishMinutes);
+            this.dtManufacturedTo = LocalDateTime.of(GameTime.iGameFinishYear, GameTime.iGameFinishMonth, GameTime.iGameFinishDate, GameTime.iGameFinishHour, GameTime.iGameFinishMinutes);
         }
     }
 
@@ -101,5 +104,35 @@ public class AircraftModel {
 
     public void UpdatePrice(Double dPrice) {
         this.dBaseCost = dPrice;
+    }
+
+    public Boolean IsValid() {
+        Boolean bValid = true;
+
+        if (this.sManufacturer.isBlank() || this.sManufacturer.isEmpty()) {
+            bValid = false;
+        }
+
+        if (this.sAircraftModel.isBlank() || this.sAircraftModel.isEmpty()) {
+            bValid = false;
+        }
+
+        if (this.sAircraftType.isBlank() || this.sAircraftType.isEmpty()) {
+            bValid = false;
+        }
+
+        if (this.iMaxEconomyCapacity == 0 && this.fMaxCargoCapacity == 0.00F) {
+            bValid = false;
+        }
+
+        if (this.dBaseCost < 1000000) {
+            bValid = false;
+        }
+
+        if (this.iMaximumRange == 0 || iMaxSpeedPerHour == 0) {
+            bValid = false;
+        }
+
+        return bValid;
     }
 }

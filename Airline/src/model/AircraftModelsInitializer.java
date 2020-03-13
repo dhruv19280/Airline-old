@@ -22,6 +22,10 @@ public class AircraftModelsInitializer {
         ParseParentURL(sParentURL);
 
         System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels Before Cleanup");
+
+        CleanUpAircraftModels();
+
+        System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels After Cleanup");
     }
 
     private static void ParseParentURL(String sURL) {
@@ -142,21 +146,22 @@ public class AircraftModelsInitializer {
                         //System.out.println("Processing : " + headers.get(i).text() + " : " + values.get(i).text());
 
                     } catch (Exception e) {
+                        e.printStackTrace();
                         continue;
                     }
                 }
             }
-            //System.out.println("Creating Object : " + sMfr + " : " + sCategory + " : " +sModel + " : " + sFrom + " : " + sTo);
+            ///System.out.println("Creating Object : " + sMfr + " : " + sCategory + " : " +sModel + " : " + sFrom + " : " + sTo);
             AircraftModel am = new AircraftModel(sMfr, sModel, sCategory, sFrom, sTo);
 
             sPrice = sPrice.replaceAll("\\$", "").trim();
             sPrice = sPrice.replaceAll("Price:", "").trim();
             sPrice = sPrice.replaceAll("\\s+", "");
-            sPrice = sPrice.replaceAll("MillionUSD", "000000").trim();
+            sPrice = sPrice.replaceAll("MillionUSD", "").trim();
             if(sPrice.isBlank() || sPrice.isEmpty()) {
                 sPrice = "0.00";
             }
-            am.UpdatePrice(Double.parseDouble(sPrice));
+            am.UpdatePrice(Double.parseDouble(sPrice) * 1000000);
 
             am.UpdateEngineSpecs(sEngine, sPower);
 
@@ -177,16 +182,24 @@ public class AircraftModelsInitializer {
             }
             am.UpdatePayload(Integer.parseInt(sPayload), Integer.parseInt(sTankCapacity));
 
+
             sTakeOffDistance = sTakeOffDistance.substring(0, sTakeOffDistance.indexOf(' ')+1).trim();
             if(sTakeOffDistance.isEmpty() || sTakeOffDistance.isBlank()) sTakeOffDistance = "0";
+            if (sTakeOffDistance.contains("."))
+            sTakeOffDistance = sTakeOffDistance.substring(0, sTakeOffDistance.indexOf('.')).trim();
+
+
             sLandingDistance = sLandingDistance.substring(0, sLandingDistance.indexOf(' ')+1).trim();
             if(sLandingDistance.isEmpty() || sLandingDistance.isBlank()) sLandingDistance = "0";
+            if(sLandingDistance.contains("."))
+            sLandingDistance = sLandingDistance.substring(0, sLandingDistance.indexOf('.')).trim();
+
             am.UpdateVREF(Integer.parseInt(sTakeOffDistance), Integer.parseInt(sLandingDistance));
 
             //840 Nautical Miles 1,556 Kilometers
             sRange = sRange.replaceAll("Nautical Miles", "").replaceAll("Kilometers", "").trim();
             sRange = sRange.replaceAll(",", "").trim();
-            if(sRange.isBlank() || sRange.isBlank()) {
+            if(sRange.isBlank() || sRange.isEmpty()) {
                 sRange = "0";
             } else
             {
@@ -250,6 +263,16 @@ public class AircraftModelsInitializer {
     public static void PrintAllAircraftModels() {
         for (AircraftModel a : lstAllAircraftModels) {
             a.PrintDetails();
+        }
+    }
+
+    private static void CleanUpAircraftModels() {
+        for(int i = 0; i<lstAllAircraftModels.size(); i++){
+            //System.out.println(myList.get(i));
+            if(!lstAllAircraftModels.get(i).IsValid()){
+                lstAllAircraftModels.remove(i);
+                i--;
+            }
         }
     }
 

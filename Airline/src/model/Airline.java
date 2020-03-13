@@ -72,4 +72,69 @@ public class Airline implements AirlineTemplate {
     public void PayBranchRents() {
 
     }
+
+    @Override
+    public void DescheduleFlights() {
+
+    }
+
+    @Override
+    public void AuditRoute() {
+
+    }
+
+    @Override
+    public void PayRouteRents() {
+
+    }
+
+    @Override
+    public void PromoteRoute() {
+
+    }
+
+    @Override
+    public void SetEconomyFare() {
+
+    }
+
+    @Override
+    public void SetBusinessFare() {
+
+    }
+
+    @Override
+    public void SetFirstFare() {
+
+    }
+
+    @Override
+    public void SetCargoFare() {
+
+    }
+
+    @Override
+    public void DeployAircraft() {
+
+    }
+
+    @Override
+    public void UpgradeAircraft() {
+
+    }
+
+    @Override
+    public void TrainCrew() {
+
+    }
+
+    @Override
+    public void AssignCrew() {
+
+    }
+
+    @Override
+    public void ScheduleFlights() {
+
+    }
 }

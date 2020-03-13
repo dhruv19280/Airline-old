@@ -28,7 +28,7 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
     private Integer iAge=0;
     private Boolean bInFlight=false;
 
-    private Double dWearRatePerHundredHour = 0.00D;
+    private Double dBaseWearRate = 0.00D;
     private Double dCurrentWearPercentage=0.00D;
 
 
@@ -89,5 +89,20 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
     @Override
     public void Land() {
 
+    }
+
+    private Double CalculateCurrentWear() {
+        /*
+        An aircraft's lifespan is measured not in years but in pressurization cycles.
+        Each time an aircraft is pressurized during flight, its fuselage and wings are stressed.
+        Both are made of large, plate-like parts connected with fasteners and rivets, and over time, cracks develop around the fastener holes due to metal fatigue.
+
+        "Aircraft lifespan is established by the manufacturer," explains the Federal Aviation Administration's John Petrakis, "and is usually based on takeoff and landing cycles.
+        The fuselage is most susceptible to fatigue, but the wings are too, especially on short hauls where an aircraft goes through pressurization cycles every day."
+         Aircraft used on longer flights experience fewer pressurization cycles, and can last more than 20 years.
+         "There are 747s out there that are 25 or 30 years old," says Petrakis.
+         */
+
+        return 0.00D;
     }
 }
