@@ -79,7 +79,7 @@ public class Airline implements AirlineTemplate {
     }
 
     @Override
-    public void AuditRoute() {
+    public void ResearchRoute() {
 
     }
 

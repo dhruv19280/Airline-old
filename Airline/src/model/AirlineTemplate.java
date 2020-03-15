@@ -5,7 +5,7 @@ public interface AirlineTemplate {
 // Route Operations
     public void OpenRoute();
     public void CloseRoute();
-    public void AuditRoute();
+    public void ResearchRoute();
     public void PayRouteRents();
     public void PromoteRoute();
     public void SetEconomyFare();

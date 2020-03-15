@@ -3,7 +3,6 @@ package Airline.src.model;
 public class Aircraft extends AircraftModel implements AircraftTemplate {
 
     private String sAircraftTail="";
-    private String sAircraftNick="";
     private String sManufacturer="";
     private String sModel="";
 
