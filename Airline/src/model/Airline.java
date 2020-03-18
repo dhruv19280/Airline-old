@@ -7,6 +7,7 @@ public class Airline implements AirlineTemplate {
 
     private String sAirlineCode="";
     private String sAirlineName="";
+    private String sAirlineCountry="";
 
     private Boolean sAutoAirline=true;
 
@@ -17,6 +18,13 @@ public class Airline implements AirlineTemplate {
     private List<Aircraft> lstOwnedAircrafts = new ArrayList<Aircraft>();
     private List<Route> lstOwnedRoutes = new ArrayList<Route>();
     private List<Crew> lstHiredCrew = new ArrayList<Crew>();
+
+    Airline(String sCode, String sName, String sCountry) {
+        this.sAirlineCode = sCode;
+        this.sAirlineName = sName;
+        this.sAirlineCountry = sCountry;
+        this.sAutoAirline = false;
+    }
 
     @Override
     public void OpenRoute() {

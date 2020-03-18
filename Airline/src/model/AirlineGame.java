@@ -14,6 +14,11 @@ public class AirlineGame {
         AircraftModelsInitializer.PrintAllAircraftModels();
         System.out.println("Aircrafts Initialization Completed.");
 
+        System.out.println("Initializing Airlines...");
+        AirlineInitializer.InitializeAll();
+        AirlineInitializer.PrintAllAirlines();
+        System.out.println("Airlines Initialization Completed.");
+
         System.out.println("Initializing GameTime...");
         GameTime gtGameTime = new GameTime();
         Thread thGameTime = new Thread(gtGameTime);

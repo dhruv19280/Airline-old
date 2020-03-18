@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AircraftModelsInitializer {
+public class AircraftModelsInitializer extends Thread {
 
     private static final String sParentURL = "https://www.aircraftcompare.com/manufacturer-categories/airplane/";
 
@@ -19,12 +19,11 @@ public class AircraftModelsInitializer {
     public static void InitializeAll() {
 
         lstAllAircraftModels = new ArrayList<AircraftModel>();
+
         ParseParentURL(sParentURL);
 
         System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels Before Cleanup");
-
         CleanUpAircraftModels();
-
         System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels After Cleanup");
     }
 
@@ -42,7 +41,9 @@ public class AircraftModelsInitializer {
                 try {
                     String sManufacturerURL = row.attr("href");
                     String sManufacturerName = row.text();
+
                     ParseManufacturerURL(sManufacturerName, sManufacturerURL);
+
                 } catch (Exception e) {
                     continue;
                 }
@@ -79,7 +80,13 @@ public class AircraftModelsInitializer {
                                 || sModelCategory.equalsIgnoreCase("Cargo Airplanes")
                         ) {
                             //System.out.println("Processing : " + sManufacturerName + " : " + sModelCategory + " : " + sModelName + " : " + sModelPrice + " : " + sModelURL);
-                            ParseModelURL(sModelURL, sManufacturerName, sModelCategory, sModelName, sModelPrice);
+                            //TODO: Check how to implement threading for Aircraft Models.
+                            //Thread th = new Thread();
+                            //th.start();
+                            new Thread(() -> {
+                                ParseModelURL(sModelURL, sManufacturerName, sModelCategory, sModelName, sModelPrice);
+                            }).start();
+
                         }
                     }
                 } catch (Exception e) {
@@ -274,6 +281,10 @@ public class AircraftModelsInitializer {
                 i--;
             }
         }
+    }
+
+    public void run() {
+
     }
 
 }
