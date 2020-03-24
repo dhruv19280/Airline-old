@@ -7,8 +7,13 @@ public class AircraftModel {
     private String sManufacturer = "";
     private String sAircraftType = "";
     private String sAircraftModel = "";
-    private String sAircraftEngine = "";
+
+    private String sEngineType = "";
+    private String sEngineDetails = "";
     private String sEnginePower = "";
+
+    private Integer iWingspan = 0;
+    private Integer iLength = 0;
 
     private LocalDateTime dtManufacturedFrom;
     private LocalDateTime dtManufacturedTo;
@@ -16,6 +21,7 @@ public class AircraftModel {
     private Integer iFuelCapacity = 0;
     private Double dFuelEconomy = 0.00D;
 
+    private String sRangeType = "";
     private Integer iMaximumRange = 0;
     private Integer iMaxSpeedPerHour = 0;
 
@@ -24,20 +30,25 @@ public class AircraftModel {
     private Integer iMaxFirstCapacity = 0;
     private Float fMaxCargoCapacity = 0.0F;
 
+    private Integer iMinCockpitCrew = 0;
+    private Integer iMaxCockpitCrew = 0;
+    private Integer iMinCabinCrew = 0;
+    private Integer iMaxCabinCrew = 0;
+
     private Integer iMinTakeOffDistance = 0;
     private Integer iMinLandingDistance = 0;
 
     private Integer iMaxPayload = 0;
 
     private Double dBaseWearRate = 0.00D;
-    private Double dBaseCost = 0.00D;
+    private Double dBasePrice = 0.00D;
 
     public void PrintDetails() {
         System.out.printf("%s : %s : %s : %s : %s : %s : %s : %d, %d : %d : %d : %d : %d : %f : %d : %d : %f : %f : %f \n",
                 sManufacturer,
                 sAircraftType,
                 sAircraftModel,
-                sAircraftEngine,
+                sEngineDetails,
                 sEnginePower,
                 dtManufacturedFrom.toString(),
                 dtManufacturedTo.toString(),
@@ -50,7 +61,7 @@ public class AircraftModel {
                 fMaxCargoCapacity,
                 iMinTakeOffDistance,
                 iMinLandingDistance,
-                dBaseCost,
+                dBasePrice,
                 dFuelEconomy,
                 dBaseWearRate);
     }
@@ -75,7 +86,7 @@ public class AircraftModel {
     }
 
     public void UpdateEngineSpecs(String sEngine, String sPower) {
-        this.sAircraftEngine = sEngine;
+        this.sEngineDetails = sEngine;
         this.sEnginePower = sPower;
     }
 
@@ -103,7 +114,7 @@ public class AircraftModel {
     }
 
     public void UpdatePrice(Double dPrice) {
-        this.dBaseCost = dPrice;
+        this.dBasePrice = dPrice;
     }
 
     public Boolean IsValid() {
@@ -125,7 +136,7 @@ public class AircraftModel {
             bValid = false;
         }
 
-        if (this.dBaseCost < 1000000) {
+        if (this.dBasePrice < 1000000) {
             bValid = false;
         }
 

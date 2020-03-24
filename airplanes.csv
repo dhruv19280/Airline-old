@@ -35,9 +35,6 @@
 "Airbus","Airbus A350-900R",35555720,"Passenger",,"Wide Body","Long Range","Jet",64.8,66.89,19100,903,138000,0.022,2810,420,2,8,3,0,2016,2027,10
 "Airbus","Airbus A350-1000",35270025,"Passenger",,"Wide Body","Long Range","Jet",64.8,73.88,15600,903,156000,0.018,2880,550,2,11,4,0,2017,2033,10
 "Airbus","Airbus A380-800",49678710,"Passenger",,"Wide Body","Long Range","Jet",79.75,72.73,15400,945,320000,0.024,2900,853,2,17,3,0,2007,2025,12
-"Airbus Military","CASA C212 Aviocar",703850,"Passenger",,"Single Aisle","Short Range","Turboprop",20.28,16.2,1811,370,1728,0.045,770,26,2,0,1,0,1971,2199,50
-"Airbus Military","IPTN CN235",903850,"Passenger",,"Single Aisle","Medium Range","Turboprop",25.81,21.4,4355,450,5728,0.045,982,51,2,0,1,0,1983,2199,50
-"Airbus Military","A400M Atlas",26542470,"Cargo",,"Wide Body","Long Range","Turboprop",42.4,45.1,6390,780,153950,0.055,980,0,4,0,0,721,2011,2199,23
 "Airspeed","Ambassador",903850,"Passenger",,"Single Aisle","Short Range","Turboprop",35.05,24.99,550,260,3466,0.077,1211,60,3,0,1,0,1947,1953,9
 "Antonov","Antonov An-10",3200090,"Passenger",,"Narrow Body","Short Range","Turboprop",38,34,4075,610,17120,0.042,720,100,2,4,2,0,1960,1972,8
 "Antonov","Antonov An-24",1900000,"Passenger",,"Narrow Body","Short Range","Turboprop",29.2,23.53,2761,450,6200,0.045,650,50,2,2,2,0,1960,1979,68
