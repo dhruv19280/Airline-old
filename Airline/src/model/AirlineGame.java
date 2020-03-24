@@ -24,12 +24,5 @@ public class AirlineGame {
         Thread thGameTime = new Thread(gtGameTime);
         thGameTime.start();
         System.out.println("GameTime Initialized and Running.");
-
-        /*
-        AirlinesInitializer.InitializeAll();
-        GameGenerator.InitializeAll();
-        CrewInitializer.InitializeAll();
-        RouteInitializer.InitializeAll();
-        */
     }
 }
