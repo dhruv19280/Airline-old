@@ -26,7 +26,13 @@ public class AirlineInitializer {
     }
 
     private static void CleanUpAirlines() {
-
+        for(int i = 0; i<lstAllAirlines.size(); i++){
+            //System.out.println(myList.get(i));
+            if(!lstAllAirlines.get(i).IsValid()){
+                lstAllAirlines.remove(i);
+                i--;
+            }
+        }
     }
 
     private static List<Airline> ParseFileIntoAirlines(String sFile) {
@@ -44,19 +50,24 @@ public class AirlineInitializer {
         int i = 0;
         while (scanner.hasNext()) {
 
-            if (i==0) continue;
-
             String line = scanner.nextLine();
-            String[] values = line.split(DEFAULT_SEPARATOR);
+            if (i==0) {
+                i++;
+                continue;
+            } else {
+                String[] values = line.split(DEFAULT_SEPARATOR);
 
-            String sCode = values[0];
-            String sName = values[1];
-            String sCountry = values[2];
+                String sCode = values[0];
+                String sName = values[1];
+                String sCountry = values[2];
 
-            Airline al = new Airline(sCode, sName, sCountry);
-            lstAirlines.add(al);
+                Airline al = new Airline(sCode, sName, sCountry);
+                lstAirlines.add(al);
 
-            i++;
+                i++;
+            }
+
+
 
         }
 
@@ -65,5 +76,8 @@ public class AirlineInitializer {
     }
 
     public static void PrintAllAirlines() {
+        for (Airline al : lstAllAirlines) {
+            al.PrintDetails();
+        }
     }
 }

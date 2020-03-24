@@ -145,4 +145,26 @@ public class Airline implements AirlineTemplate {
     public void ScheduleFlights() {
 
     }
+
+    public void PrintDetails() {
+        System.out.printf("%s : %s : %s \n", sAirlineCode, sAirlineName, sAirlineCountry);
+    }
+
+    public Boolean IsValid() {
+        Boolean bValid = true;
+
+        if (this.sAirlineCode.isBlank() || this.sAirlineCode.isEmpty()) {
+            bValid = false;
+        }
+
+        if (this.sAirlineName.isBlank() || this.sAirlineName.isEmpty()) {
+            bValid = false;
+        }
+
+        if (this.sAirlineCountry.isBlank() || this.sAirlineCountry.isEmpty()) {
+            bValid = false;
+        }
+
+        return bValid;
+    }
 }

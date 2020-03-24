@@ -56,6 +56,8 @@ public class AircraftModelsInitializer extends Thread {
 
     private static void ParseManufacturerURL(String sManufacturerName, String sManufacturerURL) {
         Document doc = null;
+        List<Thread> lstModelThreads = new ArrayList<Thread>();
+
 
         try {
             doc = Jsoup.connect(sManufacturerURL).get();
@@ -71,6 +73,8 @@ public class AircraftModelsInitializer extends Thread {
                         String sModelURL = subrow.select("a").attr("href");
                         String sModelName = subrow.select("a").text();
                         String sModelPrice = subrow.select("p").text();
+
+
                         if(
                                 sModelCategory.equalsIgnoreCase("Passenger Turbo Props")
                                 || sModelCategory.equalsIgnoreCase("Light Passenger Jets")
@@ -80,20 +84,22 @@ public class AircraftModelsInitializer extends Thread {
                                 || sModelCategory.equalsIgnoreCase("Cargo Airplanes")
                         ) {
                             //System.out.println("Processing : " + sManufacturerName + " : " + sModelCategory + " : " + sModelName + " : " + sModelPrice + " : " + sModelURL);
-                            //TODO: Check how to implement threading for Aircraft Models.
-                            //Thread th = new Thread();
-                            //th.start();
-                            new Thread(() -> {
-                                ParseModelURL(sModelURL, sManufacturerName, sModelCategory, sModelName, sModelPrice);
-                            }).start();
-
+                            lstModelThreads.add(new Thread(() -> {ParseModelURL(sModelURL, sManufacturerName, sModelCategory, sModelName, sModelPrice);}));
                         }
                     }
                 } catch (Exception e) {
                     continue;
                 }
+                for (int i = 0; i < lstModelThreads.size(); i++)
+                {
+                    lstModelThreads.get(i).start();
+                }
+                for (int i = 0; i < lstModelThreads.size(); i++)
+                {
+                    lstModelThreads.get(i).join();
+                }
             }
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
 
@@ -274,6 +280,7 @@ public class AircraftModelsInitializer extends Thread {
     }
 
     private static void CleanUpAircraftModels() {
+
         for(int i = 0; i<lstAllAircraftModels.size(); i++){
             //System.out.println(myList.get(i));
             if(!lstAllAircraftModels.get(i).IsValid()){

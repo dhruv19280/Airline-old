@@ -1,6 +1,6 @@
 package Airline.src.model;
 
-public class Crew {
+public class Crew implements CrewTemplate {
 
     private String sFirstName;
     private String sLastName;
@@ -18,6 +18,90 @@ public class Crew {
     private Boolean bHired;
 
 
+    @Override
+    public void AttendOffice() {
+
+    }
+
+    @Override
+    public void FallSick() {
+
+    }
+
+    @Override
+    public void CheckInPassengers() {
+
+    }
+
+    @Override
+    public void LoadBaggage() {
+
+    }
+
+    @Override
+    public void UnloadBaggage() {
+
+    }
+
+    @Override
+    public void GuidePassengers() {
+
+    }
+
+    @Override
+    public void UpkeepAircraft() {
+
+    }
+
+    @Override
+    public void LoadFuelOnAircraft() {
+
+    }
+
+    @Override
+    public void LoadMealsOnAircraft() {
+
+    }
+
+    @Override
+    public void FlyAircraft() {
+
+    }
+
+    @Override
+    public void CheckAircraft() {
+
+    }
+
+    @Override
+    public void TakeOffAircraft() {
+
+    }
+
+    @Override
+    public void LandAircraft() {
+
+    }
+
+    @Override
+    public void TaxiAircraft() {
+
+    }
+
+    @Override
+    public void SecurePassengers() {
+
+    }
+
+    @Override
+    public void SafetyAnnouncements() {
+
+    }
+
+    @Override
+    public void AssignCrewToFlights() {
+
+    }
 }
 
 enum EmployeeLevel {
