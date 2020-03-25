@@ -1,348 +1,348 @@
-"manufacturer","name","price","type","image","body","rangetype","engine","wingspan","length","range","speed","fuelcapacity","consumption","runwaylengthrequired","passengers","cockpitcrew","cabincrew","maxclasses","cargo","from","to","rate"
-"Aerospatiale","Aerospatiale-BAC Concorde",36813010,"Passenger",,"Single Aisle","Medium Range","Jet",25.6,61.66,7250,2158,119010,0.164,3000,120,2,4,2,0,1976,2003,1
-"Aerospatiale","Aerospatiale N 262",1224500,"Passenger",,"Single Aisle","Regional","Turboprop",21.9,19.28,1110,360,1992,0.069,1000,26,2,1,1,0,1964,1976,8
-"Aerospatiale","SA365 Dauphin 2",2646870,"Helicopter",,"Helicopter","Short Range","Jet",2.7,13.37,790,268,1135,0.131,10,11,2,0,1,0,1978,2018,24
-"Aerospatiale","EC120 Colibri",1277330,"Helicopter",,"Helicopter","Short Range","Turboprop",2.5,9.6,710,250,346,0.122,10,4,1,0,1,0,1995,2020,40
-"AW","AgustaWestland AW139",1546171,"Helicopter",,"Helicopter","Short Range","Jet",12.26,13.77,1250,306,1350,0.129,15,15,2,0,1,0,2003,2024,18
-"AW","AgustaWestland AW189",1722102,"Helicopter",,"Helicopter","Short Range","Jet",14.6,17.6,370,278,2086,0.135,18,18,2,0,1,0,2013,2030,24
-"Airbus","Airbus A300B1",15915680,"Passenger",,"Wide Body","Medium Range","Jet",44.85,54.08,3430,847,62900,0.035,2500,375,3,5,2,0,1972,1974,2
-"Airbus","Airbus A300B2",16014380,"Passenger",,"Wide Body","Medium Range","Jet",44.85,54.08,3430,847,62900,0.035,2500,345,3,5,2,0,1974,1984,17
-"Airbus","Airbus A300B4",16114380,"Passenger",,"Wide Body","Medium Range","Jet",44.85,54.08,6670,829,62900,0.035,2500,345,3,5,2,0,1978,1985,17
-"Airbus","Airbus A300-600",17711740,"Passenger",,"Wide Body","Long Range","Jet",44.85,54.08,6850,875,62000,0.034,2240,361,2,5,2,0,1983,2006,17
-"Airbus","Airbus A300C4-620",17512740,"Cargo",,"Wide Body","Long Range","Jet",44.85,54.08,6850,875,62000,0.034,2240,0,2,0,0,109,1982,2006,17
-"Airbus","Airbus A300-600F",17711740,"Cargo",,"Wide Body","Long Range","Jet",44.85,54.08,6850,875,62000,0.034,2240,0,2,0,0,116,1983,2006,17
-"Airbus","Airbus A300-600R",16312230,"Passenger",,"Wide Body","Long Range","Jet",44.85,54.08,7540,829,68150,0.034,2300,361,2,5,2,0,1988,2006,17
-"Airbus","Airbus A310-200",16344720,"Passenger",,"Narrow Body","Medium Range","Jet",43.9,46.66,6800,850,55200,0.034,2150,280,2,5,2,0,1983,2007,17
-"Airbus","Airbus A310-300",15845940,"Passenger",,"Narrow Body","Long Range","Jet",43.9,46.66,9600,850,75470,0.034,2150,280,2,5,2,0,1985,2007,17
-"Airbus","Airbus A318-100",8900950,"Passenger","Airbus A318","Narrow Body","Medium Range","Jet",34.1,31.44,5700,828,24210,0.032,1280,132,2,2,2,0,2002,2018,220
-"Airbus","Airbus A319-100",10625120,"Passenger","Airbus A319","Narrow Body","Medium Range","Jet",34.1,33.84,6700,828,24210,0.023,1480,156,2,3,2,0,1994,2013,220
-"Airbus","Airbus A319neo",9225120,"Passenger","Airbus A319","Narrow Body","Medium Range","Jet",34.1,33.84,7800,828,24210,0.014,1480,156,2,3,2,0,2015,2199,220
-"Airbus","Airbus A320-100",11383540,"Passenger","Airbus A320","Narrow Body","Medium Range","Jet",34.1,37.57,4800,828,24210,0.028,1610,180,2,3,2,0,1988,1989,20
-"Airbus","Airbus A320-200",11530190,"Passenger","Airbus A320","Narrow Body","Medium Range","Jet",34.1,37.57,5600,828,30190,0.03,1560,180,2,3,2,0,1989,2199,220
-"Airbus","Airbus A320neo",12120070,"Passenger","Airbus A320","Narrow Body","Medium Range","Jet",36.5,37.57,6900,828,30030,0.015,1895,180,2,4,2,0,2014,2199,220
-"Airbus","Airbus A321-100",13481130,"Passenger","Airbus A321","Narrow Body","Medium Range","Jet",34.1,44.51,4500,828,24050,0.024,1860,220,2,4,2,0,1994,2199,220
-"Airbus","Airbus A321-200",13620070,"Passenger","Airbus A321","Narrow Body","Medium Range","Jet",34.1,44.51,5600,828,30030,0.024,1895,220,2,4,2,0,1996,2199,220
-"Airbus","Airbus A321neo",13220070,"Passenger","Airbus A321","Narrow Body","Medium Range","Jet",34.1,44.51,6760,828,30030,0.019,2145,236,2,4,2,0,2017,2199,220
-"Airbus","Airbus A330-200",26366440,"Passenger","Airbus A330-200","Wide Body","Long Range","Jet",60.3,58.82,13430,871,139090,0.027,2490,380,2,8,3,0,1993,2018,46
-"Airbus","Airbus A330-200F",26366440,"Cargo","Airbus A330-200","Wide Body","Long Range","Jet",60.3,58.82,13430,871,139090,0.027,2490,0,2,0,0,475,1998,2018,46
-"Airbus","Airbus A330-300",29259040,"Passenger","A333","Wide Body","Long Range","Jet",60.3,63.69,10830,871,97530,0.02,2610,440,2,9,3,0,1994,2015,46
-"Airbus","Airbus A340-200",28676770,"Passenger",,"Wide Body","Long Range","Jet",60.3,59.39,15000,871,155040,0.025,3000,420,2,6,3,0,1993,2011,21
-"Airbus","Airbus A340-300",31319130,"Passenger",,"Wide Body","Long Range","Jet",60.3,63.6,13700,871,147850,0.025,3000,440,2,6,3,0,1993,2011,21
-"Airbus","Airbus A340-500",34468580,"Passenger",,"Wide Body","Long Range","Jet",63.45,67.9,16060,881,214810,0.036,3300,375,2,7,3,0,2002,2011,21
-"Airbus","Airbus A340-600",36196120,"Passenger",,"Wide Body","Long Range","Jet",63.45,75.3,14350,881,195880,0.026,3300,520,2,8,3,0,2002,2011,21
-"Airbus","Airbus A350-800",30699010,"Passenger",,"Wide Body","Long Range","Jet",64.8,60.54,15700,903,129000,0.022,2750,375,2,8,3,0,2013,2022,10
-"Airbus","Airbus A350-900",34725520,"Passenger",,"Wide Body","Long Range","Jet",64.8,66.89,15000,903,138000,0.022,2810,420,2,8,3,0,2016,2027,10
-"Airbus","Airbus A350-900R",35555720,"Passenger",,"Wide Body","Long Range","Jet",64.8,66.89,19100,903,138000,0.022,2810,420,2,8,3,0,2016,2027,10
-"Airbus","Airbus A350-1000",35270025,"Passenger",,"Wide Body","Long Range","Jet",64.8,73.88,15600,903,156000,0.018,2880,550,2,11,4,0,2017,2033,10
-"Airbus","Airbus A380-800",49678710,"Passenger",,"Wide Body","Long Range","Jet",79.75,72.73,15400,945,320000,0.024,2900,853,2,17,3,0,2007,2025,12
-"Airspeed","Ambassador",903850,"Passenger",,"Single Aisle","Short Range","Turboprop",35.05,24.99,550,260,3466,0.077,1211,60,3,0,1,0,1947,1953,9
-"Antonov","Antonov An-10",3200090,"Passenger",,"Narrow Body","Short Range","Turboprop",38,34,4075,610,17120,0.042,720,100,2,4,2,0,1960,1972,8
-"Antonov","Antonov An-24",1900000,"Passenger",,"Narrow Body","Short Range","Turboprop",29.2,23.53,2761,450,6200,0.045,650,50,2,2,2,0,1960,1979,68
-"Antonov","Antonov An-38",8553480,"Passenger",,"Single Aisle","Regional","Turboprop",22.06,15.67,1750,380,1940,0.041,600,27,2,2,1,0,2000,2008,1
-"Antonov","Antonov An-74",9770390,"Passenger",,"Narrow Body","Medium Range","Jet",31.89,28.07,4325,575,16250,0.072,2050,52,2,2,2,0,1977,2016,2
-"Antonov","Antonov An-140",1659900,"Passenger",,"Narrow Body","Regional","Turboprop",24.51,22.6,1380,460,5912,0.082,1750,52,2,2,2,0,1997,2014,2
-"Antonov","Antonov An-148 100A",2726860,"Passenger",,"Narrow Body","Short Range","Jet",28.91,29.13,2100,840,2200,0.012,1560,85,2,3,2,0,2005,2015,3
-"Antonov","Antonov An-148 100B",2878350,"Passenger",,"Narrow Body","Short Range","Jet",28.91,29.13,3500,820,3670,0.013,1800,80,2,3,2,0,2005,2013,3
-"Antonov","Antonov An-148 100E",2998710,"Passenger",,"Narrow Body","Medium Range","Jet",28.91,29.13,4400,850,4800,0.014,1885,80,2,3,2,0,2007,2016,3
-"Antonov","Antonov An-158",2985880,"Passenger",,"Narrow Body","Short Range","Jet",28.91,34.36,2500,860,4500,0.018,1900,99,2,3,2,0,2010,2016,3
-"Antonov","Antonov An-124",37512740,"Cargo",,"Wide Body","Medium Range","Jet",73.3,68.96,5200,850,82000,0.034,2520,0,6,0,0,778,1982,2199,17
-"Antonov","Antonov An-225",87512740,"Cargo",,"Wide Body","Medium Range","Jet",88.4,84,4000,850,102000,0.064,3245,0,6,0,0,1300,1988,1989,2
-"ATR","ATR 42-300",1863350,"Passenger","ATR 42","Narrow Body","Regional","Turboprop",24.57,22.67,1611,450,5625,0.073,995,48,2,1,1,0,1986,1995,14
-"ATR","ATR 42-500",1942120,"Passenger","ATR 42","Narrow Body","Regional","Turboprop",24.57,22.67,1611,515,5625,0.07,905,50,2,1,1,0,1995,2013,14
-"ATR","ATR 72-200",2490940,"Passenger","ATR 72","Narrow Body","Regional","Turboprop",27.05,27.17,1324,460,7828,0.08,1105,74,2,2,2,0,1990,2015,20
-"ATR","ATR 72-210",2637130,"Passenger","ATR 72","Narrow Body","Regional","Turboprop",27.05,27.17,1384,460,7828,0.076,1010,74,2,2,2,0,1992,2015,20
-"ATR","ATR 72-500",2784950,"Passenger","ATR 72","Narrow Body","Regional","Turboprop",27.05,27.17,1500,505,7840,0.071,990,74,2,2,2,0,1997,2015,20
-"BAC","BAC One-Eleven 200",3477440,"Passenger",,"Narrow Body","Regional","Jet",26.98,28.5,1140,882,14020,0.138,1605,89,2,2,1,0,1965,1969,9
-"BAC","BAC One-Eleven 300",3665410,"Passenger",,"Narrow Body","Regional","Jet",26.98,28.5,2300,882,29050,0.142,1620,89,2,2,1,0,1965,1969,9
-"BAC","BAC One-Eleven 400",3653000,"Passenger",,"Narrow Body","Regional","Jet",26.98,28.5,2300,882,29050,0.142,1625,89,2,2,1,0,1966,1979,9
-"BAC","BAC One-Eleven 475",3656460,"Passenger",,"Narrow Body","Regional","Jet",28.5,28.5,3000,871,38400,0.144,1500,89,2,2,1,0,1968,1982,9
-"BAC","BAC One-Eleven 500",4875890,"Passenger",,"Narrow Body","Short Range","Jet",28.5,32.61,2744,871,38400,0.118,1590,119,2,2,2,0,1967,1982,9
-"BAe","BAe 146-200",3803850,"Passenger","BAe 146","Narrow Body","Short Range","Jet",26.21,28.6,2909,801,11728,0.036,1300,112,2,2,2,0,1983,1999,17
-"BAe","Avro RJ 85",3803850,"Passenger","BAe 146","Narrow Body","Short Range","Jet",26.21,28.6,2909,801,11728,0.036,1300,112,2,2,2,0,1983,1999,17
-"BAe","BAe Jetstream 31",1722540,"Passenger",,"Single Aisle","Short Range","Turboprop",15.85,14.37,2221,433,1745,0.049,850,16,2,0,1,0,1967,1975,6
-"BAe","BAe Jetstream 41",7850300,"Passenger",,"Single Aisle","Regional","Turboprop",18.42,19.25,1433,482,1840,0.044,900,29,2,1,1,0,1992,1997,30
-"BAe","BAe ATP",8884300,"Passenger",,"Single Aisle","Regional","Turboprop",30.63,26,1480,437,2750,0.043,900,64,2,1,1,0,1988,1996,8
-"BAe","Avro RJ100 Avroliner",9084300,"Passenger",,"Single Aisle","Regional","Jet",26.34,30.99,2815,763,4050,0.041,1400,128,2,2,2,0,1987,2003,8
-"Beechcraft","Beechcraft 1900C",170940,"Passenger",,"Single Aisle","Regional","Turboprop",17.64,17.62,650,495,2520,0.02,905,19,2,0,1,0,1984,1992,35
-"Beechcraft","Beechcraft 1900D",217340,"Passenger",,"Single Aisle","Regional","Turboprop",17.64,17.62,707,530,2520,0.019,890,19,2,0,1,0,1991,2002,35
-"Beechcraft","Raytheon 1900D",267340,"Passenger",,"Single Aisle","Regional","Turboprop",17.64,17.62,707,530,2520,0.019,890,19,2,0,1,0,1991,2002,35
-"Beechcraft","Beechcraft Queen Air B80",607220,"Passenger",,"Single Aisle","Regional","Turboprop",15.32,10.82,2441,294,2056,0.047,823,9,2,0,1,0,1960,1978,27
-"Beechcraft","Beechcraft King Air B200",708220,"Passenger",,"Single Aisle","Regional","Turboprop",16.61,13.34,3338,536,2056,0.047,823,13,2,0,1,0,1972,2025,88
-"Beechcraft","Beechcraft King Air 90",475000,"Passenger",,"Single Aisle","Regional","Turboprop",15.32,10.82,2446,416,1454,0.143,533,7,1,0,1,0,1964,2199,50
-"Beechcraft","Beechcraft 99",660000,"Passenger",,"Single Aisle","Regional","Turboprop",13.98,13.58,2441,380,2056,0.066,880,15,1,0,1,0,1968,1987,25
-"Bell","Bell 412",429000,"Helicopter",,"Helicopter","Short Range","Jet",14,17.1,745,226,1249,0.077,18,13,2,0,1,0,1979,2199,25
-"Bell","Bell 212",272000,"Helicopter",,"Helicopter","Short Range","Jet",21.29,18.17,439,186,736,0.071,18,14,2,0,1,0,1968,1998,40
-"Bell","Bell 214ST",580000,"Helicopter",,"Helicopter","Short Range","Jet",15.85,15.03,858,259,1235,0.059,15,17,2,0,1,0,1979,1993,7
-"Boeing","Boeing 720 (707-020)",3800000,"Passenger",,"Narrow Body","Medium Range","Jet",39.9,41.25,4385,905,60900,0.099,2520,149,4,4,1,0,1958,1962,17
-"Boeing","Boeing 720B (707-020B)",5049500,"Passenger",,"Narrow Body","Medium Range","Jet",39.9,41.25,7200,905,83540,0.083,2005,149,4,4,1,0,1961,1967,17
-"Boeing","Boeing 707-120",4200000,"Passenger",,"Narrow Body","Medium Range","Jet",39.9,44.07,5491,930,65590,0.067,3110,179,4,4,2,0,1958,1962,48
-"Boeing","Boeing 707-120B",6039600,"Passenger",,"Narrow Body","Medium Range","Jet",39.9,44.07,7505,975,68480,0.051,2490,179,4,5,2,0,1961,1969,48
-"Boeing","Boeing 707-220",5400000,"Passenger",,"Narrow Body","Medium Range","Jet",39.9,44.07,6982,975,77608,0.062,2620,179,4,5,2,0,1959,1962,48
-"Boeing","Boeing 707-320",6000000,"Passenger",,"Narrow Body","Medium Range","Jet",44.42,46.61,6920,972,115404,0.083,3190,202,4,5,2,0,1959,1962,48
-"Boeing","Boeing 707-320B",7029700,"Passenger",,"Narrow Body","Medium Range","Jet",44.42,46.61,6920,972,90160,0.064,2885,202,4,5,2,0,1961,1979,48
-"Boeing","Boeing 707-320C",7029700,"Cargo",,"Narrow Body","Medium Range","Jet",44.42,46.61,6920,974,90290,0.064,3450,0,4,0,0,277,1963,1979,48
-"Boeing","Boeing 717-200",5847100,"Passenger","Boeing 717-200","Narrow Body","Regional","Jet",28.47,37.8,2800,825,13890,0.042,1300,117,2,2,2,0,1998,2006,19
-"Boeing","Boeing 727-100",4061900,"Passenger","Boeing 727-100","Narrow Body","Medium Range","Jet",32.9,40.6,4000,1042,29100,0.049,1460,149,3,3,2,0,1963,1972,87
-"Boeing","Boeing 727-100C",4061900,"Cargo","Boeing 727-100","Narrow Body","Medium Range","Jet",32.9,40.6,4000,1042,29100,0.049,1460,0,3,0,0,118,1963,1972,87
-"Boeing","Boeing 727-200",6382980,"Passenger","Boeing 727-200","Narrow Body","Medium Range","Jet",32.9,46.7,4500,1042,30600,0.04,1515,189,3,4,2,0,1967,1972,87
-"Boeing","Boeing 727-200 Adv.",6800000,"Passenger","Boeing 727-200","Narrow Body","Medium Range","Jet",32.9,46.7,4550,1042,39800,0.048,1470,189,3,4,2,0,1973,1984,87
-"Boeing","Boeing 737-100",6028370,"Passenger","Boeing 737-100","Narrow Body","Short Range","Jet",28.35,28.65,2850,780,17900,0.051,1275,124,2,2,2,0,1967,1971,132
-"Boeing","Boeing 737-200",6205670,"Passenger","Boeing 737-200","Narrow Body","Short Range","Jet",28.35,30.53,3500,780,18100,0.038,1280,136,2,3,2,0,1967,1975,160
-"Boeing","Boeing 737-200 Adv.",6578950,"Passenger","Boeing 737-200","Narrow Body","Medium Range","Jet",28.35,30.53,4300,780,19500,0.033,1280,136,2,3,2,0,1971,1986,160
-"Boeing","Boeing 737-200C",6578950,"Cargo","Boeing 737-200","Narrow Body","Medium Range","Jet",28.35,30.53,4300,780,19500,0.033,1280,0,2,0,0,103,1971,1986,160
-"Boeing","Boeing 737-300",6980060,"Passenger","Boeing 737-300","Narrow Body","Medium Range","Jet",28.88,33.4,4204,780,23170,0.037,1365,149,2,3,2,0,1984,1999,160
-"Boeing","Boeing 737-400",7565340,"Passenger","Boeing 737-400","Narrow Body","Medium Range","Jet",28.9,36.5,4204,780,23800,0.034,1590,168,2,3,2,0,1985,1999,160
-"Boeing","Boeing 737-400M",7982130,"Cargo",,"Narrow Body","Medium Range","Jet",28.9,36.5,4204,780,23800,0.034,1590,72,2,3,2,89,1989,1997,160
-"Boeing","Boeing 737-500",7165190,"Passenger","Boeing 737-500","Narrow Body","Medium Range","Jet",28.9,31.1,4444,780,23800,0.041,1245,132,2,3,2,0,1987,2000,160
-"Boeing","Boeing 737-600",7574290,"Passenger","Boeing 737-600","Narrow Body","Medium Range","Jet",35.7,31.2,5648,828,26020,0.035,1220,130,2,3,2,0,1995,2015,160
-"Boeing","Boeing 737-700",9036030,"Passenger","Boeing 737-700","Narrow Body","Medium Range","Jet",35.7,33.6,6230,828,26020,0.028,1545,148,2,3,2,0,1996,2016,160
-"Boeing","Boeing 737-700C",9036030,"Cargo","Boeing 737-700","Narrow Body","Medium Range","Jet",35.7,33.6,6230,828,26020,0.028,1545,0,2,0,0,108,1996,2016,160
-"Boeing","Boeing 737-800",10752690,"Passenger","Boeing 737-800","Narrow Body","Medium Range","Jet",35.7,39.5,5665,828,26020,0.024,1725,189,2,4,2,0,1996,2016,160
-"Boeing","Boeing 737-900",11550360,"Passenger","Boeing 737-900","Narrow Body","Medium Range","Jet",35.7,42.1,5100,823,26020,0.027,1780,189,2,4,2,0,2000,2020,160
-"Boeing","Boeing 737-900ER",12043630,"Passenger","Boeing 737-900","Narrow Body","Medium Range","Jet",35.7,42.1,5925,823,29660,0.023,1800,215,2,4,2,0,2005,2020,160
-"Boeing","Boeing 737 MAX 7",8736030,"Passenger","Boeing 737-700","Narrow Body","Medium Range","Jet",35.9,33.6,7038,842,26020,0.015,1545,126,2,3,2,0,2016,2199,160
-"Boeing","Boeing 737 MAX 8",10852690,"Passenger","Boeing 737-800","Narrow Body","Medium Range","Jet",35.9,39.5,6704,842,26020,0.017,1735,189,2,4,2,0,2016,2199,160
-"Boeing","Boeing 737 MAX 9",12543630,"Passenger","Boeing 737-900","Narrow Body","Medium Range","Jet",35.9,42.1,6658,842,29660,0.02,1800,215,2,4,2,0,2017,2199,160
-"Boeing","Boeing 747-100",19557820,"Passenger","Boeing 747-100","Wide Body","Long Range","Jet",59.6,70.6,9800,893,183380,0.041,3100,452,3,9,3,0,1968,1980,
-"Boeing","Boeing 747-200B",20540940,"Passenger",,"Wide Body","Long Range","Jet",59.6,70.6,12700,893,199158,0.035,3100,452,3,9,3,0,1971,1991,32
-"Boeing","Boeing 747-200F",20540940,"Cargo",,"Wide Body","Long Range","Jet",59.6,70.6,12700,893,199158,0.035,3100,0,3,0,0,694,1971,1991,32
-"Boeing","Boeing 747-300",25460120,"Passenger",,"Wide Body","Long Range","Jet",59.6,70.6,12400,893,199158,0.032,3110,496,3,10,3,0,1982,1990,32
-"Boeing","Boeing 747-400",33301500,"Passenger","Boeing 747-400","Wide Body","Long Range","Jet",64.4,70.6,13450,913,216840,0.031,2990,524,2,11,3,0,1989,2007,32
-"Boeing","Boeing 747-400D",32451500,"Passenger","Boeing 747-400","Wide Body","Long Range","Jet",59.6,70.6,2905,910,204355,0.036,1550,568,2,11,3,0,1989,1995,32
-"Boeing","Boeing 747-400F",32671040,"Cargo",,"Wide Body","Long Range","Jet",64.4,70.6,8230,908,216840,0.031,3000,0,2,0,0,779,1993,2009,32
-"Boeing","Boeing 747-400ER",36524580,"Passenger","Boeing 747-400","Wide Body","Long Range","Jet",64.4,70.6,14205,917,241140,0.032,3000,524,2,11,3,0,2000,2007,32
-"Boeing","Boeing 747-400M",33142330,"Cargo",,"Wide Body","Long Range","Jet",64.4,70.6,8230,908,216840,0.031,3000,266,2,11,3,295,1989,2002,32
-"Boeing","Boeing 747-400ERF",35117060,"Cargo",,"Wide Body","Long Range","Jet",64.4,70.6,9200,908,241140,0.032,3000,0,2,0,0,779,2001,2009,32
-"Boeing","Boeing 747-8F",44016510,"Cargo",,"Wide Body","Long Range","Jet",68.45,76.25,8130,908,227920,0.036,2790,0,2,0,0,855,2011,2025,32
-"Boeing","Boeing 747-8I",43941480,"Passenger","Boeing 747-8I","Wide Body","Long Range","Jet",68.45,76.25,14100,917,243120,0.03,2785,605,2,12,3,0,2012,2025,32
-"Boeing","Boeing 747SP",24690210,"Passenger",,"Wide Body","Long Range","Jet",59.64,56.31,12320,990,190600,0.038,2985,331,2,12,3,0,1976,1989,32
-"Boeing","Boeing 757-200",10698370,"Passenger",,"Narrow Body","Medium Range","Jet",38.05,47.32,7222,850,43490,0.026,1825,234,2,5,2,0,1983,2005,45
-"Boeing","Boeing 757-200PF",10698370,"Cargo",,"Narrow Body","Medium Range","Jet",38.05,47.32,7222,850,43490,0.026,1825,0,2,0,0,239,1983,2005,45
-"Boeing","Boeing 757-300",13166310,"Passenger",,"Narrow Body","Medium Range","Jet",38.05,54.47,6287,850,43400,0.024,2926,289,2,6,2,0,1999,2004,45
-"Boeing","Boeing 767-200",21012270,"Passenger",,"Wide Body","Medium Range","Jet",47.6,48.5,7300,851,63000,0.034,2200,255,2,5,3,0,1982,1988,32
-"Boeing","Boeing 767-200ER",20398860,"Passenger",,"Wide Body","Long Range","Jet",47.6,48.5,11825,851,91000,0.027,2743,290,2,5,3,0,1984,2014,32
-"Boeing","Boeing 767-300",32244130,"Passenger",,"Wide Body","Long Range","Jet",47.6,54.9,7900,851,63000,0.03,2410,350,2,5,3,0,1986,2000,32
-"Boeing","Boeing 767-300F",23614830,"Cargo",,"Wide Body","Long Range","Jet",47.6,54.9,7900,851,63000,0.03,2410,0,2,0,0,438,1995,2015,32
-"Boeing","Boeing 767-300ER",23292470,"Passenger",,"Wide Body","Long Range","Jet",47.6,54.9,11065,851,91000,0.031,2530,350,2,5,3,0,1988,2014,32
-"Boeing","Boeing 767-400ER",25575800,"Passenger",,"Wide Body","Long Range","Jet",51.9,61.4,10415,851,91000,0.023,2610,375,2,8,3,0,2000,2020,32
-"Boeing","Boeing 777-200",32083900,"Passenger","Boeing 777-200","Wide Body","Long Range","Jet",60.9,63.7,9700,905,117348,0.027,2500,440,2,9,3,0,1995,2003,54
-"Boeing","Boeing 777-200ER",32958320,"Passenger","Boeing 777-200","Wide Body","Long Range","Jet",64.8,63.7,14310,905,171176,0.027,2600,440,2,9,3,0,1997,2015,54
-"Boeing","Boeing 777-200LR",37092510,"Passenger","Boeing 777-200","Wide Body","Long Range","Jet",64.8,63.7,17370,905,181283,0.024,2970,440,2,9,3,0,2006,2015,54
-"Boeing","Boeing 777F",38918140,"Cargo","Boeing 777-200","Wide Body","Long Range","Jet",64.8,63.7,9070,905,181283,0.028,2830,0,2,0,0,653,2009,2020,54
-"Boeing","Boeing 777-300",38587250,"Passenger","Boeing 777-300","Wide Body","Long Range","Jet",60.9,73.9,11120,905,171176,0.028,2750,550,2,11,3,0,1998,2010,54
-"Boeing","Boeing 777-300ER",40112820,"Passenger","Boeing 777-300","Wide Body","Long Range","Jet",64.8,73.9,14690,905,181283,0.022,2780,550,2,11,3,0,2004,2015,54
-"Boeing","Boeing 777-8X",44112820,"Passenger","Boeing 777-300","Wide Body","Long Range","Jet",64.8,69.5,17224,905,181283,0.02,2780,500,2,11,3,0,2017,2199,54
-"Boeing","Boeing 777-9X",56112820,"Passenger","Boeing 777-300","Wide Body","Long Range","Jet",64.8,76.5,15186,905,181283,0.02,2780,600,2,11,3,0,2017,2199,54
-"Boeing","Boeing 787-8",26322720,"Passenger","Boeing 787-8","Wide Body","Long Range","Jet",60,56.7,14500,913,126920,0.032,2260,264,2,5,3,0,2011,2026,12
-"Boeing","Boeing 787-9",29937320,"Passenger",,"Wide Body","Long Range","Jet",60,62.8,15200,913,138700,0.03,2290,290,2,5,3,0,2014,2027,12
-"Boeing","Boeing 787-10",31239910,"Passenger",,"Wide Body","Long Range","Jet",60,62.8,13000,913,138700,0.03,2290,323,2,5,3,0,2016,2029,12
-"Boeing","Boeing 2707",59235700,"Passenger",,"Wide Body","Medium Range","Jet",54.97,93.27,7242,2600,166622,0.084,3000,275,3,6,2,0,1980,2005,2
-"Bombardier","Bombardier CRJ100",3417720,"Passenger",,"Narrow Body","Regional","Jet",21.21,26.77,2050,809,5300,0.052,1575,50,2,1,1,0,1992,2008,60
-"Bombardier","Bombardier CRJ200",3594970,"Passenger",,"Narrow Body","Regional","Jet",21.21,26.77,2350,809,8080,0.069,1500,50,2,1,1,0,1994,2008,60
-"Bombardier","Bombardier CRJ700",4149760,"Passenger",,"Narrow Body","Regional","Jet",23.24,32.51,2656,876,10841,0.058,1560,70,2,2,2,0,1997,2016,62
-"Bombardier","Bombardier CRJ900",4849500,"Passenger",,"Narrow Body","Regional","Jet",24.85,36.4,2500,850,10841,0.05,1870,86,2,2,2,0,2001,2007,62
-"Bombardier","Bombardier CRJ900LR",4997860,"Passenger",,"Narrow Body","Short Range","Jet",24.85,36.4,3385,881,14678,0.05,1940,86,2,2,2,0,2007,2020,62
-"Bombardier","Bombardier CRJ1000",5669000,"Passenger",,"Narrow Body","Regional","Jet",26.18,39.13,2491,850,10841,0.044,2050,100,2,2,2,0,2007,2021,62
-"Bombardier","Bombardier Dash 8-100",2136750,"Passenger",,"Narrow Body","Regional","Turboprop",25.89,22.25,1889,500,3160,0.05,800,37,2,1,1,0,1984,2005,36
-"Bombardier","Bombardier Dash 8-200",2233440,"Passenger",,"Narrow Body","Regional","Turboprop",25.89,22.25,1713,537,3160,0.05,800,37,2,1,1,0,1995,2009,36
-"Bombardier","Bombardier Dash 8-300",2912390,"Passenger",,"Narrow Body","Regional","Turboprop",27.43,25.68,1558,528,3160,0.05,1180,50,2,1,1,0,1989,2009,36
-"Bombardier","Bombardier Dash 8-400",4640770,"Passenger",,"Narrow Body","Regional","Turboprop",28.4,32.81,2522,667,6526,0.033,1400,78,2,2,1,0,2000,2019,36
-"Bombardier","Bombardier Dash 8-400NextGen",5116000,"Passenger",,"Narrow Body","Regional","Turboprop",28.4,32.81,1878,667,4860,0.011,1400,86,2,2,2,0,2013,2199,36
-"Bombardier","Bombardier Global 5000",5499040,"Passenger",,"Single Aisle","Long Range","Jet",28.65,29.5,9360,904,21850,0.123,1689,19,2,1,1,0,1996,2016,20
-"Bombardier","Bombardier CS-100",7423260,"Passenger",,"Narrow Body","Medium Range","Jet",35.1,34.9,4074,828,15775,0.035,1509,110,2,2,2,0,2013,2026,24
-"Bombardier","Bombardier CS-100ER",7954400,"Passenger",,"Narrow Body","Medium Range","Jet",35.1,34.9,5463,828,20431,0.034,1509,110,2,2,2,0,2014,2022,
-"Bombardier","Bombardier CS-300",8324370,"Passenger",,"Narrow Body","Medium Range","Jet",35.1,38,4074,828,16947,0.032,1902,130,2,2,2,0,2013,2025,24
-"Bombardier","Bombardier CS-300ER",8705000,"Passenger",,"Narrow Body","Medium Range","Jet",35.1,38,5463,828,22015,0.031,1890,130,2,2,2,0,2014,2019,24
-"Bristol","Bristol Britannia 310",1000000,"Passenger",,"Narrow Body","Long Range","Turboprop",43.36,37.88,7129,575,40232,0.041,2010,139,3,3,1,0,1958,1960,26
-"Britten","BN-2A Islander",230000,"Passenger",,"Narrow Body","Regional","Turboprop",14.94,10.86,1400,257,519,0.0588,335,9,2,0,1,0,1965,2199,26
-"Britten","BN Trislander",430000,"Passenger",,"Narrow Body","Regional","Turboprop",16.15,15.01,1609,249,746,0.111,594,17,2,0,1,0,1970,1980,7
-"Cessna","Cessna 441",441000,"Passenger",,"Narrow Body","Medium Range","Turboprop",15.04,11.89,4064,480,1800,0.1,544,10,2,0,1,0,1977,1987,36
-"Cessna","Cessna 404 Titan",370000,"Passenger",,"Narrow Body","Regional","Turboprop",14.12,12.04,3410,400,1317,0.1,545,10,2,0,1,0,1976,1982,66
-"Cessna","Cessna 402C",220000,"Passenger",,"Narrow Body","Regional","Turboprop",13.45,11.09,2360,394,806,0.097,537,9,1,0,1,0,1978,1985,52
-"Cessna","Cessna 402",144000,"Passenger",,"Narrow Body","Regional","Turboprop",13.45,11.09,1543,387,386,0.097,517,9,1,0,1,0,1966,1978,55
-"Cessna","Cessna 401",180000,"Passenger",,"Narrow Body","Regional","Turboprop",13.45,11.09,2041,387,386,0.097,517,8,1,0,1,0,1966,1972,105
-"Cessna","Cessna 206",71010,"Passenger",,"Narrow Body","Regional","Turboprop",10.97,8.61,1352,263,246,0.019,277,5,1,0,1,0,1962,2099,212
-"Cessna","Cessna 207",81010,"Passenger",,"Narrow Body","Regional","Turboprop",10.97,9.73,1137,265,231,0.125,335,8,1,0,1,0,1969,1977,78
-"Cessna","Cessna 208B",266180,"Passenger",,"Narrow Body","Regional","Turboprop",15.88,12.67,2000,317,1250,0.069,1100,9,2,0,1,0,1984,2099,212
-"Cessna","Cessna 208B Super Cargomaster",262470,"Cargo",,"Narrow Body","Regional","Turboprop",15.88,12.67,2000,317,1250,0.069,1100,0,2,0,0,7,1984,2099,212
-"Cessna","Cessna 560XL",1872200,"Passenger",,"Narrow Body","Short Range","Jet",17.17,16,3441,815,3808,0.123,1450,9,2,0,1,0,2005,2023,36
-"Cessna","Cessna 680",2544150,"Passenger",,"Narrow Body","Medium Range","Jet",19.24,19.37,5273,848,5457,0.115,1450,9,2,0,1,0,2004,2038,40
-"Cessna","Cessna Citation X",3214390,"Passenger",,"Narrow Body","Long Range","Jet",19.38,22.05,5956,972,7291,0.102,1600,12,2,0,1,0,1993,2019,36
-"Cirrus","Vision SF50",260000,"Passenger",,"Narrow Body","Short Range","Jet",11.68,9.4,1000,556,1200,0.166,600,6,1,0,1,0,2015,2199,125
-"Comac","Shanghai Y-10",3231122,"Passenger",,"Narrow Body","Long Range","Jet",42.24,42.93,8230,639,216840,0.093,2000,178,5,2,2,0,1980,1984,13
-"Comac","Comac C919",12375000,"Passenger",,"Narrow Body","Short Range","Jet",38.9,35.8,4075,834,16160,0.024,1700,168,2,3,2,0,2016,2199,17
-"Comac","Comac C929",2155000,"Passenger",,"Wide Body","Long Range","Jet",55.6,53.5,9500,950,95000,0.034,2290,290,2,5,3,0,2018,2199,17
-"Comac","Comac C939",32455000,"Passenger",,"Wide Body","Long Range","Jet",65.5,63.5,11750,895,150000,0.032,2600,390,2,8,3,0,2020,2199,17
-"Convair","Convair 880",4000000,"Passenger",,"Narrow Body","Medium Range","Jet",36.58,39.42,4430,990,40443,0.083,2805,110,3,3,2,0,1959,1962,21
-"Convair","Convair 990",6138610,"Passenger",,"Narrow Body","Medium Range","Jet",36.6,42.5,5400,920,57231,0.088,3000,149,4,3,2,0,1961,1963,18
-"Convair","Convair 990A",5392150,"Passenger",,"Narrow Body","Medium Range","Jet",36.6,42.5,6900,1015,59336,0.071,2260,149,4,3,2,0,1962,1963,18
-"Convair","Convair 240",1500000,"Passenger",,"Narrow Body","Short Range","Turboprop",27.97,22.76,1931,451,3785,0.023,842,44,2,1,2,0,1947,1954,169
-"Convair","Convair 440",1775000,"Passenger",,"Narrow Body","Short Range","Turboprop",27.97,22.76,1931,451,5867,0.019,1425,52,2,1,2,0,1947,1954,15
-"Dassault","Dassault Falcon 10",7993730,"Passenger",,"Single Aisle","Medium Range","Jet",13.08,13.86,3560,912,3420,0.019,1567,8,2,1,1,0,1970,1989,75
-"Dassault","Dassault Falcon 20",9910230,"Passenger",,"Single Aisle","Medium Range","Jet",16.3,17.15,3350,862,5420,0.025,1798,14,2,1,1,0,1963,1988,173
-"Dassault","Dassault Mercure",12533880,"Passenger",,"Narrow Body","Short Range","Jet",30.55,34.84,2084,926,12420,0.04,2300,162,3,4,1,0,1971,1975,12
-"DH","DH 114 Heron",75149,"Passenger",,"Narrow Body","Regional","Turboprop",21.8,14.79,1473,295,1190,0.061,1182,14,2,1,1,0,1950,1963,8
-"DH","DH 104 Dove",71440,"Passenger",,"Narrow Body","Regional","Turboprop",17.4,11.96,1415,370,979,0.065,1182,8,2,1,1,0,1946,1967,7
-"DH","DH 106 Comet 1A",343210,"Passenger",,"Narrow Body","Short Range","Jet",34.98,28.61,2850,725,1826,0.078,2182,44,2,1,1,0,1952,1971,5
-"DH","DH 106 Comet 4C",381110,"Passenger",,"Narrow Body","Long Range","Jet",34.98,35.97,6900,805,2765,0.076,2782,119,2,1,1,0,1958,1991,8
-"DH","DHC-7-100",6000000,"Passenger",,"Narrow Body","Short Range","Turboprop",28.35,24.58,1852,436,3200,0.02343,366,54,2,1,1,0,1975,1988,9
-"DH","DHC-3 Otter",500000,"Passenger",,"Narrow Body","Medium Range","Turboprop",17.69,12.8,1520,195,810,0.1,352,10,1,0,1,0,1951,1967,29
-"DH","DHC-6-100 Twin Otter",925000,"Passenger",,"Narrow Body","Short Range","Turboprop",19.8,15.77,1427,278,1447,0.053,350,19,2,0,1,0,1965,1988,9
-"DH","DHC-6-300 Twin Otter",980000,"Passenger",,"Narrow Body","Short Range","Turboprop",19.8,15.77,1434,278,1421,0.05,350,20,2,0,1,0,1965,1988,9
-"Dornier","Dornier 228-212",306750,"Passenger",,"Single Aisle","Regional","Turboprop",16.97,16.56,1111,315,2390,0.113,490,19,2,0,1,0,1982,1998,16
-"Dornier","Dornier 328-110",869380,"Passenger",,"Narrow Body","Regional","Turboprop",20.98,21.11,1850,620,4290,0.077,600,30,2,1,1,0,1991,2000,24
-"Douglas","Douglas DC-3",3100000,"Passenger",,"Narrow Body","Short Range","Turboprop",29,19.7,3400,333,3736,0.096,1800,32,2,1,1,0,1937,1942,100
-"Douglas","Douglas DC-2",1350000,"Passenger",,"Narrow Body","Short Range","Turboprop",25.9,19.1,1750,304,1900,0.071,915,14,2,0,1,0,1934,1939,40
-"Douglas","Douglas DC-6",3800000,"Passenger",,"Narrow Body","Medium Range","Turboprop",35.81,30.66,7377,501,15111,0.037,2600,56,3,2,1,0,1946,1958,58
-"Douglas","Douglas DC-6B",4200000,"Passenger",,"Narrow Body","Medium Range","Turboprop",35.81,32.18,4830,507,15111,0.058,2600,62,3,2,1,0,1946,1958,58
-"Douglas","Douglas DC-7",4500000,"Passenger",,"Narrow Body","Long Range","Turboprop",35.81,33.2,5737,578,20865,0.044,2900,82,3,2,1,0,1953,1958,66
-"Douglas","Douglas DC-7C",5100000,"Passenger",,"Narrow Body","Medium Range","Turboprop",38.86,34.21,6114,578,22340,0.035,2900,105,3,4,2,0,1954,1958,66
-"Douglas","Douglas DC-8-10",4600000,"Passenger",,"Narrow Body","Long Range","Jet",43.41,45.87,5800,893,74518,0.073,3028,176,3,4,2,0,1959,1965,38
-"Douglas","Douglas DC-8-20",5100000,"Passenger",,"Narrow Body","Long Range","Jet",43.41,45.87,6870,946,66243,0.068,2800,176,3,4,2,0,1959,1965,38
-"Douglas","Douglas DC-8-32",5800000,"Passenger",,"Narrow Body","Long Range","Jet",43.41,45.87,10103,946,120912,0.068,3290,176,3,4,2,0,1960,1970,38
-"Douglas","Douglas DC-8-40",5940590,"Passenger",,"Narrow Body","Long Range","Jet",43.41,45.87,10603,952,102637,0.055,2970,176,3,4,2,0,1961,1965,38
-"Douglas","Douglas DC-8-51",7524750,"Passenger",,"Narrow Body","Medium Range","Jet",43.41,45.87,8171,946,100000,0.068,3000,179,3,4,2,0,1961,1970,38
-"Douglas","Douglas DC-8-54CF",7647060,"Passenger",,"Narrow Body","Long Range","Jet",43.41,45.87,12139,954,143000,0.062,2950,189,3,5,2,0,1962,1975,38
-"Douglas","Douglas DC-8-61",8219180,"Passenger",,"Narrow Body","Long Range","Jet",43.41,57.1,9408,935,127000,0.05,3200,269,3,6,3,0,1966,1978,38
-"Douglas","Douglas DC-8-62F",8219180,"Cargo",,"Narrow Body","Medium Range","Jet",43.3,48,5250,935,91825,0.057,2950,0,3,0,0,220,1966,1978,38
-"Douglas","Douglas DC-8-63",7488580,"Passenger",,"Narrow Body","Long Range","Jet",45.24,57.1,11278,959,146000,0.048,3150,269,3,6,3,0,1966,1978,38
-"Douglas","Douglas DC-9-10",3835620,"Passenger","Douglas DC-9","Narrow Body","Short Range","Jet",27.25,31.82,2340,903,10800,0.051,1670,90,2,2,1,0,1966,1974,
-"Douglas","Douglas DC-9-15",4166670,"Passenger","Douglas DC-9","Narrow Body","Short Range","Jet",27.25,31.82,2840,903,12500,0.049,1520,90,2,2,1,0,1967,1980,54
-"Douglas","Douglas DC-9-30",4875890,"Passenger",,"Narrow Body","Short Range","Jet",28.47,36.37,3030,917,15000,0.043,1390,115,2,2,1,0,1967,1982,54
-"Douglas","Douglas DC-4-1009",3500000,"Passenger",,"Narrow Body","Medium Range","Turboprop",35.8,28.6,6839,365,7949,0.097,2000,86,2,2,2,0,1945,1947,40
-"Embraer","EMB 110 Bandeirante",333330,"Passenger",,"Single Aisle","Short Range","Turboprop",15.33,15.1,1964,341,2100,0.059,710,18,2,1,1,0,1973,1990,23
-"Embraer","EMB 120 Brasilia",594350,"Passenger","Embraer EMB 120","Single Aisle","Short Range","Turboprop",19.78,20,1750,552,2200,0.059,900,30,2,1,1,0,1983,2001,20
-"Embraer","Embraer ERJ135 ER",2864650,"Passenger","Embraer ERJ135","Narrow Body","Short Range","Jet",20.04,26.33,2409,828,3833,0.043,1190,37,2,1,1,0,1989,2019,37
-"Embraer","Embraer ERJ140 ER",2842930,"Passenger",,"Narrow Body","Short Range","Jet",20.04,28.45,2317,828,3670,0.036,1190,44,2,1,1,0,1999,2019,37
-"Embraer","Embraer ERJ145 LR",3107400,"Passenger","Embraer ERJ145","Narrow Body","Short Range","Jet",20.04,29.87,2873,851,4310,0.03,1210,50,2,1,1,0,1995,2019,37
-"Embraer","Embraer E-170",4689040,"Passenger",,"Narrow Body","Short Range","Jet",26,29.9,3334,890,6760,0.026,1241,80,2,2,2,0,2002,2019,77
-"Embraer","Embraer E-175",5264890,"Passenger",,"Narrow Body","Short Range","Jet",26,31.68,3334,890,6760,0.023,1261,88,2,2,2,0,2002,2019,77
-"Embraer","Embraer E-190",7120130,"Passenger",,"Narrow Body","Short Range","Jet",28.72,36.24,3334,890,9000,0.024,1244,114,2,3,2,0,2005,2019,77
-"Embraer","Embraer E-195",7120130,"Passenger",,"Narrow Body","Short Range","Jet",28.72,38.54,2593,890,9000,0.028,1275,122,2,3,2,0,2005,2019,77
-"Fairchild","Fairchild Swearingen Merlin",253140,"Passenger",,"Single Aisle","Regional","Turboprop",14.1,12.85,3591,556,1550,0.03,620,19,2,0,1,0,1965,1998,30
-"Fairchild","Fairchild Swearingen Merlin IV C",330140,"Passenger",,"Single Aisle","Regional","Turboprop",17.37,18.09,1065,515,1150,0.05,650,19,2,0,1,0,1968,2001,18
-"Fairchild","Fairchild Swearingen Metroliner",340140,"Passenger",,"Single Aisle","Regional","Turboprop",17.37,18.09,1065,515,1150,0.05,650,19,2,0,1,0,1968,2001,18
-"Fairchild","Fairchild-Dornier 328JET",1954510,"Passenger",,"Narrow Body","Short Range","Jet",20.98,21.28,3705,750,8040,0.064,1130,34,2,1,1,0,1999,2015,18
-"Fokker","Fokker F27",950000,"Passenger",,"Narrow Body","Regional","Turboprop",29,25.06,1826,518,4560,0.052,1020,48,2,1,1,0,1955,1975,18
-"Fokker","Fokker F28-1000",5214000,"Passenger",,"Narrow Body","Short Range","Jet",23.57,27.41,2000,849,8390,0.065,1744,65,2,2,2,0,1967,1980,12
-"Fokker","Fokker F28-2000",3723810,"Passenger",,"Narrow Body","Short Range","Jet",23.57,29.62,2743,843,13435,0.061,2000,79,2,3,2,0,1968,1982,12
-"Fokker","Fokker F28-3000",3611270,"Passenger",,"Narrow Body","Short Range","Jet",25.07,29.61,1900,843,8390,0.068,1744,65,2,2,2,0,1968,1984,12
-"Fokker","Fokker F28-4000",2911700,"Passenger",,"Narrow Body","Short Range","Jet",25.07,29.62,1790,843,9200,0.06,2000,85,2,3,2,0,1970,1987,12
-"Fokker","Fokker F28-6000",3488360,"Passenger",,"Narrow Body","Short Range","Jet",25.07,29.62,1900,843,9000,0.06,2000,79,2,3,2,0,1971,1987,12
-"Fokker","Fokker 50",2371030,"Passenger",,"Narrow Body","Short Range","Turboprop",29,25.25,2055,453,3700,0.031,890,58,2,1,1,0,1987,1997,20
-"Fokker","Fokker 70",3395240,"Passenger",,"Narrow Body","Short Range","Jet",28.08,30.91,2010,835,12743,0.08,1110,79,2,2,1,0,1994,1997,10
-"Fokker","Fokker 100",4978730,"Passenger",,"Narrow Body","Short Range","Jet",28.08,35.53,2450,845,13365,0.051,1520,107,2,2,2,0,1988,1997,24
-"GippsAero","GA8 Airvan",251000,"Passenger",,"Narrow Body","Regional","Turboprop",12.28,8.95,1352,222,340,0.166,488,7,1,0,1,0,2000,2199,17
-"Gulfstream","Gulfstream G650ER",8735000,"Passenger",,"Narrow Body","Long Range","Jet",30.36,30.41,13890,904,21863,0.055,1920,18,2,0,1,0,2014,2199,3
-"Gulfstream","Gulfstream G650",8150000,"Passenger",,"Narrow Body","Long Range","Jet",30.36,30.41,12960,904,20049,0.055,1786,18,2,0,1,0,2012,2199,7
-"Gulfstream","Gulfstream G550",7000000,"Passenger",,"Narrow Body","Long Range","Jet",28.5,29.39,12501,904,18733,0.055,1800,18,2,0,1,0,2003,2199,18
-"Gulfstream","Gulfstream G500",5526000,"Passenger",,"Narrow Body","Long Range","Jet",28.5,29.39,10700,904,16034,0.055,1570,18,2,0,1,0,2003,2199,10
-"Gulfstream","Gulfstream G450",5033000,"Passenger",,"Narrow Body","Medium Range","Jet",23.72,27.23,8056,850,13381,0.0625,1707,16,2,0,1,0,2004,2199,7
-"Gulfstream","Gulfstream G350",4400000,"Passenger",,"Narrow Body","Medium Range","Jet",23.72,27.23,7040,850,11693,0.0625,1587,16,2,0,1,0,2002,2013,7
-"Gulfstream","Gulfstream G280",2725000,"Passenger",,"Narrow Body","Medium Range","Jet",19.2,20.37,6667,850,6622,0.1,1448,10,2,0,1,0,2010,2199,10
-"Gulfstream","Gulfstream G200",2575000,"Passenger",,"Narrow Body","Medium Range","Jet",17.7,18.97,6300,850,6257,0.1,1390,10,2,0,1,0,1997,2011,18
-"Gulfstream","Gulfstream G150",2575000,"Passenger",,"Narrow Body","Medium Range","Jet",16.94,17.3,5556,800,4672,0.1,1390,8,2,0,1,0,2005,2199,15
-"Gulfstream","Gulfstream V",4533000,"Passenger",,"Narrow Body","Long Range","Jet",28.5,29.4,10742,904,10270,0.0625,1580,16,2,0,1,0,1998,2003,38
-"Gulfstream","Gulfstream IV",3300000,"Passenger",,"Narrow Body","Medium Range","Jet",23.7,26.9,7820,850,7477,0.0625,1650,16,2,0,1,0,1987,1998,45
-"Gulfstream","Gulfstream III",2850000,"Passenger",,"Narrow Body","Short Range","Jet",23.72,25.32,6760,818,3825,0.053,1650,19,2,0,1,0,1979,1986,30
-"Grumman","Gulfstream II",2350000,"Passenger",,"Narrow Body","Short Range","Jet",20.98,24.36,6635,778,3750,0.0714,1650,14,2,0,1,0,1967,1978,24
-"Grumman","Gulfstream I",2350000,"Passenger",,"Narrow Body","Short Range","Turboprop",23.93,19.43,4088,560,3750,0.0714,1650,24,2,1,1,0,1958,1966,25
-"HP","Dart Herald",1200000,"Passenger",,"Narrow Body","Regional","Turboprop",28.9,23.01,2632,435,7000,0.018,1300,56,2,1,1,0,1959,1968,6
-"Harbin","Harbin Y-12 II",1290000,"Passenger",,"Narrow Body","Short Range","Turboprop",17.24,18.86,1340,250,955,0.059,610,17,2,0,1,0,1985,1995,100
-"Harbin","Harbin Y-12 IV",1445000,"Passenger",,"Narrow Body","Short Range","Turboprop",17.24,18.86,1340,250,955,0.053,610,19,2,0,1,0,1995,2199,100
-"Hawker","HS.748",2724300,"Passenger",,"Single Aisle","Regional","Turboprop",31.23,20.42,1715,452,2900,0.053,900,58,2,1,1,0,1988,1996,8
-"Hawker","BEA Trident 2E",3771440,"Passenger",,"Narrow Body","Medium Range","Jet",28.9,35,4345,950,20559,0.041,2277,115,2,3,2,0,1964,1978,10
-"Hawker","BEA Trident 3B",5021440,"Passenger",,"Narrow Body","Medium Range","Jet",40,35,3597,890,23570,0.037,2315,180,2,4,2,0,1969,1976,10
-"IAe","C212 Aviocar",703850,"Passenger",,"Single Aisle","Short Range","Turboprop",20.28,16.2,1811,370,1728,0.045,770,26,2,0,1,0,1971,2199,50
-"IAe","N250-50",803850,"Passenger",,"Narrow Body","Regional","Turboprop",28,26.3,1480,556,2728,0.065,982,50,2,0,1,0,1995,2199,10
-"IAe","N250-100",908620,"Passenger",,"Narrow Body","Regional","Turboprop",28,26.3,1480,556,2728,0.065,982,70,2,0,1,0,1995,2199,10
-"IAe","N219",2736730,"Passenger",,"Single Aisle","Short Range","Turboprop",20.28,16.2,1111,395,1728,0.035,465,19,2,0,1,0,2014,2199,50
-"Ilyushin","Il-18V",1700000,"Passenger",,"Narrow Body","Medium Range","Turboprop",37.4,35.9,4270,600,30000,0.091,3280,100,3,2,1,0,1959,1965,30
-"Ilyushin","Il-18D",1800000,"Passenger",,"Narrow Body","Medium Range","Turboprop",37.4,35.9,5300,625,30000,0.063,3280,90,3,2,1,0,1965,1978,30
-"Ilyushin","Il-18E",1800000,"Passenger",,"Narrow Body","Medium Range","Turboprop",37.4,35.9,4400,625,30000,0.056,3280,120,3,2,1,0,1965,1978,30
-"Ilyushin","Il-62",4500000,"Passenger",,"Narrow Body","Long Range","Jet",43.2,53.12,6700,850,105300,0.084,3280,186,5,5,2,0,1966,1973,30
-"Ilyushin","Il-62M",25000000,"Passenger",,"Narrow Body","Long Range","Jet",43.2,53.12,10000,900,110000,0.081,3280,174,5,5,2,0,1973,2004,30
-"Ilyushin","Il-76",25572740,"Cargo",,"Wide Body","Medium Range","Jet",50.5,46.59,4300,900,80200,0.044,2470,0,5,0,0,577,1971,2199,17
-"Ilyushin","Il-76TD",26572740,"Cargo",,"Wide Body","Medium Range","Jet",50.5,46.59,5600,900,80200,0.044,2470,0,5,0,0,577,1974,2199,17
-"Ilyushin","Il-86",3322540,"Passenger",,"Wide Body","Long Range","Jet",48.06,60.21,5000,875,32750,0.049,2450,350,3,11,3,0,1980,2011,54
-"Ilyushin","Il-96-300",3103600,"Passenger",,"Wide Body","Long Range","Jet",60.11,55.3,13500,875,40332,0.039,2340,300,3,11,3,0,1992,2199,10
-"Ilyushin","Il-114",17244510,"Passenger",,"Single Aisle","Regional","Turboprop",30,26.87,1400,500,8220,0.039,879,64,2,1,3,0,1992,2011,5
-"Irkut","MC-21-200",8050000,"Passenger",,"Narrow Body","Medium Range","Jet",35.9,35.9,5000,850,18000,0.024,2000,150,2,3,2,0,2017,2199,15
-"Irkut","MC-21-300",9050000,"Passenger",,"Narrow Body","Medium Range","Jet",35.9,41.5,5500,850,19000,0.02,2400,180,2,4,2,0,2017,2199,15
-"Irkut","MC-21-400",10050000,"Passenger",,"Narrow Body","Medium Range","Jet",36.8,46.7,5500,850,21000,0.018,2500,210,2,4,2,0,2017,2199,15
-"Let","Let L-610",8450370,"Passenger",,"Single Aisle","Short Range","Turboprop",25.6,21.72,2420,438,4840,0.05,900,50,2,2,2,0,1988,1999,2
-"Let","Let L-410",1788400,"Passenger",,"Single Aisle","Regional","Turboprop",20,14.4,1040,310,1090,0.055,830,19,2,1,1,0,1988,1999,28
-"Lockheed","Lockeed L-1011-1",16628530,"Passenger",,"Wide Body","Medium Range","Jet",47.35,54.15,7420,963,97944,0.033,2690,400,3,8,3,0,1970,1983,16
-"Lockheed","Lockeed L-1011-200",22333330,"Passenger",,"Wide Body","Medium Range","Jet",47.35,54.15,9140,954,120648,0.033,2600,400,3,8,3,0,1973,1983,16
-"Lockheed","Lockeed L-1011-500",18548720,"Passenger","Lockeed L-1011-500","Wide Body","Long Range","Jet",50.09,50.04,10200,972,109242,0.034,2600,315,3,7,3,0,1979,1983,16
-"Lockheed","Lockeed L-188A",2000000,"Passenger",,"Narrow Body","Short Range","Turboprop",30.81,31.85,3450,721,23000,0.068,1330,98,3,2,1,0,1959,1961,42
-"Lockheed","Lockheed L?100?30",17512740,"Cargo",,"Wide Body","Short Range","Turboprop",40.4,34.35,2470,570,35132,0.067,1650,0,2,0,0,23,1964,1992,17
-"Lockheed","L-2000",56975180,"Passenger",,"Narrow Body","Medium Range","Jet",35.36,83.26,7500,2814,155250,0.083,3000,250,3,5,2,0,1978,2005,3
-"MBB","BK 117",330000,"Helicopter",,"Helicopter","Short Range","Jet",11,9.91,541,218,697,0.1,10,10,1,0,1,0,1979,2004,15
-"MD","MD-11",14761070,"Passenger",,"Wide Body","Long Range","Jet",51.66,58.65,12670,945,146170,0.028,2745,410,2,8,3,0,1988,1998,16
-"MD","MD-11ER",12782110,"Passenger",,"Wide Body","Long Range","Jet",51.66,58.65,13410,945,146170,0.027,2755,410,2,8,3,0,1994,2000,16
-"MD","MD-11F",15933030,"Cargo",,"Wide Body","Long Range","Jet",51.66,58.65,7320,945,146170,0.026,2745,0,2,0,0,610,1986,2000,
-"MD","MD DC-8-71",3972650,"Passenger",,"Narrow Body","Long Range","Jet",43.41,57.1,10050,854,89500,0.033,2790,269,3,6,3,0,1981,1990,38
-"MD","MD DC-8-73",4938650,"Passenger",,"Narrow Body","Long Range","Jet",45.24,57.1,12278,959,103000,0.031,2810,269,3,6,3,0,1982,1991,38
-"MD","MD DC-9-20",4251700,"Passenger","Douglas DC-9","Narrow Body","Short Range","Jet",28.47,31.82,3430,896,15000,0.049,1290,90,2,2,1,0,1968,1981,54
-"MD","MD DC-9-40",6462590,"Passenger",,"Narrow Body","Short Range","Jet",28.47,38.28,3120,917,15000,0.038,1510,125,2,3,1,0,1968,1981,54
-"MD","MD DC-9-50",4400440,"Passenger",,"Narrow Body","Short Range","Jet",28.47,40.72,3030,898,15000,0.037,1540,135,2,3,2,0,1975,1982,54
-"MD","MD-81 (DC-9-81)",5633340,"Passenger","MD MD-80 Series","Narrow Body","Short Range","Jet",32.82,45.01,2910,811,15000,0.03,1615,172,2,3,2,0,1981,1992,60
-"MD","MD-82 (DC-9-82)",5674850,"Passenger","MD MD-80 Series","Narrow Body","Medium Range","Jet",32.82,45.01,3800,811,22000,0.034,1500,172,2,3,2,0,1982,1997,60
-"MD","MD-83 (DC-9-83)",5676080,"Passenger","MD MD-80 Series","Narrow Body","Medium Range","Jet",32.82,45.01,4600,811,22000,0.028,1470,172,2,3,2,0,1983,1999,60
-"MD","MD-87 (DC-9-87)",7425740,"Passenger","MD MD-87","Narrow Body","Medium Range","Jet",32.82,39.73,4390,811,22000,0.036,1365,139,2,3,2,0,1987,1993,60
-"MD","MD-88 (DC-9-88)",8181140,"Passenger","MD MD-80 Series","Narrow Body","Medium Range","Jet",32.82,45.01,3800,811,22000,0.034,1435,172,2,3,2,0,1988,1997,60
-"MD","MD-90-30",8288400,"Passenger","MD MD-90","Narrow Body","Medium Range","Jet",32.87,46.5,3860,811,17000,0.026,1480,172,2,3,2,0,1994,2000,16
-"MD","MD DC-10-10",15643270,"Passenger",,"Wide Body","Medium Range","Jet",47.34,51.97,6114,908,88000,0.036,3000,399,3,8,2,0,1971,1981,20
-"MD","MD DC-10-10F",15643270,"Cargo",,"Wide Body","Medium Range","Jet",47.34,51.97,6114,908,88000,0.036,3000,0,3,0,0,402,1974,1981,20
-"MD","MD DC-10-15",9172440,"Passenger",,"Wide Body","Medium Range","Jet",47.34,51.97,7000,908,100000,0.036,3080,399,3,8,2,0,1979,1983,20
-"MD","MD DC-10-30",16855520,"Passenger","MD DC-10-30","Wide Body","Medium Range","Jet",50.4,51.97,10620,908,150000,0.035,2735,399,3,8,2,0,1972,1988,20
-"MD","MD DC-10-30F",16855520,"Cargo","MD DC-10-30","Wide Body","Medium Range","Jet",50.4,51.97,10620,908,150000,0.035,2735,0,3,0,0,402,1972,1988,20
-"MD","MD DC-10-40",16000000,"Passenger","MD DC-10-30","Wide Body","Medium Range","Jet",50.4,51.97,9252,908,136000,0.037,2697,399,3,8,2,0,1973,1985,20
-"Mil","Mi-8P",1760000,"Helicopter",,"Helicopter","Short Range","Jet",21.29,18.17,465,225,3720,0.031,18,32,3,0,1,0,1967,2199,18
-"Mil","Mi-8P ER",2245000,"Helicopter",,"Helicopter","Short Range","Jet",21.29,18.17,950,225,7440,0.031,18,32,3,0,1,0,1967,2199,3
-"Mil","Mi-26P",3465000,"Helicopter",,"Helicopter","Short Range","Jet",32,40.03,800,255,11600,0.016,18,63,5,1,1,0,1983,2199,2
-"Piaggio","P180 Avanti",1994000,"Passenger",,"Single Aisle","Regional","Turboprop",14.03,14.41,2795,660,1271,0.111,869,9,1,0,1,0,1990,2199,10
-"Pilatus","Pilatus PC-6 Turbo-Porter",214500,"Passenger",,"Narrow Body","Regional","Turboprop",15.87,11,1612,215,886,0.1,195,10,1,0,1,0,1961,2199,11
-"Pilatus","Pilatus PC-12",373000,"Passenger",,"Narrow Body","Regional","Turboprop",16.23,14.4,2804,500,1143,0.111,450,9,2,0,1,0,1994,2199,65
-"Pilatus","Pilatus PC-24",1185000,"Passenger",,"Narrow Body","Regional","Jet",17,16.8,3610,750,3363,0.1,450,10,2,0,1,0,2017,2199,43
-"Piper","PA-31 Navajo",250000,"Passenger",,"Narrow Body","Regional","Turboprop",12.4,9.94,1875,383,568,0.143,283,7,2,0,1,0,1967,1984,232
-"Piper","PA-31T Cheyenne",365000,"Passenger",,"Narrow Body","Regional","Turboprop",13.01,10.57,2739,393,1446,0.166,430,6,2,0,1,0,1994,2199,18
-"Piper","PA-42 Cheyenne",561000,"Passenger",,"Narrow Body","Medium Range","Turboprop",14.53,13.23,4207,523,14456,0.111,447,9,2,0,1,0,1979,2199,6
-"Piper","PA-46 Malibu",384000,"Passenger",,"Narrow Body","Regional","Turboprop",13.11,8.65,2880,363,454,0.2,447,5,1,0,1,0,1979,2199,10
-"Piper Aircraft","PA-32 Cherokee Six",181000,"Passenger",,"Narrow Body","Regional","Turboprop",10,8.4,1361,272,190,0.166,320,6,1,0,1,0,1965,2007,187
-"Piper Aircraft","PA-34 Seneca",215000,"Passenger",,"Narrow Body","Regional","Turboprop",11.86,8.72,1611,348,353,0.166,280,6,1,0,1,0,1971,2199,114
-"Piper Aircraft","PA-60 Aerostar",220000,"Passenger",,"Narrow Body","Regional","Turboprop",11.18,10.61,1648,390,625,0.2,594,5,1,0,1,0,1967,1984,60
-"Saab","Saab 90A Scandia",1393730,"Passenger",,"Narrow Body","Regional","Turboprop",28,21.3,2650,340,9720,0.09,1200,32,2,1,1,0,1946,1954,2
-"Saab","Saab 340B",2193730,"Passenger",,"Narrow Body","Regional","Turboprop",21.44,19.73,1732,467,3220,0.05,1000,37,2,1,1,0,1984,1998,28
-"Saab","Saab 2000",9192130,"Passenger",,"Narrow Body","Regional","Turboprop",24.76,27.28,2563,665,4550,0.05,1567,58,2,1,1,0,1992,1999,28
-"Short","Short 360",2145000,"Passenger",,"Narrow Body","Regional","Turboprop",22.8,21.58,1178,400,1742,0.026,1189,39,2,1,1,0,1981,1991,17
-"Short","Short 330",1650000,"Passenger",,"Narrow Body","Regional","Turboprop",22.76,17.69,1695,352,2551,0.033,1189,30,2,1,1,0,1974,1992,7
-"Short","Short SC.7 Skyvan",1045000,"Passenger",,"Narrow Body","Short Range","Turboprop",19.78,12.21,1117,317,796,0.053,610,19,2,1,1,0,1963,1986,7
-"Short","Short Belfast",1205000,"Cargo",,"Narrow Body","Medium Range","Turboprop",48.4,41.58,4300,541,54553,0.029,2500,0,4,0,0,35,1964,1968,3
-"Sikorsky","Sikorsky S-92",4123124,"Helicopter",,"Helicopter","Short Range","Jet",17.17,17.1,999,280,1850,0.132,18,19,2,0,1,0,1998,2028,22
-"Sikorsky","Sikorsky S-76",1722102,"Helicopter",,"Helicopter","Short Range","Jet",12.75,16,761,287,1064,0.136,14,12,2,0,1,0,1977,2018,20
-"Sud Aviation","Sud Aviation Caravelle I",2200000,"Passenger",,"Narrow Body","Short Range","Jet",34.3,31.01,1700,805,7500,0.055,2000,80,3,2,2,0,1959,1967,14
-"Sud Aviation","Sud Aviation Caravelle 10B",2500000,"Passenger",,"Narrow Body","Short Range","Jet",34.3,33.01,1700,805,7500,0.055,2000,105,3,2,2,0,1964,1967,6
-"Sukhoi","Sukhoi 100-75",4606480,"Passenger",,"Narrow Body","Short Range","Jet",27.8,26.44,2900,828,13135,0.058,1515,78,2,3,2,0,2011,2020,12
-"Sukhoi","Sukhoi 100-75LR",5016620,"Passenger",,"Narrow Body","Medium Range","Jet",27.8,26.44,4550,828,13135,0.037,1515,78,2,3,2,0,2012,2018,12
-"Sukhoi","Sukhoi 100-95",5097500,"Passenger",,"Narrow Body","Short Range","Jet",27.8,29.94,3048,828,13135,0.044,1731,98,2,4,2,0,2011,2019,12
-"Sukhoi","Sukhoi 100-95LR",5600550,"Passenger",,"Narrow Body","Medium Range","Jet",27.8,29.94,4578,828,13135,0.029,2052,98,2,4,2,0,2013,2018,12
-"Tupolev","Tupolev Tu-124",1600000,"Passenger",,"Narrow Body","Medium Range","Jet",25.55,30.6,2100,800,12650,0.052,2600,56,3,2,2,0,1960,1965,38
-"Tupolev","Tupolev Tu-134",1800000,"Passenger",,"Narrow Body","Medium Range","Jet",29,35,2000,800,12650,0.052,2600,70,4,3,2,0,1966,1970,38
-"Tupolev","Tupolev Tu-134A",1917810,"Passenger",,"Narrow Body","Medium Range","Jet",29,37.1,2100,850,13200,0.045,2600,76,4,3,2,0,1970,1980,38
-"Tupolev","Tupolev Tu-134B",2200000,"Passenger",,"Narrow Body","Medium Range","Jet",29,37.1,2020,880,14400,0.045,2600,80,3,3,2,0,1970,1980,38
-"Tupolev","Tupolev Tu-144",34075530,"Passenger",,"Single Aisle","Medium Range","Jet",28.8,65.5,6200,2255,105000,0.121,2800,140,2,4,2,0,1975,1984,3
-"Tupolev","Tupolev Tu-154",2974500,"Passenger",,"Narrow Body","Medium Range","Jet",37.55,47.9,2500,900,43000,0.044,2500,164,3,4,2,0,1972,1975,24
-"Tupolev","Tupolev Tu-154B",3100000,"Passenger",,"Narrow Body","Medium Range","Jet",37.55,47.9,2800,900,47000,0.044,2500,172,3,4,2,0,1975,1986,24
-"Tupolev","Tupolev Tu-154M",3500000,"Passenger",,"Narrow Body","Medium Range","Jet",37.55,47.9,3900,900,49700,0.031,2500,172,3,4,2,0,1984,2013,24
-"Tupolev","Tupolev Tu-204-100",9545800,"Passenger",,"Narrow Body","Medium Range","Jet",41.8,46.14,4400,810,30812,0.033,2150,214,3,5,3,0,1996,2025,14
-"Tupolev","Tupolev Tu-204-120",10052000,"Passenger",,"Narrow Body","Medium Range","Jet",41.8,46.14,4500,850,30812,0.032,2150,214,3,5,3,0,1998,2025,14
-"Tupolev","Tupolev Tu-204-300",8854200,"Passenger",,"Narrow Body","Medium Range","Jet",42.2,40.19,6500,850,45000,0.041,2050,166,3,4,2,0,1997,2025,8
-"Vickers","Vickers VC10",5980390,"Passenger",,"Narrow Body","Long Range","Jet",44.55,48.36,9412,933,80000,0.056,2480,151,4,3,1,0,1962,1970,6
-"Vickers","Vickers Super VC10",6567810,"Passenger",,"Narrow Body","Long Range","Jet",44.55,52.32,11102,933,92000,0.048,2480,174,3,4,2,0,1965,1972,8
-"Vickers","Vickers Viscount 800",2770550,"Passenger",,"Narrow Body","Medium Range","Jet",28.56,26.11,2220,530,5900,0.036,2400,75,2,3,2,0,1950,1963,28
-"Viking","DHC-6-400 Twin Otter",1200000,"Passenger",,"Narrow Body","Medium Range","Turboprop",19.8,15.77,1832,278,1811,0.053,350,19,2,0,1,0,2008,2199,9
-"Yak","Yak-40",5000000,"Passenger",,"Narrow Body","Short Range","Jet",25,20.36,1800,470,4200,0.031,1400,32,3,1,1,0,1967,1981,73
-"Yak","Yak-42D",5000000,"Passenger",,"Narrow Body","Medium Range","Jet",34.88,36.38,4000,740,18500,0.08,2000,120,2,3,2,0,1987,2003,9
-"Yak","Yak-42",4000000,"Passenger",,"Narrow Body","Medium Range","Jet",34.88,36.38,2000,740,15795,0.13,1800,120,2,3,2,0,1981,1987,9
+manufacturer,name,price,type,body,rangetype,engine,wingspan,length,range,speed,fuelcapacity,consumption,runwaylengthrequired,passengers,cockpitcrew,cabincrew,maxclasses,cargo,from,to,rate
+Aerospatiale,Aerospatiale-BAC Concorde,36813010,Passenger,Single Aisle,Medium Range,Jet,25.6,61.66,7250,2158,119010,0.164,3000,120,2,4,2,0,1976,2003,1
+Aerospatiale,Aerospatiale N 262,1224500,Passenger,Single Aisle,Regional,Turboprop,21.9,19.28,1110,360,1992,0.069,1000,26,2,1,1,0,1964,1976,8
+Aerospatiale,SA365 Dauphin 2,2646870,Helicopter,Helicopter,Short Range,Jet,2.7,13.37,790,268,1135,0.131,10,11,2,0,1,0,1978,2018,24
+Aerospatiale,EC120 Colibri,1277330,Helicopter,Helicopter,Short Range,Turboprop,2.5,9.6,710,250,346,0.122,10,4,1,0,1,0,1995,2020,40
+AW,AgustaWestland AW139,1546171,Helicopter,Helicopter,Short Range,Jet,12.26,13.77,1250,306,1350,0.129,15,15,2,0,1,0,2003,2024,18
+AW,AgustaWestland AW189,1722102,Helicopter,Helicopter,Short Range,Jet,14.6,17.6,370,278,2086,0.135,18,18,2,0,1,0,2013,2030,24
+Airbus,Airbus A300B1,15915680,Passenger,Wide Body,Medium Range,Jet,44.85,54.08,3430,847,62900,0.035,2500,375,3,5,2,0,1972,1974,2
+Airbus,Airbus A300B2,16014380,Passenger,Wide Body,Medium Range,Jet,44.85,54.08,3430,847,62900,0.035,2500,345,3,5,2,0,1974,1984,17
+Airbus,Airbus A300B4,16114380,Passenger,Wide Body,Medium Range,Jet,44.85,54.08,6670,829,62900,0.035,2500,345,3,5,2,0,1978,1985,17
+Airbus,Airbus A300-600,17711740,Passenger,Wide Body,Long Range,Jet,44.85,54.08,6850,875,62000,0.034,2240,361,2,5,2,0,1983,2006,17
+Airbus,Airbus A300C4-620,17512740,Cargo,Wide Body,Long Range,Jet,44.85,54.08,6850,875,62000,0.034,2240,0,2,0,0,109,1982,2006,17
+Airbus,Airbus A300-600F,17711740,Cargo,Wide Body,Long Range,Jet,44.85,54.08,6850,875,62000,0.034,2240,0,2,0,0,116,1983,2006,17
+Airbus,Airbus A300-600R,16312230,Passenger,Wide Body,Long Range,Jet,44.85,54.08,7540,829,68150,0.034,2300,361,2,5,2,0,1988,2006,17
+Airbus,Airbus A310-200,16344720,Passenger,Narrow Body,Medium Range,Jet,43.9,46.66,6800,850,55200,0.034,2150,280,2,5,2,0,1983,2007,17
+Airbus,Airbus A310-300,15845940,Passenger,Narrow Body,Long Range,Jet,43.9,46.66,9600,850,75470,0.034,2150,280,2,5,2,0,1985,2007,17
+Airbus,Airbus A318-100,8900950,Passenger,Narrow Body,Medium Range,Jet,34.1,31.44,5700,828,24210,0.032,1280,132,2,2,2,0,2002,2018,220
+Airbus,Airbus A319-100,10625120,Passenger,Narrow Body,Medium Range,Jet,34.1,33.84,6700,828,24210,0.023,1480,156,2,3,2,0,1994,2013,220
+Airbus,Airbus A319neo,9225120,Passenger,Narrow Body,Medium Range,Jet,34.1,33.84,7800,828,24210,0.014,1480,156,2,3,2,0,2015,2199,220
+Airbus,Airbus A320-100,11383540,Passenger,Narrow Body,Medium Range,Jet,34.1,37.57,4800,828,24210,0.028,1610,180,2,3,2,0,1988,1989,20
+Airbus,Airbus A320-200,11530190,Passenger,Narrow Body,Medium Range,Jet,34.1,37.57,5600,828,30190,0.03,1560,180,2,3,2,0,1989,2199,220
+Airbus,Airbus A320neo,12120070,Passenger,Narrow Body,Medium Range,Jet,36.5,37.57,6900,828,30030,0.015,1895,180,2,4,2,0,2014,2199,220
+Airbus,Airbus A321-100,13481130,Passenger,Narrow Body,Medium Range,Jet,34.1,44.51,4500,828,24050,0.024,1860,220,2,4,2,0,1994,2199,220
+Airbus,Airbus A321-200,13620070,Passenger,Narrow Body,Medium Range,Jet,34.1,44.51,5600,828,30030,0.024,1895,220,2,4,2,0,1996,2199,220
+Airbus,Airbus A321neo,13220070,Passenger,Narrow Body,Medium Range,Jet,34.1,44.51,6760,828,30030,0.019,2145,236,2,4,2,0,2017,2199,220
+Airbus,Airbus A330-200,26366440,Passenger,Wide Body,Long Range,Jet,60.3,58.82,13430,871,139090,0.027,2490,380,2,8,3,0,1993,2018,46
+Airbus,Airbus A330-200F,26366440,Cargo,Wide Body,Long Range,Jet,60.3,58.82,13430,871,139090,0.027,2490,0,2,0,0,475,1998,2018,46
+Airbus,Airbus A330-300,29259040,Passenger,Wide Body,Long Range,Jet,60.3,63.69,10830,871,97530,0.02,2610,440,2,9,3,0,1994,2015,46
+Airbus,Airbus A340-200,28676770,Passenger,Wide Body,Long Range,Jet,60.3,59.39,15000,871,155040,0.025,3000,420,2,6,3,0,1993,2011,21
+Airbus,Airbus A340-300,31319130,Passenger,Wide Body,Long Range,Jet,60.3,63.6,13700,871,147850,0.025,3000,440,2,6,3,0,1993,2011,21
+Airbus,Airbus A340-500,34468580,Passenger,Wide Body,Long Range,Jet,63.45,67.9,16060,881,214810,0.036,3300,375,2,7,3,0,2002,2011,21
+Airbus,Airbus A340-600,36196120,Passenger,Wide Body,Long Range,Jet,63.45,75.3,14350,881,195880,0.026,3300,520,2,8,3,0,2002,2011,21
+Airbus,Airbus A350-800,30699010,Passenger,Wide Body,Long Range,Jet,64.8,60.54,15700,903,129000,0.022,2750,375,2,8,3,0,2013,2022,10
+Airbus,Airbus A350-900,34725520,Passenger,Wide Body,Long Range,Jet,64.8,66.89,15000,903,138000,0.022,2810,420,2,8,3,0,2016,2027,10
+Airbus,Airbus A350-900R,35555720,Passenger,Wide Body,Long Range,Jet,64.8,66.89,19100,903,138000,0.022,2810,420,2,8,3,0,2016,2027,10
+Airbus,Airbus A350-1000,35270025,Passenger,Wide Body,Long Range,Jet,64.8,73.88,15600,903,156000,0.018,2880,550,2,11,4,0,2017,2033,10
+Airbus,Airbus A380-800,49678710,Passenger,Wide Body,Long Range,Jet,79.75,72.73,15400,945,320000,0.024,2900,853,2,17,3,0,2007,2025,12
+Airspeed,Ambassador,903850,Passenger,Single Aisle,Short Range,Turboprop,35.05,24.99,550,260,3466,0.077,1211,60,3,0,1,0,1947,1953,9
+Antonov,Antonov An-10,3200090,Passenger,Narrow Body,Short Range,Turboprop,38,34,4075,610,17120,0.042,720,100,2,4,2,0,1960,1972,8
+Antonov,Antonov An-24,1900000,Passenger,Narrow Body,Short Range,Turboprop,29.2,23.53,2761,450,6200,0.045,650,50,2,2,2,0,1960,1979,68
+Antonov,Antonov An-38,8553480,Passenger,Single Aisle,Regional,Turboprop,22.06,15.67,1750,380,1940,0.041,600,27,2,2,1,0,2000,2008,1
+Antonov,Antonov An-74,9770390,Passenger,Narrow Body,Medium Range,Jet,31.89,28.07,4325,575,16250,0.072,2050,52,2,2,2,0,1977,2016,2
+Antonov,Antonov An-140,1659900,Passenger,Narrow Body,Regional,Turboprop,24.51,22.6,1380,460,5912,0.082,1750,52,2,2,2,0,1997,2014,2
+Antonov,Antonov An-148 100A,2726860,Passenger,Narrow Body,Short Range,Jet,28.91,29.13,2100,840,2200,0.012,1560,85,2,3,2,0,2005,2015,3
+Antonov,Antonov An-148 100B,2878350,Passenger,Narrow Body,Short Range,Jet,28.91,29.13,3500,820,3670,0.013,1800,80,2,3,2,0,2005,2013,3
+Antonov,Antonov An-148 100E,2998710,Passenger,Narrow Body,Medium Range,Jet,28.91,29.13,4400,850,4800,0.014,1885,80,2,3,2,0,2007,2016,3
+Antonov,Antonov An-158,2985880,Passenger,Narrow Body,Short Range,Jet,28.91,34.36,2500,860,4500,0.018,1900,99,2,3,2,0,2010,2016,3
+Antonov,Antonov An-124,37512740,Cargo,Wide Body,Medium Range,Jet,73.3,68.96,5200,850,82000,0.034,2520,0,6,0,0,778,1982,2199,17
+Antonov,Antonov An-225,87512740,Cargo,Wide Body,Medium Range,Jet,88.4,84,4000,850,102000,0.064,3245,0,6,0,0,1300,1988,1989,2
+ATR,ATR 42-300,1863350,Passenger,Narrow Body,Regional,Turboprop,24.57,22.67,1611,450,5625,0.073,995,48,2,1,1,0,1986,1995,14
+ATR,ATR 42-500,1942120,Passenger,Narrow Body,Regional,Turboprop,24.57,22.67,1611,515,5625,0.07,905,50,2,1,1,0,1995,2013,14
+ATR,ATR 72-200,2490940,Passenger,Narrow Body,Regional,Turboprop,27.05,27.17,1324,460,7828,0.08,1105,74,2,2,2,0,1990,2015,20
+ATR,ATR 72-210,2637130,Passenger,Narrow Body,Regional,Turboprop,27.05,27.17,1384,460,7828,0.076,1010,74,2,2,2,0,1992,2015,20
+ATR,ATR 72-500,2784950,Passenger,Narrow Body,Regional,Turboprop,27.05,27.17,1500,505,7840,0.071,990,74,2,2,2,0,1997,2015,20
+BAC,BAC One-Eleven 200,3477440,Passenger,Narrow Body,Regional,Jet,26.98,28.5,1140,882,14020,0.138,1605,89,2,2,1,0,1965,1969,9
+BAC,BAC One-Eleven 300,3665410,Passenger,Narrow Body,Regional,Jet,26.98,28.5,2300,882,29050,0.142,1620,89,2,2,1,0,1965,1969,9
+BAC,BAC One-Eleven 400,3653000,Passenger,Narrow Body,Regional,Jet,26.98,28.5,2300,882,29050,0.142,1625,89,2,2,1,0,1966,1979,9
+BAC,BAC One-Eleven 475,3656460,Passenger,Narrow Body,Regional,Jet,28.5,28.5,3000,871,38400,0.144,1500,89,2,2,1,0,1968,1982,9
+BAC,BAC One-Eleven 500,4875890,Passenger,Narrow Body,Short Range,Jet,28.5,32.61,2744,871,38400,0.118,1590,119,2,2,2,0,1967,1982,9
+BAe,BAe 146-200,3803850,Passenger,Narrow Body,Short Range,Jet,26.21,28.6,2909,801,11728,0.036,1300,112,2,2,2,0,1983,1999,17
+BAe,Avro RJ 85,3803850,Passenger,Narrow Body,Short Range,Jet,26.21,28.6,2909,801,11728,0.036,1300,112,2,2,2,0,1983,1999,17
+BAe,BAe Jetstream 31,1722540,Passenger,Single Aisle,Short Range,Turboprop,15.85,14.37,2221,433,1745,0.049,850,16,2,0,1,0,1967,1975,6
+BAe,BAe Jetstream 41,7850300,Passenger,Single Aisle,Regional,Turboprop,18.42,19.25,1433,482,1840,0.044,900,29,2,1,1,0,1992,1997,30
+BAe,BAe ATP,8884300,Passenger,Single Aisle,Regional,Turboprop,30.63,26,1480,437,2750,0.043,900,64,2,1,1,0,1988,1996,8
+BAe,Avro RJ100 Avroliner,9084300,Passenger,Single Aisle,Regional,Jet,26.34,30.99,2815,763,4050,0.041,1400,128,2,2,2,0,1987,2003,8
+Beechcraft,Beechcraft 1900C,170940,Passenger,Single Aisle,Regional,Turboprop,17.64,17.62,650,495,2520,0.02,905,19,2,0,1,0,1984,1992,35
+Beechcraft,Beechcraft 1900D,217340,Passenger,Single Aisle,Regional,Turboprop,17.64,17.62,707,530,2520,0.019,890,19,2,0,1,0,1991,2002,35
+Beechcraft,Raytheon 1900D,267340,Passenger,Single Aisle,Regional,Turboprop,17.64,17.62,707,530,2520,0.019,890,19,2,0,1,0,1991,2002,35
+Beechcraft,Beechcraft Queen Air B80,607220,Passenger,Single Aisle,Regional,Turboprop,15.32,10.82,2441,294,2056,0.047,823,9,2,0,1,0,1960,1978,27
+Beechcraft,Beechcraft King Air B200,708220,Passenger,Single Aisle,Regional,Turboprop,16.61,13.34,3338,536,2056,0.047,823,13,2,0,1,0,1972,2025,88
+Beechcraft,Beechcraft King Air 90,475000,Passenger,Single Aisle,Regional,Turboprop,15.32,10.82,2446,416,1454,0.143,533,7,1,0,1,0,1964,2199,50
+Beechcraft,Beechcraft 99,660000,Passenger,Single Aisle,Regional,Turboprop,13.98,13.58,2441,380,2056,0.066,880,15,1,0,1,0,1968,1987,25
+Bell,Bell 412,429000,Helicopter,Helicopter,Short Range,Jet,14,17.1,745,226,1249,0.077,18,13,2,0,1,0,1979,2199,25
+Bell,Bell 212,272000,Helicopter,Helicopter,Short Range,Jet,21.29,18.17,439,186,736,0.071,18,14,2,0,1,0,1968,1998,40
+Bell,Bell 214ST,580000,Helicopter,Helicopter,Short Range,Jet,15.85,15.03,858,259,1235,0.059,15,17,2,0,1,0,1979,1993,7
+Boeing,Boeing 720 (707-020),3800000,Passenger,Narrow Body,Medium Range,Jet,39.9,41.25,4385,905,60900,0.099,2520,149,4,4,1,0,1958,1962,17
+Boeing,Boeing 720B (707-020B),5049500,Passenger,Narrow Body,Medium Range,Jet,39.9,41.25,7200,905,83540,0.083,2005,149,4,4,1,0,1961,1967,17
+Boeing,Boeing 707-120,4200000,Passenger,Narrow Body,Medium Range,Jet,39.9,44.07,5491,930,65590,0.067,3110,179,4,4,2,0,1958,1962,48
+Boeing,Boeing 707-120B,6039600,Passenger,Narrow Body,Medium Range,Jet,39.9,44.07,7505,975,68480,0.051,2490,179,4,5,2,0,1961,1969,48
+Boeing,Boeing 707-220,5400000,Passenger,Narrow Body,Medium Range,Jet,39.9,44.07,6982,975,77608,0.062,2620,179,4,5,2,0,1959,1962,48
+Boeing,Boeing 707-320,6000000,Passenger,Narrow Body,Medium Range,Jet,44.42,46.61,6920,972,115404,0.083,3190,202,4,5,2,0,1959,1962,48
+Boeing,Boeing 707-320B,7029700,Passenger,Narrow Body,Medium Range,Jet,44.42,46.61,6920,972,90160,0.064,2885,202,4,5,2,0,1961,1979,48
+Boeing,Boeing 707-320C,7029700,Cargo,Narrow Body,Medium Range,Jet,44.42,46.61,6920,974,90290,0.064,3450,0,4,0,0,277,1963,1979,48
+Boeing,Boeing 717-200,5847100,Passenger,Narrow Body,Regional,Jet,28.47,37.8,2800,825,13890,0.042,1300,117,2,2,2,0,1998,2006,19
+Boeing,Boeing 727-100,4061900,Passenger,Narrow Body,Medium Range,Jet,32.9,40.6,4000,1042,29100,0.049,1460,149,3,3,2,0,1963,1972,87
+Boeing,Boeing 727-100C,4061900,Cargo,Narrow Body,Medium Range,Jet,32.9,40.6,4000,1042,29100,0.049,1460,0,3,0,0,118,1963,1972,87
+Boeing,Boeing 727-200,6382980,Passenger,Narrow Body,Medium Range,Jet,32.9,46.7,4500,1042,30600,0.04,1515,189,3,4,2,0,1967,1972,87
+Boeing,Boeing 727-200 Adv.,6800000,Passenger,Narrow Body,Medium Range,Jet,32.9,46.7,4550,1042,39800,0.048,1470,189,3,4,2,0,1973,1984,87
+Boeing,Boeing 737-100,6028370,Passenger,Narrow Body,Short Range,Jet,28.35,28.65,2850,780,17900,0.051,1275,124,2,2,2,0,1967,1971,132
+Boeing,Boeing 737-200,6205670,Passenger,Narrow Body,Short Range,Jet,28.35,30.53,3500,780,18100,0.038,1280,136,2,3,2,0,1967,1975,160
+Boeing,Boeing 737-200 Adv.,6578950,Passenger,Narrow Body,Medium Range,Jet,28.35,30.53,4300,780,19500,0.033,1280,136,2,3,2,0,1971,1986,160
+Boeing,Boeing 737-200C,6578950,Cargo,Narrow Body,Medium Range,Jet,28.35,30.53,4300,780,19500,0.033,1280,0,2,0,0,103,1971,1986,160
+Boeing,Boeing 737-300,6980060,Passenger,Narrow Body,Medium Range,Jet,28.88,33.4,4204,780,23170,0.037,1365,149,2,3,2,0,1984,1999,160
+Boeing,Boeing 737-400,7565340,Passenger,Narrow Body,Medium Range,Jet,28.9,36.5,4204,780,23800,0.034,1590,168,2,3,2,0,1985,1999,160
+Boeing,Boeing 737-400M,7982130,Cargo,Narrow Body,Medium Range,Jet,28.9,36.5,4204,780,23800,0.034,1590,72,2,3,2,89,1989,1997,160
+Boeing,Boeing 737-500,7165190,Passenger,Narrow Body,Medium Range,Jet,28.9,31.1,4444,780,23800,0.041,1245,132,2,3,2,0,1987,2000,160
+Boeing,Boeing 737-600,7574290,Passenger,Narrow Body,Medium Range,Jet,35.7,31.2,5648,828,26020,0.035,1220,130,2,3,2,0,1995,2015,160
+Boeing,Boeing 737-700,9036030,Passenger,Narrow Body,Medium Range,Jet,35.7,33.6,6230,828,26020,0.028,1545,148,2,3,2,0,1996,2016,160
+Boeing,Boeing 737-700C,9036030,Cargo,Narrow Body,Medium Range,Jet,35.7,33.6,6230,828,26020,0.028,1545,0,2,0,0,108,1996,2016,160
+Boeing,Boeing 737-800,10752690,Passenger,Narrow Body,Medium Range,Jet,35.7,39.5,5665,828,26020,0.024,1725,189,2,4,2,0,1996,2016,160
+Boeing,Boeing 737-900,11550360,Passenger,Narrow Body,Medium Range,Jet,35.7,42.1,5100,823,26020,0.027,1780,189,2,4,2,0,2000,2020,160
+Boeing,Boeing 737-900ER,12043630,Passenger,Narrow Body,Medium Range,Jet,35.7,42.1,5925,823,29660,0.023,1800,215,2,4,2,0,2005,2020,160
+Boeing,Boeing 737 MAX 7,8736030,Passenger,Narrow Body,Medium Range,Jet,35.9,33.6,7038,842,26020,0.015,1545,126,2,3,2,0,2016,2199,160
+Boeing,Boeing 737 MAX 8,10852690,Passenger,Narrow Body,Medium Range,Jet,35.9,39.5,6704,842,26020,0.017,1735,189,2,4,2,0,2016,2199,160
+Boeing,Boeing 737 MAX 9,12543630,Passenger,Narrow Body,Medium Range,Jet,35.9,42.1,6658,842,29660,0.02,1800,215,2,4,2,0,2017,2199,160
+Boeing,Boeing 747-100,19557820,Passenger,Wide Body,Long Range,Jet,59.6,70.6,9800,893,183380,0.041,3100,452,3,9,3,0,1968,1980,
+Boeing,Boeing 747-200B,20540940,Passenger,Wide Body,Long Range,Jet,59.6,70.6,12700,893,199158,0.035,3100,452,3,9,3,0,1971,1991,32
+Boeing,Boeing 747-200F,20540940,Cargo,Wide Body,Long Range,Jet,59.6,70.6,12700,893,199158,0.035,3100,0,3,0,0,694,1971,1991,32
+Boeing,Boeing 747-300,25460120,Passenger,Wide Body,Long Range,Jet,59.6,70.6,12400,893,199158,0.032,3110,496,3,10,3,0,1982,1990,32
+Boeing,Boeing 747-400,33301500,Passenger,Wide Body,Long Range,Jet,64.4,70.6,13450,913,216840,0.031,2990,524,2,11,3,0,1989,2007,32
+Boeing,Boeing 747-400D,32451500,Passenger,Wide Body,Long Range,Jet,59.6,70.6,2905,910,204355,0.036,1550,568,2,11,3,0,1989,1995,32
+Boeing,Boeing 747-400F,32671040,Cargo,Wide Body,Long Range,Jet,64.4,70.6,8230,908,216840,0.031,3000,0,2,0,0,779,1993,2009,32
+Boeing,Boeing 747-400ER,36524580,Passenger,Wide Body,Long Range,Jet,64.4,70.6,14205,917,241140,0.032,3000,524,2,11,3,0,2000,2007,32
+Boeing,Boeing 747-400M,33142330,Cargo,Wide Body,Long Range,Jet,64.4,70.6,8230,908,216840,0.031,3000,266,2,11,3,295,1989,2002,32
+Boeing,Boeing 747-400ERF,35117060,Cargo,Wide Body,Long Range,Jet,64.4,70.6,9200,908,241140,0.032,3000,0,2,0,0,779,2001,2009,32
+Boeing,Boeing 747-8F,44016510,Cargo,Wide Body,Long Range,Jet,68.45,76.25,8130,908,227920,0.036,2790,0,2,0,0,855,2011,2025,32
+Boeing,Boeing 747-8I,43941480,Passenger,Wide Body,Long Range,Jet,68.45,76.25,14100,917,243120,0.03,2785,605,2,12,3,0,2012,2025,32
+Boeing,Boeing 747SP,24690210,Passenger,Wide Body,Long Range,Jet,59.64,56.31,12320,990,190600,0.038,2985,331,2,12,3,0,1976,1989,32
+Boeing,Boeing 757-200,10698370,Passenger,Narrow Body,Medium Range,Jet,38.05,47.32,7222,850,43490,0.026,1825,234,2,5,2,0,1983,2005,45
+Boeing,Boeing 757-200PF,10698370,Cargo,Narrow Body,Medium Range,Jet,38.05,47.32,7222,850,43490,0.026,1825,0,2,0,0,239,1983,2005,45
+Boeing,Boeing 757-300,13166310,Passenger,Narrow Body,Medium Range,Jet,38.05,54.47,6287,850,43400,0.024,2926,289,2,6,2,0,1999,2004,45
+Boeing,Boeing 767-200,21012270,Passenger,Wide Body,Medium Range,Jet,47.6,48.5,7300,851,63000,0.034,2200,255,2,5,3,0,1982,1988,32
+Boeing,Boeing 767-200ER,20398860,Passenger,Wide Body,Long Range,Jet,47.6,48.5,11825,851,91000,0.027,2743,290,2,5,3,0,1984,2014,32
+Boeing,Boeing 767-300,32244130,Passenger,Wide Body,Long Range,Jet,47.6,54.9,7900,851,63000,0.03,2410,350,2,5,3,0,1986,2000,32
+Boeing,Boeing 767-300F,23614830,Cargo,Wide Body,Long Range,Jet,47.6,54.9,7900,851,63000,0.03,2410,0,2,0,0,438,1995,2015,32
+Boeing,Boeing 767-300ER,23292470,Passenger,Wide Body,Long Range,Jet,47.6,54.9,11065,851,91000,0.031,2530,350,2,5,3,0,1988,2014,32
+Boeing,Boeing 767-400ER,25575800,Passenger,Wide Body,Long Range,Jet,51.9,61.4,10415,851,91000,0.023,2610,375,2,8,3,0,2000,2020,32
+Boeing,Boeing 777-200,32083900,Passenger,Wide Body,Long Range,Jet,60.9,63.7,9700,905,117348,0.027,2500,440,2,9,3,0,1995,2003,54
+Boeing,Boeing 777-200ER,32958320,Passenger,Wide Body,Long Range,Jet,64.8,63.7,14310,905,171176,0.027,2600,440,2,9,3,0,1997,2015,54
+Boeing,Boeing 777-200LR,37092510,Passenger,Wide Body,Long Range,Jet,64.8,63.7,17370,905,181283,0.024,2970,440,2,9,3,0,2006,2015,54
+Boeing,Boeing 777F,38918140,Cargo,Wide Body,Long Range,Jet,64.8,63.7,9070,905,181283,0.028,2830,0,2,0,0,653,2009,2020,54
+Boeing,Boeing 777-300,38587250,Passenger,Wide Body,Long Range,Jet,60.9,73.9,11120,905,171176,0.028,2750,550,2,11,3,0,1998,2010,54
+Boeing,Boeing 777-300ER,40112820,Passenger,Wide Body,Long Range,Jet,64.8,73.9,14690,905,181283,0.022,2780,550,2,11,3,0,2004,2015,54
+Boeing,Boeing 777-8X,44112820,Passenger,Wide Body,Long Range,Jet,64.8,69.5,17224,905,181283,0.02,2780,500,2,11,3,0,2017,2199,54
+Boeing,Boeing 777-9X,56112820,Passenger,Wide Body,Long Range,Jet,64.8,76.5,15186,905,181283,0.02,2780,600,2,11,3,0,2017,2199,54
+Boeing,Boeing 787-8,26322720,Passenger,Wide Body,Long Range,Jet,60,56.7,14500,913,126920,0.032,2260,264,2,5,3,0,2011,2026,12
+Boeing,Boeing 787-9,29937320,Passenger,Wide Body,Long Range,Jet,60,62.8,15200,913,138700,0.03,2290,290,2,5,3,0,2014,2027,12
+Boeing,Boeing 787-10,31239910,Passenger,Wide Body,Long Range,Jet,60,62.8,13000,913,138700,0.03,2290,323,2,5,3,0,2016,2029,12
+Boeing,Boeing 2707,59235700,Passenger,Wide Body,Medium Range,Jet,54.97,93.27,7242,2600,166622,0.084,3000,275,3,6,2,0,1980,2005,2
+Bombardier,Bombardier CRJ100,3417720,Passenger,Narrow Body,Regional,Jet,21.21,26.77,2050,809,5300,0.052,1575,50,2,1,1,0,1992,2008,60
+Bombardier,Bombardier CRJ200,3594970,Passenger,Narrow Body,Regional,Jet,21.21,26.77,2350,809,8080,0.069,1500,50,2,1,1,0,1994,2008,60
+Bombardier,Bombardier CRJ700,4149760,Passenger,Narrow Body,Regional,Jet,23.24,32.51,2656,876,10841,0.058,1560,70,2,2,2,0,1997,2016,62
+Bombardier,Bombardier CRJ900,4849500,Passenger,Narrow Body,Regional,Jet,24.85,36.4,2500,850,10841,0.05,1870,86,2,2,2,0,2001,2007,62
+Bombardier,Bombardier CRJ900LR,4997860,Passenger,Narrow Body,Short Range,Jet,24.85,36.4,3385,881,14678,0.05,1940,86,2,2,2,0,2007,2020,62
+Bombardier,Bombardier CRJ1000,5669000,Passenger,Narrow Body,Regional,Jet,26.18,39.13,2491,850,10841,0.044,2050,100,2,2,2,0,2007,2021,62
+Bombardier,Bombardier Dash 8-100,2136750,Passenger,Narrow Body,Regional,Turboprop,25.89,22.25,1889,500,3160,0.05,800,37,2,1,1,0,1984,2005,36
+Bombardier,Bombardier Dash 8-200,2233440,Passenger,Narrow Body,Regional,Turboprop,25.89,22.25,1713,537,3160,0.05,800,37,2,1,1,0,1995,2009,36
+Bombardier,Bombardier Dash 8-300,2912390,Passenger,Narrow Body,Regional,Turboprop,27.43,25.68,1558,528,3160,0.05,1180,50,2,1,1,0,1989,2009,36
+Bombardier,Bombardier Dash 8-400,4640770,Passenger,Narrow Body,Regional,Turboprop,28.4,32.81,2522,667,6526,0.033,1400,78,2,2,1,0,2000,2019,36
+Bombardier,Bombardier Dash 8-400NextGen,5116000,Passenger,Narrow Body,Regional,Turboprop,28.4,32.81,1878,667,4860,0.011,1400,86,2,2,2,0,2013,2199,36
+Bombardier,Bombardier Global 5000,5499040,Passenger,Single Aisle,Long Range,Jet,28.65,29.5,9360,904,21850,0.123,1689,19,2,1,1,0,1996,2016,20
+Bombardier,Bombardier CS-100,7423260,Passenger,Narrow Body,Medium Range,Jet,35.1,34.9,4074,828,15775,0.035,1509,110,2,2,2,0,2013,2026,24
+Bombardier,Bombardier CS-100ER,7954400,Passenger,Narrow Body,Medium Range,Jet,35.1,34.9,5463,828,20431,0.034,1509,110,2,2,2,0,2014,2022,
+Bombardier,Bombardier CS-300,8324370,Passenger,Narrow Body,Medium Range,Jet,35.1,38,4074,828,16947,0.032,1902,130,2,2,2,0,2013,2025,24
+Bombardier,Bombardier CS-300ER,8705000,Passenger,Narrow Body,Medium Range,Jet,35.1,38,5463,828,22015,0.031,1890,130,2,2,2,0,2014,2019,24
+Bristol,Bristol Britannia 310,1000000,Passenger,Narrow Body,Long Range,Turboprop,43.36,37.88,7129,575,40232,0.041,2010,139,3,3,1,0,1958,1960,26
+Britten,BN-2A Islander,230000,Passenger,Narrow Body,Regional,Turboprop,14.94,10.86,1400,257,519,0.0588,335,9,2,0,1,0,1965,2199,26
+Britten,BN Trislander,430000,Passenger,Narrow Body,Regional,Turboprop,16.15,15.01,1609,249,746,0.111,594,17,2,0,1,0,1970,1980,7
+Cessna,Cessna 441,441000,Passenger,Narrow Body,Medium Range,Turboprop,15.04,11.89,4064,480,1800,0.1,544,10,2,0,1,0,1977,1987,36
+Cessna,Cessna 404 Titan,370000,Passenger,Narrow Body,Regional,Turboprop,14.12,12.04,3410,400,1317,0.1,545,10,2,0,1,0,1976,1982,66
+Cessna,Cessna 402C,220000,Passenger,Narrow Body,Regional,Turboprop,13.45,11.09,2360,394,806,0.097,537,9,1,0,1,0,1978,1985,52
+Cessna,Cessna 402,144000,Passenger,Narrow Body,Regional,Turboprop,13.45,11.09,1543,387,386,0.097,517,9,1,0,1,0,1966,1978,55
+Cessna,Cessna 401,180000,Passenger,Narrow Body,Regional,Turboprop,13.45,11.09,2041,387,386,0.097,517,8,1,0,1,0,1966,1972,105
+Cessna,Cessna 206,71010,Passenger,Narrow Body,Regional,Turboprop,10.97,8.61,1352,263,246,0.019,277,5,1,0,1,0,1962,2099,212
+Cessna,Cessna 207,81010,Passenger,Narrow Body,Regional,Turboprop,10.97,9.73,1137,265,231,0.125,335,8,1,0,1,0,1969,1977,78
+Cessna,Cessna 208B,266180,Passenger,Narrow Body,Regional,Turboprop,15.88,12.67,2000,317,1250,0.069,1100,9,2,0,1,0,1984,2099,212
+Cessna,Cessna 208B Super Cargomaster,262470,Cargo,Narrow Body,Regional,Turboprop,15.88,12.67,2000,317,1250,0.069,1100,0,2,0,0,7,1984,2099,212
+Cessna,Cessna 560XL,1872200,Passenger,Narrow Body,Short Range,Jet,17.17,16,3441,815,3808,0.123,1450,9,2,0,1,0,2005,2023,36
+Cessna,Cessna 680,2544150,Passenger,Narrow Body,Medium Range,Jet,19.24,19.37,5273,848,5457,0.115,1450,9,2,0,1,0,2004,2038,40
+Cessna,Cessna Citation X,3214390,Passenger,Narrow Body,Long Range,Jet,19.38,22.05,5956,972,7291,0.102,1600,12,2,0,1,0,1993,2019,36
+Cirrus,Vision SF50,260000,Passenger,Narrow Body,Short Range,Jet,11.68,9.4,1000,556,1200,0.166,600,6,1,0,1,0,2015,2199,125
+Comac,Shanghai Y-10,3231122,Passenger,Narrow Body,Long Range,Jet,42.24,42.93,8230,639,216840,0.093,2000,178,5,2,2,0,1980,1984,13
+Comac,Comac C919,12375000,Passenger,Narrow Body,Short Range,Jet,38.9,35.8,4075,834,16160,0.024,1700,168,2,3,2,0,2016,2199,17
+Comac,Comac C929,2155000,Passenger,Wide Body,Long Range,Jet,55.6,53.5,9500,950,95000,0.034,2290,290,2,5,3,0,2018,2199,17
+Comac,Comac C939,32455000,Passenger,Wide Body,Long Range,Jet,65.5,63.5,11750,895,150000,0.032,2600,390,2,8,3,0,2020,2199,17
+Convair,Convair 880,4000000,Passenger,Narrow Body,Medium Range,Jet,36.58,39.42,4430,990,40443,0.083,2805,110,3,3,2,0,1959,1962,21
+Convair,Convair 990,6138610,Passenger,Narrow Body,Medium Range,Jet,36.6,42.5,5400,920,57231,0.088,3000,149,4,3,2,0,1961,1963,18
+Convair,Convair 990A,5392150,Passenger,Narrow Body,Medium Range,Jet,36.6,42.5,6900,1015,59336,0.071,2260,149,4,3,2,0,1962,1963,18
+Convair,Convair 240,1500000,Passenger,Narrow Body,Short Range,Turboprop,27.97,22.76,1931,451,3785,0.023,842,44,2,1,2,0,1947,1954,169
+Convair,Convair 440,1775000,Passenger,Narrow Body,Short Range,Turboprop,27.97,22.76,1931,451,5867,0.019,1425,52,2,1,2,0,1947,1954,15
+Dassault,Dassault Falcon 10,7993730,Passenger,Single Aisle,Medium Range,Jet,13.08,13.86,3560,912,3420,0.019,1567,8,2,1,1,0,1970,1989,75
+Dassault,Dassault Falcon 20,9910230,Passenger,Single Aisle,Medium Range,Jet,16.3,17.15,3350,862,5420,0.025,1798,14,2,1,1,0,1963,1988,173
+Dassault,Dassault Mercure,12533880,Passenger,Narrow Body,Short Range,Jet,30.55,34.84,2084,926,12420,0.04,2300,162,3,4,1,0,1971,1975,12
+DH,DH 114 Heron,75149,Passenger,Narrow Body,Regional,Turboprop,21.8,14.79,1473,295,1190,0.061,1182,14,2,1,1,0,1950,1963,8
+DH,DH 104 Dove,71440,Passenger,Narrow Body,Regional,Turboprop,17.4,11.96,1415,370,979,0.065,1182,8,2,1,1,0,1946,1967,7
+DH,DH 106 Comet 1A,343210,Passenger,Narrow Body,Short Range,Jet,34.98,28.61,2850,725,1826,0.078,2182,44,2,1,1,0,1952,1971,5
+DH,DH 106 Comet 4C,381110,Passenger,Narrow Body,Long Range,Jet,34.98,35.97,6900,805,2765,0.076,2782,119,2,1,1,0,1958,1991,8
+DH,DHC-7-100,6000000,Passenger,Narrow Body,Short Range,Turboprop,28.35,24.58,1852,436,3200,0.02343,366,54,2,1,1,0,1975,1988,9
+DH,DHC-3 Otter,500000,Passenger,Narrow Body,Medium Range,Turboprop,17.69,12.8,1520,195,810,0.1,352,10,1,0,1,0,1951,1967,29
+DH,DHC-6-100 Twin Otter,925000,Passenger,Narrow Body,Short Range,Turboprop,19.8,15.77,1427,278,1447,0.053,350,19,2,0,1,0,1965,1988,9
+DH,DHC-6-300 Twin Otter,980000,Passenger,Narrow Body,Short Range,Turboprop,19.8,15.77,1434,278,1421,0.05,350,20,2,0,1,0,1965,1988,9
+Dornier,Dornier 228-212,306750,Passenger,Single Aisle,Regional,Turboprop,16.97,16.56,1111,315,2390,0.113,490,19,2,0,1,0,1982,1998,16
+Dornier,Dornier 328-110,869380,Passenger,Narrow Body,Regional,Turboprop,20.98,21.11,1850,620,4290,0.077,600,30,2,1,1,0,1991,2000,24
+Douglas,Douglas DC-3,3100000,Passenger,Narrow Body,Short Range,Turboprop,29,19.7,3400,333,3736,0.096,1800,32,2,1,1,0,1937,1942,100
+Douglas,Douglas DC-2,1350000,Passenger,Narrow Body,Short Range,Turboprop,25.9,19.1,1750,304,1900,0.071,915,14,2,0,1,0,1934,1939,40
+Douglas,Douglas DC-6,3800000,Passenger,Narrow Body,Medium Range,Turboprop,35.81,30.66,7377,501,15111,0.037,2600,56,3,2,1,0,1946,1958,58
+Douglas,Douglas DC-6B,4200000,Passenger,Narrow Body,Medium Range,Turboprop,35.81,32.18,4830,507,15111,0.058,2600,62,3,2,1,0,1946,1958,58
+Douglas,Douglas DC-7,4500000,Passenger,Narrow Body,Long Range,Turboprop,35.81,33.2,5737,578,20865,0.044,2900,82,3,2,1,0,1953,1958,66
+Douglas,Douglas DC-7C,5100000,Passenger,Narrow Body,Medium Range,Turboprop,38.86,34.21,6114,578,22340,0.035,2900,105,3,4,2,0,1954,1958,66
+Douglas,Douglas DC-8-10,4600000,Passenger,Narrow Body,Long Range,Jet,43.41,45.87,5800,893,74518,0.073,3028,176,3,4,2,0,1959,1965,38
+Douglas,Douglas DC-8-20,5100000,Passenger,Narrow Body,Long Range,Jet,43.41,45.87,6870,946,66243,0.068,2800,176,3,4,2,0,1959,1965,38
+Douglas,Douglas DC-8-32,5800000,Passenger,Narrow Body,Long Range,Jet,43.41,45.87,10103,946,120912,0.068,3290,176,3,4,2,0,1960,1970,38
+Douglas,Douglas DC-8-40,5940590,Passenger,Narrow Body,Long Range,Jet,43.41,45.87,10603,952,102637,0.055,2970,176,3,4,2,0,1961,1965,38
+Douglas,Douglas DC-8-51,7524750,Passenger,Narrow Body,Medium Range,Jet,43.41,45.87,8171,946,100000,0.068,3000,179,3,4,2,0,1961,1970,38
+Douglas,Douglas DC-8-54CF,7647060,Passenger,Narrow Body,Long Range,Jet,43.41,45.87,12139,954,143000,0.062,2950,189,3,5,2,0,1962,1975,38
+Douglas,Douglas DC-8-61,8219180,Passenger,Narrow Body,Long Range,Jet,43.41,57.1,9408,935,127000,0.05,3200,269,3,6,3,0,1966,1978,38
+Douglas,Douglas DC-8-62F,8219180,Cargo,Narrow Body,Medium Range,Jet,43.3,48,5250,935,91825,0.057,2950,0,3,0,0,220,1966,1978,38
+Douglas,Douglas DC-8-63,7488580,Passenger,Narrow Body,Long Range,Jet,45.24,57.1,11278,959,146000,0.048,3150,269,3,6,3,0,1966,1978,38
+Douglas,Douglas DC-9-10,3835620,Passenger,Narrow Body,Short Range,Jet,27.25,31.82,2340,903,10800,0.051,1670,90,2,2,1,0,1966,1974,
+Douglas,Douglas DC-9-15,4166670,Passenger,Narrow Body,Short Range,Jet,27.25,31.82,2840,903,12500,0.049,1520,90,2,2,1,0,1967,1980,54
+Douglas,Douglas DC-9-30,4875890,Passenger,Narrow Body,Short Range,Jet,28.47,36.37,3030,917,15000,0.043,1390,115,2,2,1,0,1967,1982,54
+Douglas,Douglas DC-4-1009,3500000,Passenger,Narrow Body,Medium Range,Turboprop,35.8,28.6,6839,365,7949,0.097,2000,86,2,2,2,0,1945,1947,40
+Embraer,EMB 110 Bandeirante,333330,Passenger,Single Aisle,Short Range,Turboprop,15.33,15.1,1964,341,2100,0.059,710,18,2,1,1,0,1973,1990,23
+Embraer,EMB 120 Brasilia,594350,Passenger,Single Aisle,Short Range,Turboprop,19.78,20,1750,552,2200,0.059,900,30,2,1,1,0,1983,2001,20
+Embraer,Embraer ERJ135 ER,2864650,Passenger,Narrow Body,Short Range,Jet,20.04,26.33,2409,828,3833,0.043,1190,37,2,1,1,0,1989,2019,37
+Embraer,Embraer ERJ140 ER,2842930,Passenger,Narrow Body,Short Range,Jet,20.04,28.45,2317,828,3670,0.036,1190,44,2,1,1,0,1999,2019,37
+Embraer,Embraer ERJ145 LR,3107400,Passenger,Narrow Body,Short Range,Jet,20.04,29.87,2873,851,4310,0.03,1210,50,2,1,1,0,1995,2019,37
+Embraer,Embraer E-170,4689040,Passenger,Narrow Body,Short Range,Jet,26,29.9,3334,890,6760,0.026,1241,80,2,2,2,0,2002,2019,77
+Embraer,Embraer E-175,5264890,Passenger,Narrow Body,Short Range,Jet,26,31.68,3334,890,6760,0.023,1261,88,2,2,2,0,2002,2019,77
+Embraer,Embraer E-190,7120130,Passenger,Narrow Body,Short Range,Jet,28.72,36.24,3334,890,9000,0.024,1244,114,2,3,2,0,2005,2019,77
+Embraer,Embraer E-195,7120130,Passenger,Narrow Body,Short Range,Jet,28.72,38.54,2593,890,9000,0.028,1275,122,2,3,2,0,2005,2019,77
+Fairchild,Fairchild Swearingen Merlin,253140,Passenger,Single Aisle,Regional,Turboprop,14.1,12.85,3591,556,1550,0.03,620,19,2,0,1,0,1965,1998,30
+Fairchild,Fairchild Swearingen Merlin IV C,330140,Passenger,Single Aisle,Regional,Turboprop,17.37,18.09,1065,515,1150,0.05,650,19,2,0,1,0,1968,2001,18
+Fairchild,Fairchild Swearingen Metroliner,340140,Passenger,Single Aisle,Regional,Turboprop,17.37,18.09,1065,515,1150,0.05,650,19,2,0,1,0,1968,2001,18
+Fairchild,Fairchild-Dornier 328JET,1954510,Passenger,Narrow Body,Short Range,Jet,20.98,21.28,3705,750,8040,0.064,1130,34,2,1,1,0,1999,2015,18
+Fokker,Fokker F27,950000,Passenger,Narrow Body,Regional,Turboprop,29,25.06,1826,518,4560,0.052,1020,48,2,1,1,0,1955,1975,18
+Fokker,Fokker F28-1000,5214000,Passenger,Narrow Body,Short Range,Jet,23.57,27.41,2000,849,8390,0.065,1744,65,2,2,2,0,1967,1980,12
+Fokker,Fokker F28-2000,3723810,Passenger,Narrow Body,Short Range,Jet,23.57,29.62,2743,843,13435,0.061,2000,79,2,3,2,0,1968,1982,12
+Fokker,Fokker F28-3000,3611270,Passenger,Narrow Body,Short Range,Jet,25.07,29.61,1900,843,8390,0.068,1744,65,2,2,2,0,1968,1984,12
+Fokker,Fokker F28-4000,2911700,Passenger,Narrow Body,Short Range,Jet,25.07,29.62,1790,843,9200,0.06,2000,85,2,3,2,0,1970,1987,12
+Fokker,Fokker F28-6000,3488360,Passenger,Narrow Body,Short Range,Jet,25.07,29.62,1900,843,9000,0.06,2000,79,2,3,2,0,1971,1987,12
+Fokker,Fokker 50,2371030,Passenger,Narrow Body,Short Range,Turboprop,29,25.25,2055,453,3700,0.031,890,58,2,1,1,0,1987,1997,20
+Fokker,Fokker 70,3395240,Passenger,Narrow Body,Short Range,Jet,28.08,30.91,2010,835,12743,0.08,1110,79,2,2,1,0,1994,1997,10
+Fokker,Fokker 100,4978730,Passenger,Narrow Body,Short Range,Jet,28.08,35.53,2450,845,13365,0.051,1520,107,2,2,2,0,1988,1997,24
+GippsAero,GA8 Airvan,251000,Passenger,Narrow Body,Regional,Turboprop,12.28,8.95,1352,222,340,0.166,488,7,1,0,1,0,2000,2199,17
+Gulfstream,Gulfstream G650ER,8735000,Passenger,Narrow Body,Long Range,Jet,30.36,30.41,13890,904,21863,0.055,1920,18,2,0,1,0,2014,2199,3
+Gulfstream,Gulfstream G650,8150000,Passenger,Narrow Body,Long Range,Jet,30.36,30.41,12960,904,20049,0.055,1786,18,2,0,1,0,2012,2199,7
+Gulfstream,Gulfstream G550,7000000,Passenger,Narrow Body,Long Range,Jet,28.5,29.39,12501,904,18733,0.055,1800,18,2,0,1,0,2003,2199,18
+Gulfstream,Gulfstream G500,5526000,Passenger,Narrow Body,Long Range,Jet,28.5,29.39,10700,904,16034,0.055,1570,18,2,0,1,0,2003,2199,10
+Gulfstream,Gulfstream G450,5033000,Passenger,Narrow Body,Medium Range,Jet,23.72,27.23,8056,850,13381,0.0625,1707,16,2,0,1,0,2004,2199,7
+Gulfstream,Gulfstream G350,4400000,Passenger,Narrow Body,Medium Range,Jet,23.72,27.23,7040,850,11693,0.0625,1587,16,2,0,1,0,2002,2013,7
+Gulfstream,Gulfstream G280,2725000,Passenger,Narrow Body,Medium Range,Jet,19.2,20.37,6667,850,6622,0.1,1448,10,2,0,1,0,2010,2199,10
+Gulfstream,Gulfstream G200,2575000,Passenger,Narrow Body,Medium Range,Jet,17.7,18.97,6300,850,6257,0.1,1390,10,2,0,1,0,1997,2011,18
+Gulfstream,Gulfstream G150,2575000,Passenger,Narrow Body,Medium Range,Jet,16.94,17.3,5556,800,4672,0.1,1390,8,2,0,1,0,2005,2199,15
+Gulfstream,Gulfstream V,4533000,Passenger,Narrow Body,Long Range,Jet,28.5,29.4,10742,904,10270,0.0625,1580,16,2,0,1,0,1998,2003,38
+Gulfstream,Gulfstream IV,3300000,Passenger,Narrow Body,Medium Range,Jet,23.7,26.9,7820,850,7477,0.0625,1650,16,2,0,1,0,1987,1998,45
+Gulfstream,Gulfstream III,2850000,Passenger,Narrow Body,Short Range,Jet,23.72,25.32,6760,818,3825,0.053,1650,19,2,0,1,0,1979,1986,30
+Grumman,Gulfstream II,2350000,Passenger,Narrow Body,Short Range,Jet,20.98,24.36,6635,778,3750,0.0714,1650,14,2,0,1,0,1967,1978,24
+Grumman,Gulfstream I,2350000,Passenger,Narrow Body,Short Range,Turboprop,23.93,19.43,4088,560,3750,0.0714,1650,24,2,1,1,0,1958,1966,25
+HP,Dart Herald,1200000,Passenger,Narrow Body,Regional,Turboprop,28.9,23.01,2632,435,7000,0.018,1300,56,2,1,1,0,1959,1968,6
+Harbin,Harbin Y-12 II,1290000,Passenger,Narrow Body,Short Range,Turboprop,17.24,18.86,1340,250,955,0.059,610,17,2,0,1,0,1985,1995,100
+Harbin,Harbin Y-12 IV,1445000,Passenger,Narrow Body,Short Range,Turboprop,17.24,18.86,1340,250,955,0.053,610,19,2,0,1,0,1995,2199,100
+Hawker,HS.748,2724300,Passenger,Single Aisle,Regional,Turboprop,31.23,20.42,1715,452,2900,0.053,900,58,2,1,1,0,1988,1996,8
+Hawker,BEA Trident 2E,3771440,Passenger,Narrow Body,Medium Range,Jet,28.9,35,4345,950,20559,0.041,2277,115,2,3,2,0,1964,1978,10
+Hawker,BEA Trident 3B,5021440,Passenger,Narrow Body,Medium Range,Jet,40,35,3597,890,23570,0.037,2315,180,2,4,2,0,1969,1976,10
+IAe,C212 Aviocar,703850,Passenger,Single Aisle,Short Range,Turboprop,20.28,16.2,1811,370,1728,0.045,770,26,2,0,1,0,1971,2199,50
+IAe,N250-50,803850,Passenger,Narrow Body,Regional,Turboprop,28,26.3,1480,556,2728,0.065,982,50,2,0,1,0,1995,2199,10
+IAe,N250-100,908620,Passenger,Narrow Body,Regional,Turboprop,28,26.3,1480,556,2728,0.065,982,70,2,0,1,0,1995,2199,10
+IAe,N219,2736730,Passenger,Single Aisle,Short Range,Turboprop,20.28,16.2,1111,395,1728,0.035,465,19,2,0,1,0,2014,2199,50
+Ilyushin,Il-18V,1700000,Passenger,Narrow Body,Medium Range,Turboprop,37.4,35.9,4270,600,30000,0.091,3280,100,3,2,1,0,1959,1965,30
+Ilyushin,Il-18D,1800000,Passenger,Narrow Body,Medium Range,Turboprop,37.4,35.9,5300,625,30000,0.063,3280,90,3,2,1,0,1965,1978,30
+Ilyushin,Il-18E,1800000,Passenger,Narrow Body,Medium Range,Turboprop,37.4,35.9,4400,625,30000,0.056,3280,120,3,2,1,0,1965,1978,30
+Ilyushin,Il-62,4500000,Passenger,Narrow Body,Long Range,Jet,43.2,53.12,6700,850,105300,0.084,3280,186,5,5,2,0,1966,1973,30
+Ilyushin,Il-62M,25000000,Passenger,Narrow Body,Long Range,Jet,43.2,53.12,10000,900,110000,0.081,3280,174,5,5,2,0,1973,2004,30
+Ilyushin,Il-76,25572740,Cargo,Wide Body,Medium Range,Jet,50.5,46.59,4300,900,80200,0.044,2470,0,5,0,0,577,1971,2199,17
+Ilyushin,Il-76TD,26572740,Cargo,Wide Body,Medium Range,Jet,50.5,46.59,5600,900,80200,0.044,2470,0,5,0,0,577,1974,2199,17
+Ilyushin,Il-86,3322540,Passenger,Wide Body,Long Range,Jet,48.06,60.21,5000,875,32750,0.049,2450,350,3,11,3,0,1980,2011,54
+Ilyushin,Il-96-300,3103600,Passenger,Wide Body,Long Range,Jet,60.11,55.3,13500,875,40332,0.039,2340,300,3,11,3,0,1992,2199,10
+Ilyushin,Il-114,17244510,Passenger,Single Aisle,Regional,Turboprop,30,26.87,1400,500,8220,0.039,879,64,2,1,3,0,1992,2011,5
+Irkut,MC-21-200,8050000,Passenger,Narrow Body,Medium Range,Jet,35.9,35.9,5000,850,18000,0.024,2000,150,2,3,2,0,2017,2199,15
+Irkut,MC-21-300,9050000,Passenger,Narrow Body,Medium Range,Jet,35.9,41.5,5500,850,19000,0.02,2400,180,2,4,2,0,2017,2199,15
+Irkut,MC-21-400,10050000,Passenger,Narrow Body,Medium Range,Jet,36.8,46.7,5500,850,21000,0.018,2500,210,2,4,2,0,2017,2199,15
+Let,Let L-610,8450370,Passenger,Single Aisle,Short Range,Turboprop,25.6,21.72,2420,438,4840,0.05,900,50,2,2,2,0,1988,1999,2
+Let,Let L-410,1788400,Passenger,Single Aisle,Regional,Turboprop,20,14.4,1040,310,1090,0.055,830,19,2,1,1,0,1988,1999,28
+Lockheed,Lockeed L-1011-1,16628530,Passenger,Wide Body,Medium Range,Jet,47.35,54.15,7420,963,97944,0.033,2690,400,3,8,3,0,1970,1983,16
+Lockheed,Lockeed L-1011-200,22333330,Passenger,Wide Body,Medium Range,Jet,47.35,54.15,9140,954,120648,0.033,2600,400,3,8,3,0,1973,1983,16
+Lockheed,Lockeed L-1011-500,18548720,Passenger,Wide Body,Long Range,Jet,50.09,50.04,10200,972,109242,0.034,2600,315,3,7,3,0,1979,1983,16
+Lockheed,Lockeed L-188A,2000000,Passenger,Narrow Body,Short Range,Turboprop,30.81,31.85,3450,721,23000,0.068,1330,98,3,2,1,0,1959,1961,42
+Lockheed,Lockheed L?100?30,17512740,Cargo,Wide Body,Short Range,Turboprop,40.4,34.35,2470,570,35132,0.067,1650,0,2,0,0,23,1964,1992,17
+Lockheed,L-2000,56975180,Passenger,Narrow Body,Medium Range,Jet,35.36,83.26,7500,2814,155250,0.083,3000,250,3,5,2,0,1978,2005,3
+MBB,BK 117,330000,Helicopter,Helicopter,Short Range,Jet,11,9.91,541,218,697,0.1,10,10,1,0,1,0,1979,2004,15
+MD,MD-11,14761070,Passenger,Wide Body,Long Range,Jet,51.66,58.65,12670,945,146170,0.028,2745,410,2,8,3,0,1988,1998,16
+MD,MD-11ER,12782110,Passenger,Wide Body,Long Range,Jet,51.66,58.65,13410,945,146170,0.027,2755,410,2,8,3,0,1994,2000,16
+MD,MD-11F,15933030,Cargo,Wide Body,Long Range,Jet,51.66,58.65,7320,945,146170,0.026,2745,0,2,0,0,610,1986,2000,
+MD,MD DC-8-71,3972650,Passenger,Narrow Body,Long Range,Jet,43.41,57.1,10050,854,89500,0.033,2790,269,3,6,3,0,1981,1990,38
+MD,MD DC-8-73,4938650,Passenger,Narrow Body,Long Range,Jet,45.24,57.1,12278,959,103000,0.031,2810,269,3,6,3,0,1982,1991,38
+MD,MD DC-9-20,4251700,Passenger,Narrow Body,Short Range,Jet,28.47,31.82,3430,896,15000,0.049,1290,90,2,2,1,0,1968,1981,54
+MD,MD DC-9-40,6462590,Passenger,Narrow Body,Short Range,Jet,28.47,38.28,3120,917,15000,0.038,1510,125,2,3,1,0,1968,1981,54
+MD,MD DC-9-50,4400440,Passenger,Narrow Body,Short Range,Jet,28.47,40.72,3030,898,15000,0.037,1540,135,2,3,2,0,1975,1982,54
+MD,MD-81 (DC-9-81),5633340,Passenger,Narrow Body,Short Range,Jet,32.82,45.01,2910,811,15000,0.03,1615,172,2,3,2,0,1981,1992,60
+MD,MD-82 (DC-9-82),5674850,Passenger,Narrow Body,Medium Range,Jet,32.82,45.01,3800,811,22000,0.034,1500,172,2,3,2,0,1982,1997,60
+MD,MD-83 (DC-9-83),5676080,Passenger,Narrow Body,Medium Range,Jet,32.82,45.01,4600,811,22000,0.028,1470,172,2,3,2,0,1983,1999,60
+MD,MD-87 (DC-9-87),7425740,Passenger,Narrow Body,Medium Range,Jet,32.82,39.73,4390,811,22000,0.036,1365,139,2,3,2,0,1987,1993,60
+MD,MD-88 (DC-9-88),8181140,Passenger,Narrow Body,Medium Range,Jet,32.82,45.01,3800,811,22000,0.034,1435,172,2,3,2,0,1988,1997,60
+MD,MD-90-30,8288400,Passenger,Narrow Body,Medium Range,Jet,32.87,46.5,3860,811,17000,0.026,1480,172,2,3,2,0,1994,2000,16
+MD,MD DC-10-10,15643270,Passenger,Wide Body,Medium Range,Jet,47.34,51.97,6114,908,88000,0.036,3000,399,3,8,2,0,1971,1981,20
+MD,MD DC-10-10F,15643270,Cargo,Wide Body,Medium Range,Jet,47.34,51.97,6114,908,88000,0.036,3000,0,3,0,0,402,1974,1981,20
+MD,MD DC-10-15,9172440,Passenger,Wide Body,Medium Range,Jet,47.34,51.97,7000,908,100000,0.036,3080,399,3,8,2,0,1979,1983,20
+MD,MD DC-10-30,16855520,Passenger,Wide Body,Medium Range,Jet,50.4,51.97,10620,908,150000,0.035,2735,399,3,8,2,0,1972,1988,20
+MD,MD DC-10-30F,16855520,Cargo,Wide Body,Medium Range,Jet,50.4,51.97,10620,908,150000,0.035,2735,0,3,0,0,402,1972,1988,20
+MD,MD DC-10-40,16000000,Passenger,Wide Body,Medium Range,Jet,50.4,51.97,9252,908,136000,0.037,2697,399,3,8,2,0,1973,1985,20
+Mil,Mi-8P,1760000,Helicopter,Helicopter,Short Range,Jet,21.29,18.17,465,225,3720,0.031,18,32,3,0,1,0,1967,2199,18
+Mil,Mi-8P ER,2245000,Helicopter,Helicopter,Short Range,Jet,21.29,18.17,950,225,7440,0.031,18,32,3,0,1,0,1967,2199,3
+Mil,Mi-26P,3465000,Helicopter,Helicopter,Short Range,Jet,32,40.03,800,255,11600,0.016,18,63,5,1,1,0,1983,2199,2
+Piaggio,P180 Avanti,1994000,Passenger,Single Aisle,Regional,Turboprop,14.03,14.41,2795,660,1271,0.111,869,9,1,0,1,0,1990,2199,10
+Pilatus,Pilatus PC-6 Turbo-Porter,214500,Passenger,Narrow Body,Regional,Turboprop,15.87,11,1612,215,886,0.1,195,10,1,0,1,0,1961,2199,11
+Pilatus,Pilatus PC-12,373000,Passenger,Narrow Body,Regional,Turboprop,16.23,14.4,2804,500,1143,0.111,450,9,2,0,1,0,1994,2199,65
+Pilatus,Pilatus PC-24,1185000,Passenger,Narrow Body,Regional,Jet,17,16.8,3610,750,3363,0.1,450,10,2,0,1,0,2017,2199,43
+Piper,PA-31 Navajo,250000,Passenger,Narrow Body,Regional,Turboprop,12.4,9.94,1875,383,568,0.143,283,7,2,0,1,0,1967,1984,232
+Piper,PA-31T Cheyenne,365000,Passenger,Narrow Body,Regional,Turboprop,13.01,10.57,2739,393,1446,0.166,430,6,2,0,1,0,1994,2199,18
+Piper,PA-42 Cheyenne,561000,Passenger,Narrow Body,Medium Range,Turboprop,14.53,13.23,4207,523,14456,0.111,447,9,2,0,1,0,1979,2199,6
+Piper,PA-46 Malibu,384000,Passenger,Narrow Body,Regional,Turboprop,13.11,8.65,2880,363,454,0.2,447,5,1,0,1,0,1979,2199,10
+Piper Aircraft,PA-32 Cherokee Six,181000,Passenger,Narrow Body,Regional,Turboprop,10,8.4,1361,272,190,0.166,320,6,1,0,1,0,1965,2007,187
+Piper Aircraft,PA-34 Seneca,215000,Passenger,Narrow Body,Regional,Turboprop,11.86,8.72,1611,348,353,0.166,280,6,1,0,1,0,1971,2199,114
+Piper Aircraft,PA-60 Aerostar,220000,Passenger,Narrow Body,Regional,Turboprop,11.18,10.61,1648,390,625,0.2,594,5,1,0,1,0,1967,1984,60
+Saab,Saab 90A Scandia,1393730,Passenger,Narrow Body,Regional,Turboprop,28,21.3,2650,340,9720,0.09,1200,32,2,1,1,0,1946,1954,2
+Saab,Saab 340B,2193730,Passenger,Narrow Body,Regional,Turboprop,21.44,19.73,1732,467,3220,0.05,1000,37,2,1,1,0,1984,1998,28
+Saab,Saab 2000,9192130,Passenger,Narrow Body,Regional,Turboprop,24.76,27.28,2563,665,4550,0.05,1567,58,2,1,1,0,1992,1999,28
+Short,Short 360,2145000,Passenger,Narrow Body,Regional,Turboprop,22.8,21.58,1178,400,1742,0.026,1189,39,2,1,1,0,1981,1991,17
+Short,Short 330,1650000,Passenger,Narrow Body,Regional,Turboprop,22.76,17.69,1695,352,2551,0.033,1189,30,2,1,1,0,1974,1992,7
+Short,Short SC.7 Skyvan,1045000,Passenger,Narrow Body,Short Range,Turboprop,19.78,12.21,1117,317,796,0.053,610,19,2,1,1,0,1963,1986,7
+Short,Short Belfast,1205000,Cargo,Narrow Body,Medium Range,Turboprop,48.4,41.58,4300,541,54553,0.029,2500,0,4,0,0,35,1964,1968,3
+Sikorsky,Sikorsky S-92,4123124,Helicopter,Helicopter,Short Range,Jet,17.17,17.1,999,280,1850,0.132,18,19,2,0,1,0,1998,2028,22
+Sikorsky,Sikorsky S-76,1722102,Helicopter,Helicopter,Short Range,Jet,12.75,16,761,287,1064,0.136,14,12,2,0,1,0,1977,2018,20
+Sud Aviation,Sud Aviation Caravelle I,2200000,Passenger,Narrow Body,Short Range,Jet,34.3,31.01,1700,805,7500,0.055,2000,80,3,2,2,0,1959,1967,14
+Sud Aviation,Sud Aviation Caravelle 10B,2500000,Passenger,Narrow Body,Short Range,Jet,34.3,33.01,1700,805,7500,0.055,2000,105,3,2,2,0,1964,1967,6
+Sukhoi,Sukhoi 100-75,4606480,Passenger,Narrow Body,Short Range,Jet,27.8,26.44,2900,828,13135,0.058,1515,78,2,3,2,0,2011,2020,12
+Sukhoi,Sukhoi 100-75LR,5016620,Passenger,Narrow Body,Medium Range,Jet,27.8,26.44,4550,828,13135,0.037,1515,78,2,3,2,0,2012,2018,12
+Sukhoi,Sukhoi 100-95,5097500,Passenger,Narrow Body,Short Range,Jet,27.8,29.94,3048,828,13135,0.044,1731,98,2,4,2,0,2011,2019,12
+Sukhoi,Sukhoi 100-95LR,5600550,Passenger,Narrow Body,Medium Range,Jet,27.8,29.94,4578,828,13135,0.029,2052,98,2,4,2,0,2013,2018,12
+Tupolev,Tupolev Tu-124,1600000,Passenger,Narrow Body,Medium Range,Jet,25.55,30.6,2100,800,12650,0.052,2600,56,3,2,2,0,1960,1965,38
+Tupolev,Tupolev Tu-134,1800000,Passenger,Narrow Body,Medium Range,Jet,29,35,2000,800,12650,0.052,2600,70,4,3,2,0,1966,1970,38
+Tupolev,Tupolev Tu-134A,1917810,Passenger,Narrow Body,Medium Range,Jet,29,37.1,2100,850,13200,0.045,2600,76,4,3,2,0,1970,1980,38
+Tupolev,Tupolev Tu-134B,2200000,Passenger,Narrow Body,Medium Range,Jet,29,37.1,2020,880,14400,0.045,2600,80,3,3,2,0,1970,1980,38
+Tupolev,Tupolev Tu-144,34075530,Passenger,Single Aisle,Medium Range,Jet,28.8,65.5,6200,2255,105000,0.121,2800,140,2,4,2,0,1975,1984,3
+Tupolev,Tupolev Tu-154,2974500,Passenger,Narrow Body,Medium Range,Jet,37.55,47.9,2500,900,43000,0.044,2500,164,3,4,2,0,1972,1975,24
+Tupolev,Tupolev Tu-154B,3100000,Passenger,Narrow Body,Medium Range,Jet,37.55,47.9,2800,900,47000,0.044,2500,172,3,4,2,0,1975,1986,24
+Tupolev,Tupolev Tu-154M,3500000,Passenger,Narrow Body,Medium Range,Jet,37.55,47.9,3900,900,49700,0.031,2500,172,3,4,2,0,1984,2013,24
+Tupolev,Tupolev Tu-204-100,9545800,Passenger,Narrow Body,Medium Range,Jet,41.8,46.14,4400,810,30812,0.033,2150,214,3,5,3,0,1996,2025,14
+Tupolev,Tupolev Tu-204-120,10052000,Passenger,Narrow Body,Medium Range,Jet,41.8,46.14,4500,850,30812,0.032,2150,214,3,5,3,0,1998,2025,14
+Tupolev,Tupolev Tu-204-300,8854200,Passenger,Narrow Body,Medium Range,Jet,42.2,40.19,6500,850,45000,0.041,2050,166,3,4,2,0,1997,2025,8
+Vickers,Vickers VC10,5980390,Passenger,Narrow Body,Long Range,Jet,44.55,48.36,9412,933,80000,0.056,2480,151,4,3,1,0,1962,1970,6
+Vickers,Vickers Super VC10,6567810,Passenger,Narrow Body,Long Range,Jet,44.55,52.32,11102,933,92000,0.048,2480,174,3,4,2,0,1965,1972,8
+Vickers,Vickers Viscount 800,2770550,Passenger,Narrow Body,Medium Range,Jet,28.56,26.11,2220,530,5900,0.036,2400,75,2,3,2,0,1950,1963,28
+Viking,DHC-6-400 Twin Otter,1200000,Passenger,Narrow Body,Medium Range,Turboprop,19.8,15.77,1832,278,1811,0.053,350,19,2,0,1,0,2008,2199,9
+Yak,Yak-40,5000000,Passenger,Narrow Body,Short Range,Jet,25,20.36,1800,470,4200,0.031,1400,32,3,1,1,0,1967,1981,73
+Yak,Yak-42D,5000000,Passenger,Narrow Body,Medium Range,Jet,34.88,36.38,4000,740,18500,0.08,2000,120,2,3,2,0,1987,2003,9
+Yak,Yak-42,4000000,Passenger,Narrow Body,Medium Range,Jet,34.88,36.38,2000,740,15795,0.13,1800,120,2,3,2,0,1981,1987,9
