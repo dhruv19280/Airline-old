@@ -1,6 +1,6 @@
 package Airline.src.model;
 
-import Airline.src.template.AirlineTemplate;
+import Airline.src.templates.AirlineTemplate;
 
 import java.util.ArrayList;
 import java.util.List;

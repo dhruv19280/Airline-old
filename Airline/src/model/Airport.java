@@ -1,6 +1,6 @@
 package Airline.src.model;
 
-import Airline.src.template.AirportTemplate;
+import Airline.src.templates.AirportTemplate;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,6 +1,4 @@
-package Airline.src.template;
-
-import Airline.src.model.Airline;
+package Airline.src.templates;
 
 public interface AircraftTemplate {
 

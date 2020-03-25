@@ -106,7 +106,7 @@ public class AircraftModelsInitializer extends Thread {
         return lstAircraftModels;
     }
 
-    private static void ParseParentURL(String sURL) {
+/*    private static void ParseParentURL(String sURL) {
 
         Document doc = null;
 
@@ -354,7 +354,7 @@ public class AircraftModelsInitializer extends Thread {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     public static void PrintAllAircraftModels() {
         for (AircraftModel a : lstAllAircraftModels) {

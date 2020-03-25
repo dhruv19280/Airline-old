@@ -21,7 +21,7 @@ public class GameTime extends Thread {
     private static LocalDateTime dtGameCurrentTime;
     private static LocalDateTime dtGameStartDate;
 
-    GameTime() {
+    public GameTime() {
         dtGameStartDate =LocalDateTime.of(iGameStartYear, iGameStartMonth, iGameStartDate, iGameStartHour, iGameStartMinutes);
         dtGameCurrentTime =LocalDateTime.of(iGameStartYear, iGameStartMonth, iGameStartDate, iGameStartHour, iGameStartMinutes);
     }

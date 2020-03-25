@@ -1,6 +1,6 @@
 package Airline.src.model;
 
-import Airline.src.template.CrewTemplate;
+import Airline.src.templates.CrewTemplate;
 
 public class Crew implements CrewTemplate {
 
