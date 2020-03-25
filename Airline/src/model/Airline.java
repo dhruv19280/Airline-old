@@ -14,9 +14,9 @@ public class Airline implements AirlineTemplate {
     private Double dAirlineFunds=0.00;
     private Double dAirlineValue=0.00;
 
-    private List<Airport> lstAirportsBranches = new ArrayList<Airport>();
+    private List<Airport> lstAirportBranches = new ArrayList<Airport>();
     private List<Aircraft> lstOwnedAircrafts = new ArrayList<Aircraft>();
-    private List<Route> lstOwnedRoutes = new ArrayList<Route>();
+    private List<Route> lstRentedRoutes = new ArrayList<Route>();
     private List<Crew> lstHiredCrew = new ArrayList<Crew>();
 
     Airline(String sCode, String sName, String sCountry) {
