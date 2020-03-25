@@ -9,15 +9,17 @@ public class AirlineGame {
         //AirportsInitializer.PrintAllAirports();
         System.out.println("Airports Initialization Completed.");
 
+        System.out.println("Initializing Airlines...");
+        AirlineInitializer.InitializeAll();
+        //AirlineInitializer.PrintAllAirlines();
+        System.out.println("Airlines Initialization Completed.");
+
+
         System.out.println("Initializing Aircraft Models...");
         AircraftModelsInitializer.InitializeAll();
         AircraftModelsInitializer.PrintAllAircraftModels();
         System.out.println("Aircraft Model Initialization Completed.");
 
-        System.out.println("Initializing Airlines...");
-        AirlineInitializer.InitializeAll();
-        AirlineInitializer.PrintAllAirlines();
-        System.out.println("Airlines Initialization Completed.");
 
         System.out.println("Initializing GameTime...");
         GameTime gtGameTime = new GameTime();

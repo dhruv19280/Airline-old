@@ -5,9 +5,12 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class AircraftModelsInitializer extends Thread {
 
@@ -20,11 +23,84 @@ public class AircraftModelsInitializer extends Thread {
 
         lstAllAircraftModels = new ArrayList<AircraftModel>();
 
-        ParseParentURL(sParentURL);
+        //ParseParentURL(sParentURL);
+        lstAllAircraftModels = ParseFileIntoAircrafts("airplanes.csv");
 
         System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels Before Cleanup");
         CleanUpAircraftModels();
         System.out.println(lstAllAircraftModels.size() + ": Size of AircraftModels After Cleanup");
+    }
+
+    private static List<AircraftModel> ParseFileIntoAircrafts(String sFile) {
+        /*
+        0manufacturer,1name,2price,3type,4body,5rangetype,6engine,7wingspan,8length,
+        9range,10speed,11fuelcapacity,12consumption,13runwaylengthrequired,14passengers,
+        15cockpitcrew,16cabincrew,17maxclasses,18cargo,19from,20to,21rate
+        */
+
+        String DEFAULT_SEPARATOR = ",";
+        List lstAircraftModels = new ArrayList<AircraftModel>();
+
+        Scanner scanner = null;
+
+        try {
+            scanner = new Scanner(new File(sFile));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        int i = 0;
+        while (scanner.hasNext()) {
+
+            String line = scanner.nextLine();
+            if (i==0) {
+                i++;
+                continue;
+            } else {
+                String[] values = line.split(DEFAULT_SEPARATOR);
+
+                String sMfr = values[0];
+                String sModel = values[1];
+                String sPrice = values[2];
+                String sType = values[3];
+                String sBody = values[4];
+                String sRangeType = values[5];
+                String sEngine = values[6];
+                String sWingspan = values[7];
+                String sLength = values[8];
+                String sRange = values[9];
+                String sSpeed = values[10];
+                String sFuelCapacity = values[11];
+                String sConsumption = values[12];
+                String sRunwayLength = values[13];
+                String sPassengers = values[14];
+                String sCockpitCrew = values[15];
+                String sCabinCrew = values[16];
+                String sMaxClasses=values[17];
+                String sCargo = values[18];
+                String sFrom = values[19];
+                String sTo = values[20];
+                String sWear = values[21];
+
+                AircraftModel am = new AircraftModel(sMfr,sModel, sType, sFrom, sTo);
+                am.UpdateEngineBody(sEngine, sBody);
+                am.UpdatePrice(Double.parseDouble(sPrice));
+                am.UpdateRangeSpeed(Integer.parseInt(sSpeed), Integer.parseInt(sRange), sRangeType);
+                am.UpdateFuel(Integer.parseInt(sFuelCapacity), Float.parseFloat(sConsumption));
+                am.UpdateVREF(Integer.parseInt(sRunwayLength));
+                am.UpdateVitals(Float.parseFloat(sWingspan), Float.parseFloat(sLength), Float.parseFloat(sWear));
+                am.UpdateCrewRequirements(Integer.parseInt(sCockpitCrew), Integer.parseInt(sCabinCrew));
+                am.UpdatePaxCapacities(Integer.parseInt(sPassengers), Integer.parseInt(sMaxClasses));
+                am.UpdateCargoCapacity(Float.parseFloat(sCargo));
+
+                lstAircraftModels.add(am);
+
+                i++;
+            }
+
+        }
+
+        scanner.close();
+        return lstAircraftModels;
     }
 
     private static void ParseParentURL(String sURL) {
@@ -80,7 +156,6 @@ public class AircraftModelsInitializer extends Thread {
                                 || sModelCategory.equalsIgnoreCase("Light Passenger Jets")
                                 || sModelCategory.equalsIgnoreCase("Mid Size Passenger Jets")
                                 || sModelCategory.equalsIgnoreCase("Jumbo Passenger Jets")
-                                || sModelCategory.equalsIgnoreCase("Heavy Business Jets")
                                 || sModelCategory.equalsIgnoreCase("Cargo Airplanes")
                         ) {
                             //System.out.println("Processing : " + sManufacturerName + " : " + sModelCategory + " : " + sModelName + " : " + sModelPrice + " : " + sModelURL);
@@ -165,7 +240,12 @@ public class AircraftModelsInitializer extends Thread {
                 }
             }
             ///System.out.println("Creating Object : " + sMfr + " : " + sCategory + " : " +sModel + " : " + sFrom + " : " + sTo);
-            AircraftModel am = new AircraftModel(sMfr, sModel, sCategory, sFrom, sTo);
+            AircraftModel am = null;
+            if(sCategory.contains("Passenger")) {
+                am = new AircraftModel(sMfr, sModel, "Passenger", sFrom, sTo);
+            } else {
+                am = new AircraftModel(sMfr, sModel, "Cargo", sFrom, sTo);
+            }
 
             sPrice = sPrice.replaceAll("\\$", "").trim();
             sPrice = sPrice.replaceAll("Price:", "").trim();
@@ -176,7 +256,7 @@ public class AircraftModelsInitializer extends Thread {
             }
             am.UpdatePrice(Double.parseDouble(sPrice) * 1000000);
 
-            am.UpdateEngineSpecs(sEngine, sPower);
+            //am.UpdateEngineSpecs(sEngine, sPower);
 
 
             if(sPayload.isEmpty() || sPayload.isBlank()) {
@@ -193,7 +273,7 @@ public class AircraftModelsInitializer extends Thread {
             {
                 sTankCapacity = "0";
             }
-            am.UpdatePayload(Integer.parseInt(sPayload), Integer.parseInt(sTankCapacity));
+            //am.UpdatePayload(Integer.parseInt(sPayload), Integer.parseInt(sTankCapacity));
 
 
             sTakeOffDistance = sTakeOffDistance.substring(0, sTakeOffDistance.indexOf(' ')+1).trim();
@@ -207,7 +287,7 @@ public class AircraftModelsInitializer extends Thread {
             if(sLandingDistance.contains("."))
             sLandingDistance = sLandingDistance.substring(0, sLandingDistance.indexOf('.')).trim();
 
-            am.UpdateVREF(Integer.parseInt(sTakeOffDistance), Integer.parseInt(sLandingDistance));
+            //am.UpdateVREF(Integer.parseInt(sTakeOffDistance), Integer.parseInt(sLandingDistance));
 
             //840 Nautical Miles 1,556 Kilometers
             sRange = sRange.replaceAll("Nautical Miles", "").replaceAll("Kilometers", "").trim();
@@ -240,7 +320,7 @@ public class AircraftModelsInitializer extends Thread {
                 sFuelEconomy = "0.00";
             }
 
-            am.UpdateRangeSpeed(Integer.parseInt(sSpeed), Integer.parseInt(sRange), Double.parseDouble(sFuelEconomy));
+            //am.UpdateRangeSpeed(Integer.parseInt(sSpeed), Integer.parseInt(sRange), Double.parseDouble(sFuelEconomy));
 
             //189 seats
             sSeatsEconomy = sSeatsEconomy.replaceAll("seats", "").trim();
@@ -261,7 +341,7 @@ public class AircraftModelsInitializer extends Thread {
             {
                 sCargoVolume = "0.00";
             }
-            am.UpdatePaxCapacities(Integer.parseInt(sSeatsEconomy), Integer.parseInt(sSeatsBusiness), Integer.parseInt(sSeatsFirst), Float.parseFloat(sCargoVolume));
+            //am.UpdatePaxCapacities(Integer.parseInt(sSeatsEconomy), Integer.parseInt(sSeatsBusiness), Integer.parseInt(sSeatsFirst), Float.parseFloat(sCargoVolume));
 
             //System.out.println("Adding Object : " + sMfr + " : " + sCategory + " : " +sModel + " : " + sFrom + " : " + sTo);
             lstAllAircraftModels.add(am);

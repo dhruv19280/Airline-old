@@ -9,61 +9,56 @@ public class AircraftModel {
     private String sAircraftModel = "";
 
     private String sEngineType = "";
-    private String sEngineDetails = "";
-    private String sEnginePower = "";
+    private String sBodyType = "";
 
-    private Integer iWingspan = 0;
-    private Integer iLength = 0;
+    private Float fWingspan = 0.000F;
+    private Float fLength = 0.000F;
 
     private LocalDateTime dtManufacturedFrom;
     private LocalDateTime dtManufacturedTo;
 
     private Integer iFuelCapacity = 0;
-    private Double dFuelEconomy = 0.00D;
+    private Float fFuelEconomy = 0.0000F;
 
     private String sRangeType = "";
     private Integer iMaximumRange = 0;
     private Integer iMaxSpeedPerHour = 0;
 
     private Integer iMaxEconomyCapacity = 0;
-    private Integer iMaxBusinessCapacity = 0;
-    private Integer iMaxFirstCapacity = 0;
+    private Integer iMaxClasses = 0;
     private Float fMaxCargoCapacity = 0.0F;
 
     private Integer iMinCockpitCrew = 0;
-    private Integer iMaxCockpitCrew = 0;
     private Integer iMinCabinCrew = 0;
-    private Integer iMaxCabinCrew = 0;
-
     private Integer iMinTakeOffDistance = 0;
-    private Integer iMinLandingDistance = 0;
 
-    private Integer iMaxPayload = 0;
-
-    private Double dBaseWearRate = 0.00D;
+    private Float fBaseWearRate = 0.0000F;
     private Double dBasePrice = 0.00D;
 
     public void PrintDetails() {
-        System.out.printf("%s : %s : %s : %s : %s : %s : %s : %d, %d : %d : %d : %d : %d : %f : %d : %d : %f : %f : %f \n",
+        System.out.printf("%s : %s : %s : %s : %s : %s : %s : %s : %d : %d, %d : %d : %d : %d : %d : %d : %f : %f : %f : %f : %f : %f \n",
                 sManufacturer,
                 sAircraftType,
                 sAircraftModel,
-                sEngineDetails,
-                sEnginePower,
+                sEngineType,
+                sBodyType,
+                sRangeType,
                 dtManufacturedFrom.toString(),
                 dtManufacturedTo.toString(),
                 iFuelCapacity,
                 iMaximumRange,
                 iMaxSpeedPerHour,
                 iMaxEconomyCapacity,
-                iMaxBusinessCapacity,
-                iMaxFirstCapacity,
-                fMaxCargoCapacity,
+                iMaxClasses,
                 iMinTakeOffDistance,
-                iMinLandingDistance,
+                iMinCockpitCrew,
+                iMinCabinCrew,
+                fMaxCargoCapacity,
+                fWingspan,
+                fLength,
                 dBasePrice,
-                dFuelEconomy,
-                dBaseWearRate);
+                fFuelEconomy,
+                fBaseWearRate);
     }
 
     public AircraftModel(String sMfr, String sModel, String sType, String sFrom, String sTo) {
@@ -85,36 +80,48 @@ public class AircraftModel {
         }
     }
 
-    public void UpdateEngineSpecs(String sEngine, String sPower) {
-        this.sEngineDetails = sEngine;
-        this.sEnginePower = sPower;
+    public void UpdateEngineBody(String sEngineType, String sBody) {
+        this.sEngineType = sEngineType;
+        this.sBodyType = sBody;
     }
 
-    public void UpdateRangeSpeed(Integer iSpeed, Integer iRange, Double dEconomy) {
+    public void UpdateRangeSpeed(Integer iSpeed, Integer iRange, String sRangeType) {
         this.iMaxSpeedPerHour = iSpeed;
         this.iMaximumRange = iRange;
-        this.dFuelEconomy = dEconomy;
+        this.sRangeType = sRangeType;
     }
 
-    public void UpdatePayload(Integer iPayload, Integer iFuelTank) {
-        this.iMaxPayload = iPayload;
+    public void UpdateFuel(Integer iFuelTank, Float fEconomy) {
         this.iFuelCapacity = iFuelTank;
+        this.fFuelEconomy = fEconomy;
     }
 
-    public void UpdateVREF(Integer iTakeOffDist, Integer iLandDist) {
-        this.iMinLandingDistance = iLandDist;
+    public void UpdateVREF(Integer iTakeOffDist) {
         this.iMinTakeOffDistance = iTakeOffDist;
     }
 
-    public void UpdatePaxCapacities(Integer iEco, Integer iBus, Integer iFirst, Float fCargo) {
+    public void UpdatePaxCapacities(Integer iEco, Integer iClasses) {
         this.iMaxEconomyCapacity = iEco;
-        this.iMaxBusinessCapacity = iBus;
-        this.iMaxFirstCapacity = iFirst;
+        this.iMaxClasses= iClasses;
+    }
+
+    public void UpdateCargoCapacity(Float fCargo) {
         this.fMaxCargoCapacity = fCargo;
     }
 
     public void UpdatePrice(Double dPrice) {
         this.dBasePrice = dPrice;
+    }
+
+    public void UpdateVitals(Float fWings,Float fLength, Float fWear) {
+        this.fWingspan = fWings;
+        this.fLength = fLength;
+        this.fBaseWearRate = fWear;
+    }
+
+    public void UpdateCrewRequirements(Integer iCockpit, Integer iCabin) {
+        this.iMinCockpitCrew = iCockpit;
+        this.iMinCabinCrew = iCabin;
     }
 
     public Boolean IsValid() {
@@ -136,7 +143,7 @@ public class AircraftModel {
             bValid = false;
         }
 
-        if (this.dBasePrice < 1000000) {
+        if (this.dBasePrice == 0) {
             bValid = false;
         }
 
