@@ -1,5 +1,7 @@
 package Airline.src.model;
 
+import Airline.src.template.AircraftTemplate;
+
 public class Aircraft extends AircraftModel implements AircraftTemplate {
 
     private String sAircraftTail="";

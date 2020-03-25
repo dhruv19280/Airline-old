@@ -1,10 +1,10 @@
 package Airline.src.model;
 
+import Airline.src.template.AirportTemplate;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
-import static java.util.Objects.isNull;
 
 public class Airport implements AirportTemplate {
 
@@ -40,7 +40,7 @@ public class Airport implements AirportTemplate {
     public Boolean bIsValid = false;
 
 
-    Airport(String sIATA, Integer iFlights) {
+    public Airport(String sIATA, Integer iFlights) {
 
         this.sAirportIATA = sIATA;
 

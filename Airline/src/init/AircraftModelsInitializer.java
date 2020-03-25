@@ -1,5 +1,8 @@
-package Airline.src.model;
+package Airline.src.init;
 
+import Airline.src.model.AircraftModel;
+import Airline.src.model.Airline;
+import Airline.src.model.GameTime;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

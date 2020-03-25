@@ -1,4 +1,6 @@
-package Airline.src.model;
+package Airline.src.init;
+
+import Airline.src.model.Airline;
 
 import java.io.File;
 import java.io.FileNotFoundException;

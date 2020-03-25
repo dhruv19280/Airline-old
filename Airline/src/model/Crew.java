@@ -1,5 +1,7 @@
 package Airline.src.model;
 
+import Airline.src.template.CrewTemplate;
+
 public class Crew implements CrewTemplate {
 
     private String sFirstName;

@@ -1,10 +1,12 @@
-package Airline.src.model;
+package Airline.src.init;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import Airline.src.model.Airline;
+import Airline.src.model.Airport;
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

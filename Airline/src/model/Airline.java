@@ -1,5 +1,7 @@
 package Airline.src.model;
 
+import Airline.src.template.AirlineTemplate;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +21,7 @@ public class Airline implements AirlineTemplate {
     private List<Route> lstRentedRoutes = new ArrayList<Route>();
     private List<Crew> lstHiredCrew = new ArrayList<Crew>();
 
-    Airline(String sCode, String sName, String sCountry) {
+    public Airline(String sCode, String sName, String sCountry) {
         this.sAirlineCode = sCode;
         this.sAirlineName = sName;
         this.sAirlineCountry = sCountry;

@@ -1,5 +1,9 @@
 package Airline.src.model;
 
+import Airline.src.init.AircraftModelsInitializer;
+import Airline.src.init.AirlineInitializer;
+import Airline.src.init.AirportsInitializer;
+
 public class AirlineGame {
 
     public static void Initialize() {
