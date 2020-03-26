@@ -8,39 +8,41 @@ import java.util.Scanner;
 
 public class Airport implements AirportTemplate {
 
-    public String sAirportName = "";
-    public String sAirportIATA = "";
-    public String sAirportSize = "";
+    private String sAirportName = "";
+    private String sAirportIATA = "";
+    private String sAirportSize = "";
 
-    public String sAirportCountry = "";
-    public String sAirportCity = "";
+    private String sAirportCountry = "";
+    private String sAirportCity = "";
 
-    public Double dLatitude=0.00D;
-    public Double dLongitude=0.00D;
-    public Integer iElevation=0;
+    private Double dLatitude=0.00D;
+    private Double dLongitude=0.00D;
+    private Integer iElevation=0;
 
-    public Integer iPassengerCapacity = 0;
-    public Integer iCargoCapacity = 0;
+    private Integer iPassengerCapacity = 0;
+    private Integer iCargoCapacity = 0;
 
-    public Integer iWaitingPassengers = 0;
-    public Integer iWaitingCargo = 0;
+    private Integer iWaitingPassengers = 0;
+    private Integer iWaitingCargo = 0;
 
-    public Integer iTotalSlots = 0;
-    public Integer iOccupiedSlots = 0;
-    public Integer iAvailableSlots = 0;
+    private Integer iTotalSlots = 0;
+    private Integer iOccupiedSlots = 0;
+    private Integer iAvailableSlots = 0;
 
-    public Double dBranchSetupCost = 0.00D;
-    public Double dBrandDemolishCost = 0.00D;
-    public Double dBranchRegularCost = 0.00D;
+    private Double dBranchSetupCost = 0.00D;
+    private Double dBrandDemolishCost = 0.00D;
+    private Double dBranchRegularCost = 0.00D;
 
-    public Double dConnectivityRating = 0.00D;
-    public Double dFacilitiesRating = 0.00D;
-    public Double dPunctualityRating = 0.00D;
+    private Double dConnectivityRating = 0.00D;
+    private Double dFacilitiesRating = 0.00D;
+    private Double dPunctualityRating = 0.00D;
 
-    public Boolean bIsValid = false;
+    private Boolean bIsValid = false;
+
+    private Integer iAircraftCount = 0;
 
 
-    public Airport(String sIATA, Integer iFlights) {
+    private Airport(String sIATA, Integer iFlights) {
 
         this.sAirportIATA = sIATA;
 
@@ -137,11 +139,11 @@ public class Airport implements AirportTemplate {
 
     }
 
-    public Boolean IsValid() {
+    private Boolean IsValid() {
         return this.bIsValid;
     }
 
-    public void PrintDetails() {
+    private void PrintDetails() {
         System.out.println(
                 sAirportIATA + ":" +
                 sAirportName + ":" +
@@ -180,12 +182,12 @@ public class Airport implements AirportTemplate {
 
     @Override
     public void AircraftArrival() {
-
+        this.iAircraftCount++;
     }
 
     @Override
     public void AircraftDeparture() {
-
+        if(this.iAircraftCount > 0) this.iAircraftCount--;
     }
 
     @Override
