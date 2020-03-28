@@ -1,17 +1,19 @@
 package Airline.src.templates;
 
+import Airline.src.model.Route;
+
 public interface AirlineTemplate {
 
 // Route Operations
-    public void OpenRoute();
-    public void CloseRoute();
-    public void ResearchRoute();
-    public void PayRouteRents();
-    public void PromoteRoute();
-    public void SetEconomyFare();
-    public void SetBusinessFare();
-    public void SetFirstFare();
-    public void SetCargoFare();
+    public void OpenRoute(Route route);
+    public void CloseRoute(Route route);
+    public void ResearchRoute(Route route);
+    public void PayRouteRents(Route route);
+    public void PromoteRoute(Route route);
+    public void SetEconomyFare(Route route);
+    public void SetBusinessFare(Route route);
+    public void SetFirstFare(Route route);
+    public void SetCargoFare(Route route);
 
 
 // Aircraft Operations

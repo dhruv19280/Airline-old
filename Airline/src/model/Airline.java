@@ -7,6 +7,9 @@ import java.util.List;
 
 public class Airline implements AirlineTemplate {
 
+    private final Double INIT_AIRLINE_START_FUNDS = 50000000D;
+    private final Double INIT_AIRLINE_START_VALUE = 50000000D;
+
     private String sAirlineCode="";
     private String sAirlineName="";
     private String sAirlineCountry="";
@@ -26,15 +29,55 @@ public class Airline implements AirlineTemplate {
         this.sAirlineName = sName;
         this.sAirlineCountry = sCountry;
         this.sAutoAirline = false;
+
+        this.dAirlineFunds = INIT_AIRLINE_START_FUNDS;
+        this.dAirlineValue = INIT_AIRLINE_START_VALUE;
     }
 
     @Override
-    public void OpenRoute() {
+    public void OpenRoute(Route route) {
+        //TODO: Check if the route exists in the list of Rented Routes first.
+        lstRentedRoutes.add(route);
+    }
+
+    @Override
+    public void CloseRoute(Route route) {
+        //TODO: Check if the route exists in the list of Rented Routes first.
+        lstRentedRoutes.remove(route);
+    }
+
+    @Override
+    public void ResearchRoute(Route route) {
 
     }
 
     @Override
-    public void CloseRoute() {
+    public void PayRouteRents(Route route) {
+
+    }
+
+    @Override
+    public void PromoteRoute(Route route) {
+
+    }
+
+    @Override
+    public void SetEconomyFare(Route route) {
+
+    }
+
+    @Override
+    public void SetBusinessFare(Route route) {
+
+    }
+
+    @Override
+    public void SetFirstFare(Route route) {
+
+    }
+
+    @Override
+    public void SetCargoFare(Route route) {
 
     }
 
@@ -85,41 +128,6 @@ public class Airline implements AirlineTemplate {
 
     @Override
     public void DescheduleFlights() {
-
-    }
-
-    @Override
-    public void ResearchRoute() {
-
-    }
-
-    @Override
-    public void PayRouteRents() {
-
-    }
-
-    @Override
-    public void PromoteRoute() {
-
-    }
-
-    @Override
-    public void SetEconomyFare() {
-
-    }
-
-    @Override
-    public void SetBusinessFare() {
-
-    }
-
-    @Override
-    public void SetFirstFare() {
-
-    }
-
-    @Override
-    public void SetCargoFare() {
 
     }
 
