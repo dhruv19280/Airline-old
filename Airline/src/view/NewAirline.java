@@ -4,7 +4,10 @@ import Airline.src.init.AirlineInitializer;
 import Airline.src.model.Airline;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
+import java.util.List;
 
 public class NewAirline extends JDialog {
     private JPanel contentPane;
@@ -48,6 +51,7 @@ public class NewAirline extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         InitializeAirlineList(lstAirlines);
+
     }
 
     private void onOK() {
@@ -60,9 +64,20 @@ public class NewAirline extends JDialog {
         dispose();
     }
 
-    private void InitializeAirlineList(JList<Airline> airlineList) {
-        for(int i=0; i<AirlineInitializer.lstAllAirlines.size(); i++) {
-            airlineList.setListData((Airline[]) AirlineInitializer.lstAllAirlines.toArray());
-        }
+    private void InitializeAirlineList(JList airlineList) {
+
+        airlineList.setAutoscrolls(true);
+        airlineList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        airlineList.setListData(AirlineInitializer.lstAllAirlines.toArray());
+
+        airlineList.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if(!e.getValueIsAdjusting()) {
+                    final List<Airline> selectedValuesList = airlineList.getSelectedValuesList();
+                    System.out.println(selectedValuesList);
+                }
+            }
+        });
     }
 }

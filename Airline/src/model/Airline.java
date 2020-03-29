@@ -177,4 +177,8 @@ public class Airline implements AirlineTemplate {
 
         return bValid;
     }
+
+    public String toString() {
+        return "[" + this.sAirlineCode + "] " + this.sAirlineName;
+    }
 }

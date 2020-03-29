@@ -42,7 +42,7 @@ public class Airport implements AirportTemplate {
     private Integer iAircraftCount = 0;
 
 
-    private Airport(String sIATA, Integer iFlights) {
+    public Airport(String sIATA, Integer iFlights) {
 
         this.sAirportIATA = sIATA;
 
@@ -139,11 +139,11 @@ public class Airport implements AirportTemplate {
 
     }
 
-    private Boolean IsValid() {
+    public Boolean IsValid() {
         return this.bIsValid;
     }
 
-    private void PrintDetails() {
+    public void PrintDetails() {
         System.out.println(
                 sAirportIATA + ":" +
                 sAirportName + ":" +
@@ -157,7 +157,7 @@ public class Airport implements AirportTemplate {
                 iElevation.toString());
     }
 
-    private void UpdateDetails(String sInputFile) throws FileNotFoundException {
+    public void UpdateDetails(String sInputFile) throws FileNotFoundException {
 
         String DEFAULT_SEPARATOR = ",";
 
