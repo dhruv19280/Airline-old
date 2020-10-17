@@ -2,10 +2,6 @@ package Airline.src.model;
 
 import Airline.src.templates.AirportTemplate;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-
 public class Airport implements AirportTemplate {
 
     private String sAirportName = "";
@@ -42,19 +38,12 @@ public class Airport implements AirportTemplate {
     private Integer iAircraftCount = 0;
 
 
-    public Airport(String sIATA, Integer iFlights) {
+    public Airport(String sIATA) {
 
         this.sAirportIATA = sIATA;
-
-        try {
-            UpdateDetails("airports.csv");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        DeriveOtherFields(iFlights);
     }
 
-    private void DeriveOtherFields(Integer iFlights) {
+    public void DeriveOtherFields(Integer iFlights) {
 
         if (iFlights >= 450 && iFlights <1000) {
             sAirportSize = "Very Large";
@@ -139,7 +128,37 @@ public class Airport implements AirportTemplate {
 
     }
 
+    public void UpdateInitialize(String sName, String sCountry, String sCity, String sLat, String sLong, String sElev) {
+        this.sAirportName = sName;
+        this.sAirportCountry = sCountry;
+        this.sAirportCity = sCity;
+        this.dLatitude = Double.parseDouble(sLat);
+        this.dLongitude = Double.parseDouble(sLong);
+        this.iElevation = Integer.parseInt(sElev);
+        this.bIsValid = true;
+    }
+
     public Boolean IsValid() {
+        boolean valid = true;
+        if(this.sAirportIATA.length() < 2) {
+            valid = false;
+        }
+        if(this.sAirportName.length() < 5) {
+            valid = false;
+        }
+        if(this.sAirportCountry.length() < 3) {
+            valid = false;
+        }
+        if(this.sAirportCity.length() < 3) {
+            valid = false;
+        }
+        if(this.dLatitude.isNaN()) {
+            valid = false;
+        }
+        if(this.dLongitude.isNaN()) {
+            valid = false;
+        }
+        this.bIsValid = valid;
         return this.bIsValid;
     }
 
@@ -155,29 +174,6 @@ public class Airport implements AirportTemplate {
                 dLatitude.toString() + ":" +
                 dLongitude.toString()+ ":" +
                 iElevation.toString());
-    }
-
-    public void UpdateDetails(String sInputFile) throws FileNotFoundException {
-
-        String DEFAULT_SEPARATOR = ",";
-
-        Scanner scanner = new Scanner(new File(sInputFile));
-        while (scanner.hasNext()) {
-            String line = scanner.nextLine();
-            String[] values = line.split(DEFAULT_SEPARATOR);
-
-                if(this.sAirportIATA.equalsIgnoreCase(values[0])) {
-
-                    this.sAirportName = values[2];
-                    this.sAirportCountry = values[7];
-                    this.sAirportCity = values[8];
-                    this.dLatitude = Double.parseDouble(values[3]);
-                    this.dLongitude = Double.parseDouble(values[4]);
-                    this.iElevation = Integer.parseInt(values[5]);
-                    this.bIsValid = true;
-                }
-        }
-        scanner.close();
     }
 
     @Override

@@ -2,22 +2,26 @@ package Airline.src.init;
 
 import Airline.src.model.GameTime;
 
+import java.io.FileNotFoundException;
+
 public class AirlineGame {
 
     public static void Initialize() {
 
-        InitializeAirports();
+        try {
+            InitializeAirports();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         InitializeAirlines();
         InitializeAircraftModels();
         InitializeGameTime();
 
     }
 
-    private static void InitializeAirports() {
+    private static void InitializeAirports() throws FileNotFoundException {
         System.out.println("Initializing Airports...");
         AirportsUpdater.InitializeAll();
-        //AirportsInitializer.InitializeAll();
-        //AirportsInitializer.PrintAllAirports();
         System.out.println("Airports Initialization Completed.");
     }
 
@@ -25,7 +29,6 @@ public class AirlineGame {
 
         System.out.println("Initializing Airlines...");
         AirlineInitializer.InitializeAll();
-        //AirlineInitializer.PrintAllAirlines();
         System.out.println("Airlines Initialization Completed.");
     }
 
@@ -33,7 +36,7 @@ public class AirlineGame {
 
         System.out.println("Initializing Aircraft Models...");
         AircraftModelsInitializer.InitializeAll();
-        AircraftModelsInitializer.PrintAllAircraftModels();
+        //AircraftModelsInitializer.PrintAllAircraftModels();
         System.out.println("Aircraft Model Initialization Completed.");
     }
 
