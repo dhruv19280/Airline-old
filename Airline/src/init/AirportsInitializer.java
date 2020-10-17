@@ -7,10 +7,10 @@ import java.util.StringTokenizer;
 
 import Airline.src.model.Airline;
 import Airline.src.model.Airport;
-import org.jsoup.*;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+//import org.jsoup.*;
+//import org.jsoup.nodes.Document;
+//import org.jsoup.nodes.Element;
+//import org.jsoup.select.Elements;
 
 public class AirportsInitializer {
 
@@ -29,12 +29,12 @@ public class AirportsInitializer {
 
         lstAllAirports = new ArrayList<Airport>();
 
-        lstAllAirports.addAll(ParseURLintoAirports(sURLAfrica));
-        lstAllAirports.addAll(ParseURLintoAirports(sURLAsia));
-        lstAllAirports.addAll(ParseURLintoAirports(sURLEurope));
-        lstAllAirports.addAll(ParseURLintoAirports(sURLOceania));
-        lstAllAirports.addAll(ParseURLintoAirports(sURLNAmerica));
-        lstAllAirports.addAll(ParseURLintoAirports(sURLSAmerica));
+        //lstAllAirports.addAll(ParseURLintoAirports(sURLAfrica));
+        //lstAllAirports.addAll(ParseURLintoAirports(sURLAsia));
+        //lstAllAirports.addAll(ParseURLintoAirports(sURLEurope));
+        //lstAllAirports.addAll(ParseURLintoAirports(sURLOceania));
+        //lstAllAirports.addAll(ParseURLintoAirports(sURLNAmerica));
+        //lstAllAirports.addAll(ParseURLintoAirports(sURLSAmerica));
 
         System.out.println(lstAllAirports.size() + ": Size of All Airports Before Cleanup");
 
@@ -42,49 +42,6 @@ public class AirportsInitializer {
 
         System.out.println(lstAllAirports.size() + ": Size of All Airports After Cleanup");
 
-    }
-
-    private static List<Airport> ParseURLintoAirports(String sURL) {
-
-        Document doc = null;
-        ArrayList<Airport> lstAirports = new ArrayList<Airport>();
-
-        try {
-            doc = Jsoup.connect(sURL).get();
-            Elements tablerows = doc.select("a.hometoplist-item");
-
-            int i = 0;
-            for (Element row : tablerows) {
-
-                try {
-                    String temp = row.text();
-                    StringTokenizer stk = new StringTokenizer(temp, " ");
-
-                    stk.nextToken();
-
-                    String sCity = stk.nextToken();
-                    String bracket = stk.nextToken();
-
-                    while (bracket.indexOf("(") < 0) {
-                        sCity = sCity.concat(" " + bracket);
-                        bracket = stk.nextToken();
-                    }
-                    String sICAO = bracket.substring(1, 4);
-                    String sFlights = stk.nextToken();
-
-                    lstAirports.add(new Airport(sICAO, Integer.parseInt(sFlights)));
-                    i++;
-
-                } catch (Exception e) {
-                    continue;
-                }
-
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return lstAirports;
     }
 
     public static void PrintAllAirports() {

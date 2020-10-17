@@ -22,7 +22,8 @@ public class AirlineGame {
 
     private static void InitializeAirports() {
         System.out.println("Initializing Airports...");
-        AirportsInitializer.InitializeAll();
+        AirportsUpdater.Update();
+        //AirportsInitializer.InitializeAll();
         //AirportsInitializer.PrintAllAirports();
         System.out.println("Airports Initialization Completed.");
     }

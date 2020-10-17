@@ -1,16 +1,9 @@
 package Airline.src.init;
 
 import Airline.src.model.AircraftModel;
-import Airline.src.model.Airline;
-import Airline.src.model.GameTime;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -20,7 +13,6 @@ public class AircraftModelsInitializer extends Thread {
     private static final String sParentURL = "https://www.aircraftcompare.com/manufacturer-categories/airplane/";
 
     public static List<AircraftModel> lstAllAircraftModels;
-
 
     public static void InitializeAll() {
 

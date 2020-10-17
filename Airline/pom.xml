@@ -10,7 +10,7 @@
 
   <name>Airline</name>
   <!-- FIXME change it to the project's website -->
-  <url></url>
+  <url>https://yahoo.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,12 +19,6 @@
   </properties>
 
   <dependencies>
-      <dependency>
-  <!-- jsoup HTML parser library @ https://jsoup.org/ -->
-      <groupId>org.jsoup</groupId>
-      <artifactId>jsoup</artifactId>
-      <version>1.12.1</version>
-    </dependency>
   </dependencies>
 
 
