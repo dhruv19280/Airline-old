@@ -1,9 +1,5 @@
 package Airline.src.init;
 
-import Airline.src.init.AircraftModelsInitializer;
-import Airline.src.init.AirlineInitializer;
-import Airline.src.init.AirportsInitializer;
-import Airline.src.model.Airline;
 import Airline.src.model.GameTime;
 
 public class AirlineGame {
@@ -11,18 +7,15 @@ public class AirlineGame {
     public static void Initialize() {
 
         InitializeAirports();
-
         InitializeAirlines();
-
         InitializeAircraftModels();
-
         InitializeGameTime();
 
     }
 
     private static void InitializeAirports() {
         System.out.println("Initializing Airports...");
-        AirportsUpdater.Update();
+        AirportsUpdater.InitializeAll();
         //AirportsInitializer.InitializeAll();
         //AirportsInitializer.PrintAllAirports();
         System.out.println("Airports Initialization Completed.");

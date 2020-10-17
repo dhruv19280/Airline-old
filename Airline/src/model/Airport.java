@@ -56,7 +56,7 @@ public class Airport implements AirportTemplate {
 
     private void DeriveOtherFields(Integer iFlights) {
 
-        if (iFlights >= 600 && iFlights <1000) {
+        if (iFlights >= 450 && iFlights <1000) {
             sAirportSize = "Very Large";
             iPassengerCapacity = 5000;
             iCargoCapacity = 500;
@@ -76,7 +76,7 @@ public class Airport implements AirportTemplate {
             dFacilitiesRating = 3.00D;
             dPunctualityRating = 3.00D;
         }
-        else if (iFlights >=200 && iFlights<599 ) {
+        else if (iFlights >=200 && iFlights<449 ) {
             sAirportSize = "Large";
             iPassengerCapacity = 2500;
             iCargoCapacity = 250;
