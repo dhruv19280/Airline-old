@@ -181,4 +181,5 @@ public class Airline implements AirlineTemplate {
     public String toString() {
         return "[" + this.sAirlineCode + "] " + this.sAirlineName;
     }
+    public String getAirlineBase() {return this.sAirlineCountry;}
 }

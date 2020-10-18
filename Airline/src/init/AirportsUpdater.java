@@ -29,37 +29,50 @@ public class AirportsUpdater {
 
     public static void ReadWebForSizing() {
 
-        String sURL = "https://www.flightsfrom.com/top-100-airports";
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(sURL))
-                .GET() // GET is default
-                .build();
+        String[] sURL = new String[7];
+        sURL[0] = "https://www.flightsfrom.com/top-100-airports";
+        sURL[1] = "https://www.flightsfrom.com/top-100-airports-in-africa";
+        sURL[2] = "https://www.flightsfrom.com/top-100-airports-in-asia";
+        sURL[3] = "https://www.flightsfrom.com/top-100-airports-in-europe";
+        sURL[4] = "https://www.flightsfrom.com/top-100-airports-in-north-america";
+        sURL[5] = "https://www.flightsfrom.com/top-100-airports-in-oceania";
+        sURL[6] = "https://www.flightsfrom.com/top-100-airports-in-south-america";
 
-        HttpResponse<String> response = null;
-
-        try {
-            response = client.send(request,HttpResponse.BodyHandlers.ofString());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        String[] parts = response.body().split("<a class=\"hometoplist-item\" href=\"/");
-        int i = 0;
         lstFlightsFrom = new ArrayList<FlightsFrom>();
+        lstFlightsFrom.clear();
 
-        while(i < parts.length) {
-            if (i > 0) {
-                String sAirportCode, sFlights;
-                String[] parts1;
-                sAirportCode = parts[i].substring(0, 3);
-                parts1 = parts[i].split("<span class=\"makebluehighlight\">");
-                sFlights = parts1[1].substring(0,3);
-                lstFlightsFrom.add(new FlightsFrom(sAirportCode, sFlights));
+        for (String sLink : sURL) {
+
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(sLink))
+                    .GET() // GET is default
+                    .build();
+
+            HttpResponse<String> response = null;
+
+            try {
+                response = client.send(request,HttpResponse.BodyHandlers.ofString());
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            i++;
-        }
 
+            String[] parts = response.body().split("<a class=\"hometoplist-item\" href=\"/");
+            int i = 0;
+
+            while(i < parts.length) {
+                if (i > 0) {
+                    String sAirportCode, sFlights;
+                    String[] parts1;
+                    sAirportCode = parts[i].substring(0, 3);
+                    parts1 = parts[i].split("<span class=\"makebluehighlight\">");
+                    sFlights = parts1[1].substring(0,3);
+                    sFlights = sFlights.split(" ")[0];
+                    lstFlightsFrom.add(new FlightsFrom(sAirportCode, sFlights));
+                }
+                i++;
+            }
+        }
     }
 
     public static void InitializeAll() throws FileNotFoundException {
@@ -96,7 +109,7 @@ public class AirportsUpdater {
                 }
             }
             if(found) {
-                a.DeriveOtherFields(Integer.parseInt(sFlights));
+                a.DeriveOtherFields(Integer.parseInt(sFlights.trim()));
             } else
             {
                 a.DeriveOtherFields(0);

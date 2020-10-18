@@ -1,54 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Airline.src.view.MainView">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="pnlMainView" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="659" height="514"/>
+      <xy x="20" y="20" width="500" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="5f787" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font size="20"/>
-          <text value="Airline Manager"/>
-        </properties>
-      </component>
-      <vspacer id="2872e">
-        <constraints>
-          <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
-      <component id="608b7" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font size="20"/>
-          <text value="Airline Name"/>
-        </properties>
-      </component>
-      <component id="ab46a" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font size="20"/>
-          <text value="Current Date/Time"/>
-        </properties>
-      </component>
-      <component id="8bb9a" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font size="20"/>
-          <text value="Airline Funds"/>
-        </properties>
-      </component>
+      <grid id="4e9cd" binding="right" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="East"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="803f0" class="javax.swing.JTextArea" binding="txtLogs">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <text value="Well Well Well!"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="a314d" binding="top" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b8e5f" class="javax.swing.JLabel" binding="lblTitle">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <font size="20"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Airline Manager v 1.0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c5556" binding="bottom" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9f52a" class="javax.swing.JLabel" binding="lblBottom">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <text value="Date Time"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="f178c" binding="center" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="9c668" binding="tabbedPane1" default-binding="true">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="59fe5" binding="tabAirline" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Airline"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="143a" binding="tabAircrafts" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Aircrafts"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="1bcec" binding="tabCrew" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Crew"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="81aba" binding="tabRoutes" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Routes"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="5c3c" binding="tabFlights" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Flights"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="c904b" binding="tabFinances" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Finance"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="b6ff3" binding="tabMarketing" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Marketing"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+            </children>
+          </tabbedpane>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>

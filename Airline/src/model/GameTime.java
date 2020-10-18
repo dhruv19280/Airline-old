@@ -41,12 +41,10 @@ public class GameTime extends Thread {
         while(true) {
             try {
                 IncrementGameCurrentTime();
-                System.out.println(GetGameCurrentTime());
                 this.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-
     }
 }
