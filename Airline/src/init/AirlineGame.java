@@ -1,10 +1,14 @@
 package Airline.src.init;
 
+import Airline.src.model.Airline;
 import Airline.src.model.GameTime;
 
 import java.io.FileNotFoundException;
+import java.util.Random;
 
 public class AirlineGame {
+
+    public static Airline thisAirline;
 
     public static void Initialize() {
 
@@ -17,12 +21,19 @@ public class AirlineGame {
         InitializeAircraftModels();
         InitializeGameTime();
 
+        SetThisAirline();
+
     }
 
     private static void InitializeAirports() throws FileNotFoundException {
         System.out.println("Initializing Airports...");
         AirportsUpdater.InitializeAll();
         System.out.println("Airports Initialization Completed.");
+    }
+
+    private static void SetThisAirline() {
+        Random r = new Random();
+        thisAirline = AirlineInitializer.lstAllAirlines.get(r.nextInt(AirlineInitializer.lstAllAirlines.size()));
     }
 
     private static void InitializeAirlines() {

@@ -182,4 +182,6 @@ public class Airline implements AirlineTemplate {
         return "[" + this.sAirlineCode + "] " + this.sAirlineName;
     }
     public String getAirlineBase() {return this.sAirlineCountry;}
+    public String getAirlineFunds() {return this.dAirlineFunds.toString();}
+    public String getAirlineValue() {return this.dAirlineValue.toString();}
 }

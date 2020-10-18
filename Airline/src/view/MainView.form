@@ -7,33 +7,40 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="4e9cd" binding="right" layout-manager="BorderLayout" hgap="0" vgap="0">
-        <constraints border-constraint="East"/>
-        <properties/>
-        <border type="none"/>
-        <children>
-          <component id="803f0" class="javax.swing.JTextArea" binding="txtLogs">
-            <constraints border-constraint="Center"/>
-            <properties>
-              <text value="Well Well Well!"/>
-            </properties>
-          </component>
-        </children>
-      </grid>
       <grid id="a314d" binding="top" layout-manager="BorderLayout" hgap="0" vgap="0">
         <constraints border-constraint="North"/>
         <properties/>
         <border type="none"/>
         <children>
-          <component id="b8e5f" class="javax.swing.JLabel" binding="lblTitle">
+          <grid id="af73a" layout-manager="BorderLayout" hgap="0" vgap="0">
             <constraints border-constraint="Center"/>
-            <properties>
-              <font size="20"/>
-              <horizontalAlignment value="0"/>
-              <horizontalTextPosition value="0"/>
-              <text value="Airline Manager v 1.0"/>
-            </properties>
-          </component>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="b8e5f" class="javax.swing.JLabel" binding="lblTitle">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <font size="20"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Airline Manager v 1.0"/>
+                </properties>
+              </component>
+              <component id="979d2" class="javax.swing.JLabel" binding="lblFunds">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <text value="Funds"/>
+                </properties>
+              </component>
+              <component id="9e29e" class="javax.swing.JLabel" binding="lblValue">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value="Value"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
         </children>
       </grid>
       <grid id="c5556" binding="bottom" layout-manager="BorderLayout" hgap="0" vgap="0">
@@ -110,6 +117,14 @@
               <grid id="b6ff3" binding="tabMarketing" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints>
                   <tabbedpane title="Marketing"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="d2682" binding="tabLogs" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Logs"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>
