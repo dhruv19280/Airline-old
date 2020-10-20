@@ -12,7 +12,7 @@ public class MainView extends JPanel implements Runnable {
     private JPanel top;
     private JPanel bottom;
     private JPanel center;
-    private JTabbedPane tabbedPane1;
+    private JTabbedPane tabTop;
     private JPanel tabAirline;
     private JPanel tabAircrafts;
     private JPanel tabCrew;
@@ -20,11 +20,12 @@ public class MainView extends JPanel implements Runnable {
     private JPanel tabFlights;
     private JPanel tabFinances;
     private JPanel tabMarketing;
+    private JPanel tabLogs;
     private JLabel lblTitle;
     private JLabel lblBottom;
-    private JPanel tabLogs;
     private JLabel lblFunds;
     private JLabel lblValue;
+    private JLabel lblAirline;
 
 
     @Override
@@ -33,11 +34,18 @@ public class MainView extends JPanel implements Runnable {
             lblBottom.setText(GameTime.GetGameCurrentTime());
             lblFunds.setText(AirlineGame.thisAirline.getAirlineFunds());
             lblValue.setText(AirlineGame.thisAirline.getAirlineValue());
+            lblAirline.setText(AirlineGame.thisAirline.getAirlineName() + " - " + AirlineGame.thisAirline.getAirlineBase());
         }
     }
 
     public MainView() {
         Thread thUpdateTime = new Thread(this);
         thUpdateTime.start();
+
+        InitializeAircraftsTab();
+    }
+
+    public void InitializeAircraftsTab() {
+        tabAircrafts.add(new AircraftsView());
     }
 }

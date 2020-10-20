@@ -2,8 +2,10 @@ package Airline.src.model;
 
 import Airline.src.templates.AirlineTemplate;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Airline implements AirlineTemplate {
 
@@ -182,6 +184,14 @@ public class Airline implements AirlineTemplate {
         return "[" + this.sAirlineCode + "] " + this.sAirlineName;
     }
     public String getAirlineBase() {return this.sAirlineCountry;}
-    public String getAirlineFunds() {return this.dAirlineFunds.toString();}
-    public String getAirlineValue() {return this.dAirlineValue.toString();}
+    public String getAirlineName() {return this.sAirlineName;}
+
+    public String getAirlineFunds() {
+        NumberFormat format = NumberFormat.getCurrencyInstance(new Locale("en", "US"));
+        return format.format(this.dAirlineFunds);
+    }
+    public String getAirlineValue() {
+        NumberFormat format = NumberFormat.getCurrencyInstance(new Locale("en", "US"));
+        return format.format(this.dAirlineValue);
+    }
 }

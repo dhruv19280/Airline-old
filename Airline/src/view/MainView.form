@@ -35,8 +35,16 @@
               <component id="9e29e" class="javax.swing.JLabel" binding="lblValue">
                 <constraints border-constraint="East"/>
                 <properties>
-                  <enabled value="false"/>
+                  <enabled value="true"/>
                   <text value="Value"/>
+                </properties>
+              </component>
+              <component id="e797" class="javax.swing.JLabel" binding="lblAirline">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Airline"/>
                 </properties>
               </component>
             </children>
@@ -61,7 +69,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <tabbedpane id="9c668" binding="tabbedPane1" default-binding="true">
+          <tabbedpane id="9c668" binding="tabTop">
             <constraints border-constraint="Center"/>
             <properties/>
             <border type="none"/>
