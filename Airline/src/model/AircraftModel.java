@@ -18,7 +18,7 @@ public class AircraftModel {
     private LocalDateTime dtManufacturedTo;
 
     private Integer iFuelCapacity = 0;
-    private Float fFuelEconomy = 0.0000F;
+    private Float fFuelConsumption = 0.0000F;
 
     private String sRangeType = "";
     private Integer iMaximumRange = 0;
@@ -57,7 +57,7 @@ public class AircraftModel {
                 fWingspan,
                 fLength,
                 dBasePrice,
-                fFuelEconomy,
+                fFuelConsumption,
                 fBaseWearRate);
     }
 
@@ -93,7 +93,7 @@ public class AircraftModel {
 
     public void UpdateFuel(Integer iFuelTank, Float fEconomy) {
         this.iFuelCapacity = iFuelTank;
-        this.fFuelEconomy = fEconomy;
+        this.fFuelConsumption = fEconomy;
     }
 
     public void UpdateVREF(Integer iTakeOffDist) {

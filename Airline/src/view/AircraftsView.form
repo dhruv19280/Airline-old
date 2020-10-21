@@ -15,6 +15,17 @@
           <component id="b9054" class="javax.swing.JList" binding="list1" default-binding="true">
             <constraints border-constraint="Center"/>
             <properties>
+              <model>
+                <item value="vgfdg"/>
+                <item value="gfdgfd"/>
+                <item value="fgdg"/>
+                <item value="fdgdf"/>
+                <item value="gfdgfdgfd"/>
+                <item value="gfdg"/>
+                <item value="fd"/>
+                <item value="gfd"/>
+                <item value="gdf"/>
+              </model>
               <selectionMode value="0"/>
             </properties>
           </component>
@@ -43,6 +54,14 @@
             <properties/>
             <border type="none"/>
             <children>
+              <grid id="70aa8" binding="tabDetails" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Aircraft Details"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
               <grid id="40034" binding="tabRoute" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints>
                   <tabbedpane title="Route"/>

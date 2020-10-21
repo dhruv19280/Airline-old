@@ -3,7 +3,8 @@ package Airline.src.view;
 import javax.swing.*;
 
 public class AircraftsView extends JPanel {
-    private JPanel pnlAircraftsView;
+
+    public JPanel pnlAircraftsView;
     private JPanel left;
     private JPanel top;
     private JPanel center;
@@ -16,4 +17,9 @@ public class AircraftsView extends JPanel {
     private JPanel tabFinance;
     private JPanel tabRevenues;
     private JPanel tabCosts;
+    private JPanel tabDetails;
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 }

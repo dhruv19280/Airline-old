@@ -46,6 +46,6 @@ public class MainView extends JPanel implements Runnable {
     }
 
     public void InitializeAircraftsTab() {
-        tabAircrafts.add(new AircraftsView());
+        tabAircrafts.add(new AircraftsView().pnlAircraftsView);
     }
 }

@@ -4,18 +4,13 @@ import Airline.src.templates.AircraftTemplate;
 
 public class Aircraft extends AircraftModel implements AircraftTemplate {
 
-    private String sAircraftTail="";
-    private String sManufacturer="";
-    private String sModel="";
+    private String sAircraftName="";
 
-    private Integer iFuelCapacity=0;
     private Integer iRemainingFuel=0;
-    private Double dConsumptionLitersPerPaxPerHundredKM=0.00D;
 
     private Integer iCompleteFlights = 0;
     private Integer iCompleteFlightHours = 0;
 
-    private Integer iMaximumRange=0;
     private Integer iCurrentRange=0;
     private Integer iSpeedPerHour=0;
 
