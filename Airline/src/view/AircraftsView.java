@@ -1,6 +1,11 @@
 package Airline.src.view;
 
+import Airline.src.init.AirlineGame;
+import Airline.src.model.Aircraft;
+
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 
 public class AircraftsView extends JPanel {
 
@@ -8,7 +13,7 @@ public class AircraftsView extends JPanel {
     private JPanel left;
     private JPanel top;
     private JPanel center;
-    private JList list1;
+    private JList lstOwnedAircrafts;
     private JButton btnPurchase;
     private JTabbedPane tabAircraft;
     private JPanel tabRoute;
@@ -19,7 +24,22 @@ public class AircraftsView extends JPanel {
     private JPanel tabCosts;
     private JPanel tabDetails;
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
+    public AircraftsView() {
+
+        PopulateAircraftsList();
+
+        lstOwnedAircrafts.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent listSelectionEvent) {
+
+            }
+        });
+    }
+
+    private void PopulateAircraftsList() {
+        DefaultListModel aircraftModel = new DefaultListModel();
+        aircraftModel.addAll(AirlineGame.thisAirline.GetAircraftsList());
+        lstOwnedAircrafts.setModel(aircraftModel);
+        lstOwnedAircrafts.updateUI();
     }
 }

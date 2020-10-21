@@ -1,5 +1,6 @@
 package Airline.src.templates;
 
+import Airline.src.model.Aircraft;
 import Airline.src.model.Route;
 
 public interface AirlineTemplate {
@@ -17,7 +18,7 @@ public interface AirlineTemplate {
 
 
 // Aircraft Operations
-    public void PurchaseAircraft();
+    public void PurchaseAircraft(Aircraft a, Double value);
     public void DeployAircraft();
     public void UpgradeAircraft();
     public void MaintainAircraft();

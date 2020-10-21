@@ -12,7 +12,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="b9054" class="javax.swing.JList" binding="list1" default-binding="true">
+          <component id="b9054" class="javax.swing.JList" binding="lstOwnedAircrafts">
             <constraints border-constraint="Center"/>
             <properties>
               <model>

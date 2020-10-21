@@ -1,5 +1,6 @@
 package Airline.src.init;
 
+import Airline.src.model.Aircraft;
 import Airline.src.model.Airline;
 import Airline.src.model.GameTime;
 
@@ -22,7 +23,13 @@ public class AirlineGame {
         InitializeGameTime();
 
         SetThisAirline();
+        ProvideInitialAircraft();
 
+    }
+
+    private static void ProvideInitialAircraft() {
+        Aircraft a = new Aircraft("Aircraft 1","Boeing", "Boeing 747-300");
+        thisAirline.PurchaseAircraft(a, 0D);
     }
 
     private static void InitializeAirports() throws FileNotFoundException {

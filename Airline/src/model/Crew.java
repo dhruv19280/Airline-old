@@ -117,8 +117,9 @@ enum EmployeeLevel {
 
 enum EmployeeType {
     Pilot,
-    Ground,
-    AirHostess,
+    Engineer,
+    AirHost,
+    Technician,
     Management
 }
 

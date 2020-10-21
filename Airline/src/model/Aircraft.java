@@ -38,8 +38,9 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
 
     private Float dCumulativeProfitability=0.00F;
 
-    public Aircraft(String sMfr, String sModel, String sType, String sFrom, String sTo) {
-        super(sMfr, sModel, sType, sFrom, sTo);
+    public Aircraft(String sName, String sMfr, String sModel) {
+        super(sMfr, sModel);
+        this.sAircraftName = sName;
     }
 
     @Override
@@ -100,5 +101,9 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
          */
 
         return 0.00D;
+    }
+
+    public String toString() {
+        return this.sAircraftName;
     }
 }

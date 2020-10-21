@@ -80,6 +80,11 @@ public class AircraftModel {
         }
     }
 
+    public AircraftModel(String sMfr, String sModel) {
+        this.sManufacturer = sMfr;
+        this.sAircraftModel = sModel;
+    }
+
     public void UpdateEngineBody(String sEngineType, String sBody) {
         this.sEngineType = sEngineType;
         this.sBodyType = sBody;

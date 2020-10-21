@@ -36,6 +36,14 @@ public class Airline implements AirlineTemplate {
         this.dAirlineValue = INIT_AIRLINE_START_VALUE;
     }
 
+    public List<String> GetAircraftsList() {
+        List <String> lstAircraftNames = new ArrayList<String>();
+        for (Aircraft a : lstOwnedAircrafts) {
+            lstAircraftNames.add(a.toString());
+        }
+        return lstAircraftNames;
+    }
+
     @Override
     public void OpenRoute(Route route) {
         //TODO: Check if the route exists in the list of Rented Routes first.
@@ -84,8 +92,10 @@ public class Airline implements AirlineTemplate {
     }
 
     @Override
-    public void PurchaseAircraft() {
-
+    public void PurchaseAircraft(Aircraft a, Double value) {
+        lstOwnedAircrafts.add(a);
+        dAirlineFunds = dAirlineFunds - value;
+        dAirlineValue = dAirlineValue + (value*0.70);
     }
 
     @Override
