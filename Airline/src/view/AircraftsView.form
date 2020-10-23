@@ -86,25 +86,9 @@
                 <border type="none"/>
                 <children/>
               </grid>
-              <grid id="3a973" binding="tabRevenues" layout-manager="BorderLayout" hgap="0" vgap="0">
-                <constraints>
-                  <tabbedpane title="Revenues"/>
-                </constraints>
-                <properties/>
-                <border type="none"/>
-                <children/>
-              </grid>
-              <grid id="ab3c7" binding="tabCosts" layout-manager="BorderLayout" hgap="0" vgap="0">
-                <constraints>
-                  <tabbedpane title="Expenses"/>
-                </constraints>
-                <properties/>
-                <border type="none"/>
-                <children/>
-              </grid>
               <grid id="3a527" binding="tabFinance" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints>
-                  <tabbedpane title="Bottom Line"/>
+                  <tabbedpane title="Finances"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>

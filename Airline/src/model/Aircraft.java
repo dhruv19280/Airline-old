@@ -4,28 +4,28 @@ import Airline.src.templates.AircraftTemplate;
 
 public class Aircraft extends AircraftModel implements AircraftTemplate {
 
-    private String sAircraftName="";
+    public String sAircraftName="";
 
-    private Integer iRemainingFuel=0;
+    public Integer iRemainingFuel=0;
 
-    private Integer iCompleteFlights = 0;
-    private Integer iCompleteFlightHours = 0;
+    public Integer iCompleteFlights = 0;
+    public Integer iCompleteFlightHours = 0;
 
-    private Integer iCurrentRange=0;
-    private Integer iSpeedPerHour=0;
+    public Integer iCurrentRange=0;
+    public Integer iSpeedPerHour=0;
 
-    private Integer iEconomyPassengerCapacity=0;
-    private Integer iBusinessPassengerCapacity=0;
-    private Integer iFirstPassengerCapacity=0;
-    private Integer iCargoCapacity=0;
+    public Integer iEconomyPassengerCapacity=0;
+    public Integer iBusinessPassengerCapacity=0;
+    public Integer iFirstPassengerCapacity=0;
+    public Integer iCargoCapacity=0;
 
-    private Boolean bSold=false;
-    private Integer iPurchasedYear=1950;
-    private Integer iAge=0;
-    private Boolean bInFlight=false;
+    public Boolean bSold=false;
+    public Integer iPurchasedYear=1950;
+    public Integer iAge=0;
+    public Boolean bInFlight=false;
 
-    private Double dBaseWearRate = 0.00D;
-    private Double dCurrentWearPercentage=0.00D;
+    public Double dBaseWearRate = 0.00D;
+    public Double dCurrentWearPercentage=0.00D;
 
 
     private Double dPurchasePrice = 0.00D;

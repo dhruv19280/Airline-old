@@ -20,8 +20,6 @@ public class AircraftsView extends JPanel {
     private JPanel tabCrew;
     private JPanel tabFlights;
     private JPanel tabFinance;
-    private JPanel tabRevenues;
-    private JPanel tabCosts;
     private JPanel tabDetails;
 
     public AircraftsView() {
@@ -31,7 +29,8 @@ public class AircraftsView extends JPanel {
         lstOwnedAircrafts.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent listSelectionEvent) {
-
+                tabDetails.removeAll();
+                tabDetails.add(AircraftDetailsPanel(lstOwnedAircrafts.getSelectedIndex()));
             }
         });
     }
@@ -41,5 +40,36 @@ public class AircraftsView extends JPanel {
         aircraftModel.addAll(AirlineGame.thisAirline.GetAircraftsList());
         lstOwnedAircrafts.setModel(aircraftModel);
         lstOwnedAircrafts.updateUI();
+    }
+
+    private JPanel AircraftDetailsPanel(Integer selectedAircraft) {
+        JPanel panel = new JPanel();
+        panel.setLayout(new SpringLayout());
+        Aircraft a = AirlineGame.thisAirline.lstOwnedAircrafts.get(selectedAircraft);
+
+        JLabel lblAircraftName = new JLabel("Name: " + a.sAircraftName);
+        JLabel lblAircraftManufacturer = new JLabel("Manufacturer: " + a.sManufacturer);
+        JLabel lblAircraftModel = new JLabel("Model: " + a.sAircraftModel);
+        JLabel lblAircraftPurchased = new JLabel("Purchased: " + a.iPurchasedYear.toString() + " ( Age: " + a.iAge.toString() + " Years)");
+
+        JLabel lblAircraftType = new JLabel("Aircraft Type: " + a.sAircraftType);
+        JLabel lblAircraftBodyType = new JLabel("Body Type: " + a.sBodyType);
+        JLabel lblAircraftEngineType = new JLabel("Engine Type: " + a.sEngineType);
+        JLabel lblAircraftRangeType = new JLabel("Range Type: " + a.sRangeType);
+
+
+        panel.add(lblAircraftName);
+        panel.add(lblAircraftManufacturer);
+        panel.add(lblAircraftModel);
+        panel.add(lblAircraftPurchased);
+        panel.add(lblAircraftType);
+        panel.add(lblAircraftBodyType);
+        panel.add(lblAircraftEngineType);
+        panel.add(lblAircraftEngineType);
+        panel.add(lblAircraftRangeType);
+
+        SpringUtilities.makeGrid(panel,4, 2, 5, 5, 5, 5);
+
+        return panel;
     }
 }

@@ -28,8 +28,12 @@ public class AirlineGame {
     }
 
     private static void ProvideInitialAircraft() {
-        Aircraft a = new Aircraft("Aircraft 1","Boeing", "Boeing 747-300");
-        thisAirline.PurchaseAircraft(a, 0D);
+        thisAirline.PurchaseAircraft(new Aircraft("Aircraft 1","Boeing", "Boeing 747-300"), 0D);
+        thisAirline.PurchaseAircraft(new Aircraft("Aircraft 2","Boeing", "Boeing 747-300"), 0D);
+        thisAirline.PurchaseAircraft(new Aircraft("Aircraft 3","Boeing", "Boeing 747-300"), 0D);
+        thisAirline.PurchaseAircraft(new Aircraft("Aircraft 4","Boeing", "Boeing 747-300"), 0D);
+        thisAirline.PurchaseAircraft(new Aircraft("Aircraft 5","Boeing", "Boeing 747-300"), 0D);
+        thisAirline.PurchaseAircraft(new Aircraft("Aircraft 6","Boeing", "Boeing 747-300"), 0D);
     }
 
     private static void InitializeAirports() throws FileNotFoundException {

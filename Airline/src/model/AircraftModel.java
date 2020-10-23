@@ -4,36 +4,36 @@ import java.time.LocalDateTime;
 
 public class AircraftModel {
 
-    private String sManufacturer = "";
-    private String sAircraftType = "";
-    private String sAircraftModel = "";
+    public String sManufacturer = "";
+    public String sAircraftType = "";
+    public String sAircraftModel = "";
 
-    private String sEngineType = "";
-    private String sBodyType = "";
+    public String sEngineType = "";
+    public String sBodyType = "";
 
-    private Float fWingspan = 0.000F;
-    private Float fLength = 0.000F;
+    public Float fWingspan = 0.000F;
+    public Float fLength = 0.000F;
 
-    private LocalDateTime dtManufacturedFrom;
-    private LocalDateTime dtManufacturedTo;
+    public LocalDateTime dtManufacturedFrom;
+    public LocalDateTime dtManufacturedTo;
 
-    private Integer iFuelCapacity = 0;
-    private Float fFuelConsumption = 0.0000F;
+    public Integer iFuelCapacity = 0;
+    public Float fFuelConsumption = 0.0000F;
 
-    private String sRangeType = "";
-    private Integer iMaximumRange = 0;
-    private Integer iMaxSpeedPerHour = 0;
+    public String sRangeType = "";
+    public Integer iMaximumRange = 0;
+    public Integer iMaxSpeedPerHour = 0;
 
-    private Integer iMaxEconomyCapacity = 0;
-    private Integer iMaxClasses = 0;
-    private Float fMaxCargoCapacity = 0.0F;
+    public Integer iMaxEconomyCapacity = 0;
+    public Integer iMaxClasses = 0;
+    public Float fMaxCargoCapacity = 0.0F;
 
-    private Integer iMinCockpitCrew = 0;
-    private Integer iMinCabinCrew = 0;
-    private Integer iMinTakeOffDistance = 0;
+    public Integer iMinCockpitCrew = 0;
+    public Integer iMinCabinCrew = 0;
+    public Integer iMinTakeOffDistance = 0;
 
-    private Float fBaseWearRate = 0.0000F;
-    private Double dBasePrice = 0.00D;
+    public Float fBaseWearRate = 0.0000F;
+    public Double dBasePrice = 0.00D;
 
     public void PrintDetails() {
         System.out.printf("%s : %s : %s : %s : %s : %s : %s : %s : %d : %d, %d : %d : %d : %d : %d : %d : %f : %f : %f : %f : %f : %f \n",

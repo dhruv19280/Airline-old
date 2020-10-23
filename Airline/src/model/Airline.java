@@ -21,10 +21,10 @@ public class Airline implements AirlineTemplate {
     private Double dAirlineFunds=0.00;
     private Double dAirlineValue=0.00;
 
-    private List<Airport> lstAirportBranches = new ArrayList<Airport>();
-    private List<Aircraft> lstOwnedAircrafts = new ArrayList<Aircraft>();
-    private List<Route> lstRentedRoutes = new ArrayList<Route>();
-    private List<Crew> lstHiredCrew = new ArrayList<Crew>();
+    public List<Airport> lstAirportBranches = new ArrayList<Airport>();
+    public List<Aircraft> lstOwnedAircrafts = new ArrayList<Aircraft>();
+    public List<Route> lstRentedRoutes = new ArrayList<Route>();
+    public List<Crew> lstHiredCrew = new ArrayList<Crew>();
 
     public Airline(String sCode, String sName, String sCountry) {
         this.sAirlineCode = sCode;
