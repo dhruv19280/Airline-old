@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Airline.src.view.NewAircraftView">
-  <grid id="27dc6" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+  <grid id="27dc6" binding="pnlNewAircraft" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="1641" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
-    <children/>
+    <children>
+      <grid id="50275" binding="pnlFilters" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="West"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="96b1f" class="javax.swing.JComboBox" binding="cmbManufacturer">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="c1c0f" class="javax.swing.JComboBox" binding="cmbAircraftType">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="16f09" class="javax.swing.JComboBox" binding="cmbRangeType">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="43c8" class="javax.swing.JComboBox" binding="cmbBodyType">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="47623" class="javax.swing.JComboBox" binding="cmbEngineType">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="dd707" binding="pnlModels" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="309" class="javax.swing.JList" binding="lstModels">
+            <constraints border-constraint="Center"/>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="562c5" binding="pnlDetails" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="East"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
   </grid>
 </form>

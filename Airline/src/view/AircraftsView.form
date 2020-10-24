@@ -7,7 +7,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="66c69" binding="left" layout-manager="BorderLayout" hgap="0" vgap="0">
+      <grid id="66c69" binding="left" layout-manager="BorderLayout" hgap="5" vgap="5">
         <constraints border-constraint="West"/>
         <properties/>
         <border type="none"/>
@@ -57,6 +57,14 @@
               <grid id="70aa8" binding="tabDetails" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints>
                   <tabbedpane title="Aircraft Details"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="fbcc8" binding="tabCapacity" layout-manager="CardLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Capacity"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>

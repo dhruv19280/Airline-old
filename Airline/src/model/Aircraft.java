@@ -1,5 +1,6 @@
 package Airline.src.model;
 
+import Airline.src.init.AircraftModelsInitializer;
 import Airline.src.templates.AircraftTemplate;
 
 public class Aircraft extends AircraftModel implements AircraftTemplate {
@@ -24,7 +25,7 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
     public Integer iAge=0;
     public Boolean bInFlight=false;
 
-    public Double dBaseWearRate = 0.00D;
+    public Float fBaseWearRate = 0.00F;
     public Double dCurrentWearPercentage=0.00D;
 
 
@@ -41,6 +42,36 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
     public Aircraft(String sName, String sMfr, String sModel) {
         super(sMfr, sModel);
         this.sAircraftName = sName;
+        this.iPurchasedYear = GameTime.GetGameCurrentYear();
+        PopulateAircraftModelAttributes();
+    }
+
+    private void PopulateAircraftModelAttributes() {
+        for (AircraftModel m : AircraftModelsInitializer.lstAllAircraftModels) {
+            if(m.sManufacturer.equals(this.sManufacturer) && m.sAircraftModel.equals(this.sAircraftModel)) {
+                this.iFuelCapacity = m.iFuelCapacity;
+                this.iCargoCapacity = m.iFuelCapacity;
+                this.iEconomyPassengerCapacity = m.iMaxEconomyCapacity;
+                this.iBusinessPassengerCapacity = 0;
+                this.iFirstPassengerCapacity = 0;
+                this.sRangeType = m.sRangeType;
+                this.sEngineType = m.sEngineType;
+                this.sBodyType = m.sBodyType;
+                this.sAircraftType = m.sAircraftType;
+                this.iAge = 0;
+                this.fBaseWearRate = m.fBaseWearRate;
+                this.dPurchasePrice = m.dBasePrice;
+                this.fWingspan = m.fWingspan;
+                this.fLength = m.fLength;
+                this.iMaximumRange = m.iMaximumRange;
+                this.iMaxSpeedPerHour = m.iMaxSpeedPerHour;
+                this.fFuelConsumption = m.fFuelConsumption;
+                this.iMinTakeOffDistance = m.iMinTakeOffDistance;
+                this.iMinCabinCrew = m.iMinCabinCrew;
+                this.iMinCockpitCrew = m.iMinCockpitCrew;
+                this.iMaxClasses = m.iMaxClasses;
+            }
+        }
     }
 
     @Override
@@ -104,6 +135,6 @@ public class Aircraft extends AircraftModel implements AircraftTemplate {
     }
 
     public String toString() {
-        return this.sAircraftName;
+        return this.sAircraftName + " ( " + this.sAircraftModel + " )";
     }
 }

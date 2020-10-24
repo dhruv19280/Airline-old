@@ -32,6 +32,12 @@ public class GameTime extends Thread {
         return formatDateTime;
     }
 
+    public static Integer GetGameCurrentYear() {
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy");
+        String formatDateTime = dtGameCurrentTime.format(format);
+        return Integer.parseInt(formatDateTime);
+    }
+
     private static void IncrementGameCurrentTime() {
         dtGameCurrentTime = dtGameCurrentTime.plusMinutes(iVirtualMinsPerRealSecond);
     } 
