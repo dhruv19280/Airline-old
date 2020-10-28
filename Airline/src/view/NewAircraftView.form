@@ -1,55 +1,344 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Airline.src.view.NewAircraftView">
-  <grid id="27dc6" binding="pnlNewAircraft" layout-manager="BorderLayout" hgap="0" vgap="0">
+  <grid id="27dc6" binding="pnlNewAircraft" layout-manager="BorderLayout" hgap="10" vgap="10">
     <constraints>
-      <xy x="20" y="20" width="1641" height="400"/>
+      <xy x="20" y="20" width="1025" height="400"/>
     </constraints>
     <properties/>
-    <border type="none"/>
+    <border type="line"/>
     <children>
-      <grid id="50275" binding="pnlFilters" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+      <grid id="dd707" binding="pnlModels" layout-manager="BorderLayout" hgap="10" vgap="10">
         <constraints border-constraint="West"/>
         <properties/>
-        <border type="none"/>
+        <border type="line"/>
         <children>
-          <component id="96b1f" class="javax.swing.JComboBox" binding="cmbManufacturer">
-            <constraints/>
+          <grid id="9d523" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
             <properties/>
-          </component>
-          <component id="c1c0f" class="javax.swing.JComboBox" binding="cmbAircraftType">
-            <constraints/>
+            <border type="none"/>
+            <children>
+              <component id="925a3" class="javax.swing.JLabel" binding="lblSearchResult">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <text value="Aircrafts Matching Search Criteria:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <scrollpane id="7f2ae">
+            <constraints border-constraint="Center"/>
             <properties/>
-          </component>
-          <component id="16f09" class="javax.swing.JComboBox" binding="cmbRangeType">
-            <constraints/>
-            <properties/>
-          </component>
-          <component id="43c8" class="javax.swing.JComboBox" binding="cmbBodyType">
-            <constraints/>
-            <properties/>
-          </component>
-          <component id="47623" class="javax.swing.JComboBox" binding="cmbEngineType">
-            <constraints/>
-            <properties/>
-          </component>
+            <border type="none"/>
+            <children>
+              <component id="309" class="javax.swing.JList" binding="lstModels">
+                <constraints/>
+                <properties>
+                  <layoutOrientation value="0"/>
+                  <model>
+                    <item value="dsgfsdgds"/>
+                  </model>
+                  <selectionMode value="0"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
         </children>
       </grid>
-      <grid id="dd707" binding="pnlModels" layout-manager="BorderLayout" hgap="0" vgap="0">
+      <grid id="50275" binding="pnlFilters" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="line">
+          <font/>
+        </border>
+        <children>
+          <scrollpane id="66653" binding="scrFilterScroll">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="25c2b" binding="pnlFilterScroll" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="f2ce6" class="javax.swing.JLabel" binding="lblSearch">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Filter Criteria:"/>
+                      <verticalAlignment value="1"/>
+                      <verticalTextPosition value="1"/>
+                    </properties>
+                  </component>
+                  <component id="96b1f" class="javax.swing.JComboBox" binding="cmbManufacturer">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="c1c0f" class="javax.swing.JComboBox" binding="cmbAircraftType">
+                    <constraints/>
+                    <properties>
+                      <model/>
+                    </properties>
+                  </component>
+                  <component id="16f09" class="javax.swing.JComboBox" binding="cmbRangeType">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="43c8" class="javax.swing.JComboBox" binding="cmbBodyType">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="47623" class="javax.swing.JComboBox" binding="cmbEngineType">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="2d752" binding="pnlActions" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="line"/>
+        <children>
+          <grid id="62ab6" binding="pnlActionsScroll" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="1">
+            <constraints/>
+            <properties/>
+            <border type="line"/>
+            <children>
+              <component id="a5e10" class="javax.swing.JButton" binding="btnPurchase">
+                <constraints/>
+                <properties>
+                  <text value="Purchase"/>
+                </properties>
+              </component>
+              <component id="5f086" class="javax.swing.JButton" binding="btnCustomize">
+                <constraints/>
+                <properties>
+                  <text value="Customize and Purchase"/>
+                </properties>
+              </component>
+              <component id="6812" class="javax.swing.JButton" binding="btnLeaseAircraft">
+                <constraints/>
+                <properties>
+                  <text value="Lease Aircraft"/>
+                </properties>
+              </component>
+              <component id="27893" class="javax.swing.JButton" binding="btnCancel">
+                <constraints/>
+                <properties>
+                  <text value="Cancel"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="ce5f9" binding="pnlModelDetails" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="1">
         <constraints border-constraint="Center"/>
         <properties/>
         <border type="none"/>
         <children>
-          <component id="309" class="javax.swing.JList" binding="lstModels">
-            <constraints border-constraint="Center"/>
+          <scrollpane id="ad6c7">
+            <constraints/>
             <properties/>
-          </component>
+            <border type="line"/>
+            <children>
+              <grid id="9f942" binding="pnlModelDet" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="0">
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="247ba" class="javax.swing.JLabel" binding="lblModel">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="8a4a1" class="javax.swing.JLabel" binding="lblAircraftType">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="47bc5" class="javax.swing.JLabel" binding="lblBodyType">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="13afd" class="javax.swing.JLabel" binding="lblRangeType">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="34b1" class="javax.swing.JLabel" binding="lblEngineType">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="7d7d4" class="javax.swing.JLabel" binding="lblPrice">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <scrollpane id="b01d6">
+            <constraints/>
+            <properties/>
+            <border type="line"/>
+            <children>
+              <grid id="552f0" binding="pnlCapacities" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="1">
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="c2d4a" class="javax.swing.JLabel" binding="lblMaxPassengers">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="bc205" class="javax.swing.JLabel" binding="lblMaxCargo">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="b39e2" class="javax.swing.JLabel" binding="lblMaxFuel">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="dea6" class="javax.swing.JLabel" binding="lblMaxRange">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="32759" class="javax.swing.JLabel" binding="lblMaxSpeed">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="dfb33" class="javax.swing.JLabel" binding="lblMaxClasses">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <scrollpane id="38641">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="25f2f" binding="pnlAvailability" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="1">
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="665ce" class="javax.swing.JLabel" binding="lblAvailableFrom">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="4e1c" class="javax.swing.JLabel" binding="lblAvailableTill">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <scrollpane id="62664">
+            <constraints/>
+            <properties/>
+            <border type="line"/>
+            <children>
+              <grid id="f1263" binding="pnlCrew" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="1">
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="cde99" class="javax.swing.JLabel" binding="lblCockpitCrew">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="67bbd" class="javax.swing.JLabel" binding="lblCabinCrew">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <scrollpane id="ca2a9">
+            <constraints/>
+            <properties/>
+            <border type="line"/>
+            <children>
+              <grid id="b93cf" binding="pnlOtherDetails" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="1">
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="a4a79" class="javax.swing.JLabel" binding="lblLength">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="4df62" class="javax.swing.JLabel" binding="lblWingspan">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="fc795" class="javax.swing.JLabel" binding="lblFuelConsumption">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="e10b0" class="javax.swing.JLabel" binding="lblWearRate">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="b721" class="javax.swing.JLabel" binding="lblMinRunway">
+                    <constraints/>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
         </children>
-      </grid>
-      <grid id="562c5" binding="pnlDetails" layout-manager="BorderLayout" hgap="0" vgap="0">
-        <constraints border-constraint="East"/>
-        <properties/>
-        <border type="none"/>
-        <children/>
       </grid>
     </children>
   </grid>

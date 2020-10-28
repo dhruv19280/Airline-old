@@ -5,7 +5,7 @@ import Airline.src.templates.AircraftTemplate;
 
 public class Aircraft extends AircraftModel implements AircraftTemplate {
 
-    public String sAircraftName="";
+    public String sAircraftName;
 
     public Integer iRemainingFuel=0;
 
